@@ -71,3 +71,21 @@ PLTMH-ELC-QLSTM/
 └── docs/
     ├── equations.md
     └── methodology.md
+
+## Research objective
+
+## System architecture
+
+## Mathematical model
+
+## Repository structure
+
+## Installation
+
+## Google Colab
+
+## Experiments
+
+## Reproducibility
+
+## Results
