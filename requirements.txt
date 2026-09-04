@@ -1,1 +1,11 @@
-
+numpy
+scipy
+pandas
+matplotlib
+scikit-learn
+torch
+pennylane
+statsmodels
+pyyaml
+joblib
+pytest
