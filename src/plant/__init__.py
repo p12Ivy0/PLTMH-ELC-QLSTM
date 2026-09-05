@@ -9,3 +9,14 @@ from .microhydro_plant import (
     plant_rhs,
     simulate_plant,
 )
+
+
+from .synchronous_generator import (
+    GeneratorParams,
+    electrical_base_speed_rad_s,
+    synchronous_speed_rpm,
+    frequency_hz,
+    rotor_speed_rpm,
+    generator_rhs,
+    simulate_generator,
+)
