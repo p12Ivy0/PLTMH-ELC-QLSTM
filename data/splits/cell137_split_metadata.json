@@ -1,0 +1,47 @@
+{
+  "primary_dataset_source": "CELL133_VALIDATED_11_FAMILY_DATASET",
+  "cell135_enrichment_included": false,
+  "enrichment_exclusion_reason": "D25_L+20 remains numerically unresolved at dt=0.00125; D35_L+20 is a resolved G1 family but does not remove the singleton-G3 limitation. Selective post-hoc inclusion of only the successful enrichment family is therefore not used in the primary supervised dataset.",
+  "selected_candidate_id": 204,
+  "selection_rule_level": "BOTH_LOAD_SIGNS_AND_TWO_DUMP_LEVELS",
+  "train_families": [
+    "D20_L-10",
+    "D30_L+10",
+    "D30_L+20",
+    "D30_L-10",
+    "D30_L-20",
+    "D40_L+20",
+    "D40_L-10"
+  ],
+  "validation_families": [
+    "D20_L-20",
+    "D40_L+10"
+  ],
+  "test_families": [
+    "D20_L+10",
+    "D40_L-20"
+  ],
+  "train_windows": 11200,
+  "validation_windows": 3200,
+  "test_windows": 3200,
+  "train_gain_regimes": [
+    "G1",
+    "G2",
+    "G3"
+  ],
+  "validation_gain_regimes": [
+    "G1",
+    "G2"
+  ],
+  "test_gain_regimes": [
+    "G1",
+    "G2"
+  ],
+  "g3_scope": "G3 is training-only in the primary family-heldout evaluation because only one independent G3 family exists in the validated primary dataset.",
+  "split_selection_used_model_performance": false,
+  "split_selection_used_X_values": false,
+  "split_selection_used_prediction_results": false,
+  "feature_normalization_applied": false,
+  "target_normalization_applied": false,
+  "training_started": false
+}

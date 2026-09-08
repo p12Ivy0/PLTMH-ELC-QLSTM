@@ -1,0 +1,28 @@
+{
+  "stage": "CONTROLLED_PENNYLANE_INSTALLATION",
+  "python_version": "3.13.15 (main, Aug  6 2026, 11:06:23) [GCC 11.4.0]",
+  "installation_performed": true,
+  "pip_returncode": 0,
+  "installation_runtime_s": 30.084869639002136,
+  "resolved_versions": {
+    "pennylane": "0.45.1",
+    "pennylane-lightning": "0.45.0",
+    "torch": "2.11.0+cpu",
+    "numpy": "2.1.3"
+  },
+  "pennylane_version": "0.45.1",
+  "torch_version": "2.11.0+cpu",
+  "cuda_available": false,
+  "qml_device": "default.qubit",
+  "n_qubits_smoke_test": 4,
+  "forward_ok": true,
+  "output_finite": true,
+  "backward_ok": true,
+  "gradient_finite": true,
+  "gradient_nonzero": true,
+  "vqc_forward_backward_runtime_s": 0.05815811499996926,
+  "qlstm_environment_ready": true,
+  "qlstm_training_started": false,
+  "dataset_modified": false,
+  "test_dataset_accessed": false
+}

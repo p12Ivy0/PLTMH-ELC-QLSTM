@@ -1,0 +1,20 @@
+{
+  "status": "MIGRATION_AUDIT_COMPLETE",
+  "original_cell145a_error": "NameError: hash_before_145a was not defined",
+  "original_recovery_artifacts_reused": true,
+  "dataset_sha256": "7287018d944b7e3740aa778c78459df1142d53d77493a6193493af2009b46f60",
+  "dataset_sha_matches_manifest": true,
+  "git_head": "58895647c79ae38d3bcdea50acd866e37f100979",
+  "git_head_matches_manifest": true,
+  "tracked_src_worktree_clean": true,
+  "tracked_src_staging_clean": true,
+  "untracked_backup_file_count": 11,
+  "nonbackup_untracked_src": [
+    "src/simulation/__init__.py"
+  ],
+  "unexpected_nonbackup_src": [],
+  "source_unchanged_during_fix": true,
+  "github_large_file_risk": false,
+  "next_action": "CREATE_GIT_RECOVERY_CHECKPOINT_CELL_145B",
+  "scientific_next_cell_after_migration": "CELL_146_MINIMAL_QLSTM_RUNTIME_BENCHMARK"
+}

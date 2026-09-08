@@ -1,0 +1,61 @@
+{
+  "scaler_type": "TRAIN_ONLY_Z_SCORE_STANDARDIZATION",
+  "feature_scaler_fit_population": "UNIQUE_20HZ_OBSERVATIONS_USED_BY_TRAIN_WINDOWS",
+  "feature_scaler_fit_observation_count": 11900,
+  "feature_names": [
+    "frequency_deviation_hz",
+    "mechanical_power_kw",
+    "electrical_power_kw",
+    "dump_power_kw"
+  ],
+  "feature_mean": [
+    3.337386389654714e-16,
+    90.0,
+    90.0000000000001,
+    31.428571428571516
+  ],
+  "feature_std": [
+    0.011815210318254889,
+    7.0710678118654755,
+    7.21950285455603,
+    14.275213338693552
+  ],
+  "feature_min_train": [
+    -0.1146640050752267,
+    80.0,
+    60.0,
+    4.263396671205244
+  ],
+  "feature_max_train": [
+    0.1146640050752054,
+    100.0,
+    120.0,
+    55.73660332878959
+  ],
+  "target_scaler_fit_population": "TRAIN_WINDOWS_ONLY",
+  "target_names": [
+    "kp_target",
+    "ki_target"
+  ],
+  "target_mean": [
+    2.7428571428573214,
+    5.390171428572276
+  ],
+  "target_std": [
+    0.40276594712469055,
+    3.7607088380913134
+  ],
+  "target_min_train": [
+    2.16,
+    3.0368
+  ],
+  "target_max_train": [
+    3.36,
+    14.144
+  ],
+  "formula": "z=(value-train_mean)/train_std",
+  "inverse_formula": "value=z*train_std+train_mean",
+  "validation_used_for_fit": false,
+  "test_used_for_fit": false,
+  "clipping_applied": false
+}

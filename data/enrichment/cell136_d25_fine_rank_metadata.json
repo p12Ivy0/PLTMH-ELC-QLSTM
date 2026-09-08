@@ -1,0 +1,21 @@
+{
+  "family_key": "D25_L+20",
+  "fine_dt_s": 0.00125,
+  "candidate_count": 20,
+  "same_best_as_dt0025": false,
+  "fine_best": {
+    "kp": 3.36,
+    "r": 0.55,
+    "ki": 19.448,
+    "score": 0.26274082132123855
+  },
+  "fine_best_to_second_gap": 5.416054747708898e-05,
+  "fine_top2_max_residual": 6.394563847944568e-05,
+  "gap_to_top2_residual_ratio": 0.8469779763712586,
+  "fine_candidate_regime": "NEW",
+  "hard_label_adopted": false,
+  "existing_dataset_modified": false,
+  "split_applied": false,
+  "normalization_applied": false,
+  "training_started": false
+}

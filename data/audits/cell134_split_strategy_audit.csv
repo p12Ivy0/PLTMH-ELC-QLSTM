@@ -1,0 +1,6 @@
+strategy,all_three_targets_can_appear,family_independent,g3_seen_in_training,g3_independent_heldout,primary_scientific_use,reason
+RANDOM_WINDOW_SPLIT,True,False,True,False,False,Same scenario/family windows would cross train/validation/test.
+SCENARIO_GROUP_SPLIT,True,False,True,False,False,Different scenario IDs from the same dynamic family can cross splits.
+FAMILY_GROUP_ALL3_IN_EACH_SPLIT,False,True,False,False,False,Requires at least three independent families per gain regime.
+FAMILY_GROUP_G3_TRAIN_ONLY,True,True,True,False,True,"Leakage-free training is possible, but held-out validation/test cover only G1 and G2."
+FAMILY_GROUP_G3_HELD_OUT,False,True,False,True,False,G3 becomes zero-shot target extrapolation because training contains no G3 label.

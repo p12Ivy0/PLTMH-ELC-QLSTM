@@ -1,0 +1,21 @@
+{
+  "audit_stage": "POST_BASELINE_TEMPORAL_INFORMATION",
+  "dataset_modified": false,
+  "model_retrained": false,
+  "test_reopened": false,
+  "validation_only_model_diagnostic": true,
+  "energy99_horizon_s": 0.75,
+  "window_span_s": 0.5,
+  "fully_post_energy99_endpoint_s": 1.25,
+  "validation_windows": 3200,
+  "within_energy99_windows": 300,
+  "within_energy99_fraction": 0.09375,
+  "fully_post_energy99_windows": 2700,
+  "fully_post_energy99_fraction": 0.84375,
+  "early_lstm_mse": 0.6091640471426516,
+  "early_constant_mse": 0.6523589193981222,
+  "late_lstm_mse": 0.506820005277291,
+  "late_constant_mse": 0.6523589193981222,
+  "early_lstm_beats_constant": true,
+  "late_lstm_beats_constant": true
+}

@@ -1,0 +1,66 @@
+{
+  "dataset_status": "FINAL_LSTM_QLSTM_READY",
+  "dataset_source": "CELL133_VALIDATED_PRIMARY_DATASET",
+  "cell135_enrichment_included": false,
+  "supervised_window_count": 17600,
+  "sequence_length": 11,
+  "feature_count": 4,
+  "features": [
+    "frequency_deviation_hz",
+    "mechanical_power_kw",
+    "electrical_power_kw",
+    "dump_power_kw"
+  ],
+  "targets": [
+    "kp_target",
+    "ki_target"
+  ],
+  "observation_dt_s": 0.05,
+  "observation_frequency_hz": 20.0,
+  "window_span_s": 0.5,
+  "train_windows": 11200,
+  "validation_windows": 3200,
+  "test_windows": 3200,
+  "split_strategy": "LEAKAGE_FREE_DYNAMIC_FAMILY_GROUP_SPLIT",
+  "split_candidate_id": 204,
+  "train_families": [
+    "D20_L-10",
+    "D30_L+10",
+    "D30_L+20",
+    "D30_L-10",
+    "D30_L-20",
+    "D40_L+20",
+    "D40_L-10"
+  ],
+  "validation_families": [
+    "D20_L-20",
+    "D40_L+10"
+  ],
+  "test_families": [
+    "D20_L+10",
+    "D40_L-20"
+  ],
+  "training_gain_regimes": [
+    "G1",
+    "G2",
+    "G3"
+  ],
+  "validation_gain_regimes": [
+    "G1",
+    "G2"
+  ],
+  "test_gain_regimes": [
+    "G1",
+    "G2"
+  ],
+  "g3_scope_limitation": "Only one independently validated G3 dynamic family exists. G3 is therefore training-only in the primary family-heldout evaluation. Validation/test generalization claims apply to held-out G1/G2 families.",
+  "feature_standardization": "TRAIN_ONLY_UNIQUE_OBSERVATION_Z_SCORE",
+  "target_standardization": "TRAIN_ONLY_WINDOW_TARGET_Z_SCORE",
+  "tensor_dtype": "float32",
+  "normalization_complete": true,
+  "family_leakage": false,
+  "scenario_leakage": false,
+  "row_random_split_used": false,
+  "boundary_stress_test_in_supervised_tensor": false,
+  "training_started": false
+}

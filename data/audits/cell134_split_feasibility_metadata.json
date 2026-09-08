@@ -1,0 +1,26 @@
+{
+  "audit_stage": "LEAKAGE_FREE_SPLIT_FEASIBILITY",
+  "independent_family_count": 11,
+  "families_per_regime": {
+    "G1": 4,
+    "G2": 6,
+    "G3": 1
+  },
+  "g3_family": "D30_L+20",
+  "g3_independent_family_count": 1,
+  "full_three_regime_family_heldout_feasible": false,
+  "leakage_free_g3_train_only_split_feasible": true,
+  "g3_independent_generalization_test_feasible": false,
+  "balanced_7_2_2_candidate_split_count": 360,
+  "potential_family_split_windows": {
+    "train": 11200,
+    "validation": 3200,
+    "test": 3200
+  },
+  "g3_zero_shot_is_target_extrapolation": true,
+  "option_a": "USE_FAMILY_GROUP_SPLIT_WITH_G3_TRAIN_ONLY_AND_EXPLICITLY_LIMIT_HELDOUT_GENERALIZATION_CLAIMS_TO_G1_G2",
+  "option_b": "ENRICH_SCENARIO_FAMILIES_AND_RELABEL_BEFORE_TRAINING_TO_CREATE_ADDITIONAL_INDEPENDENT_G3_OR_OTHER_GAIN_REGIME_FAMILIES",
+  "split_applied": false,
+  "normalization_applied": false,
+  "model_training_started": false
+}

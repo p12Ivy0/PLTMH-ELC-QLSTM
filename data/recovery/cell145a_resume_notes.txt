@@ -1,0 +1,81 @@
+PLTMH-ELC-QLSTM — RECOVERY POINT AFTER CELL 145
+
+CURRENT SCIENTIFIC STATUS
+-------------------------
+Dataset formation complete through Cell 138.
+
+Primary final dataset:
+data/final/qlstm_lstm_dataset_final.npz
+
+Final dataset SHA256:
+7287018d944b7e3740aa778c78459df1142d53d77493a6193493af2009b46f60
+
+Split:
+train      = 11200 windows
+validation = 3200 windows
+test       = 3200 windows
+
+Sequence:
+11 samples x 4 features
+observation cadence = 20 Hz
+window span = 0.5 s
+
+Primary family split:
+leakage-free dynamic-family group split.
+
+G3 limitation:
+G3 has only one independent validated family and remains train-only.
+Held-out validation/test generalization claims apply to G1/G2.
+
+Classical modeling completed:
+Cell 139 — LSTM baseline
+Cell 140 — temporal-information audit
+Cell 141 — frozen LSTM temporal ablation
+Cell 142 — endpoint MLP baseline
+Cell 143 — 5-seed validation stability audit
+
+Cell 143:
+LSTM wins 5/5 seeds against parameter-matched endpoint MLP.
+Mean validation advantage ~5.07 percent.
+
+Cell 141:
+strong temporal-order dependence was NOT demonstrated.
+Endpoint-repeat validation MSE change ~ -0.27 percent.
+History reversal change ~ +0.43 percent.
+
+QLSTM environment:
+Cell 144 — readiness audit
+Cell 145 — PennyLane installation + autograd PASS
+
+PennyLane version:
+0.45.1
+
+PyTorch version:
+2.11.0+cpu
+
+NEXT SCIENTIFIC CELL:
+CELL 146 — MINIMAL QLSTM RUNTIME BENCHMARK
+
+DO NOT:
+- regenerate Cell 1-138 dataset
+- create random-window split
+- include Cell-135 enrichment in primary dataset
+- use test for model selection
+- start full QLSTM training before Cell 146 benchmark
+
+RESTORE ORDER ON A NEW COLAB RUNTIME
+------------------------------------
+1. Clone/check out the latest recovery Git checkpoint.
+2. cd to project root.
+3. Install PennyLane 0.45.1.
+4. Load final persisted dataset from data/final.
+5. Verify dataset SHA256:
+   7287018d944b7e3740aa778c78459df1142d53d77493a6193493af2009b46f60
+6. Verify required model/audit artifacts exist.
+7. Run a small recovery-loader cell.
+8. Continue with Cell 146.
+
+IMPORTANT:
+Changing laptop itself is not scientifically relevant.
+Losing/restarting the Colab runtime is what removes RAM variables
+and installed Python packages.

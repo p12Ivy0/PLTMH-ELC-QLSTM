@@ -1,0 +1,43 @@
+{
+  "stage": "QLSTM_ENVIRONMENT_READINESS",
+  "torch_version": "2.11.0+cpu",
+  "torch_device": "cpu",
+  "cuda_available": false,
+  "pennylane_available": false,
+  "pennylane_version": null,
+  "qml_device": null,
+  "minimal_vqc_forward_ok": false,
+  "minimal_vqc_backward_ok": false,
+  "minimal_vqc_finite": false,
+  "minimal_vqc_gradient_finite": false,
+  "minimal_vqc_runtime_s": null,
+  "qlstm_environment_ready": false,
+  "initial_architecture_envelope": {
+    "input_features": 4,
+    "sequence_length": 11,
+    "n_qubits": 4,
+    "vqc_depth": 1,
+    "hidden_dim": 4,
+    "quantum_recurrent_gates": 4,
+    "quantum_parameters": 48
+  },
+  "workload": {
+    "train_windows": 11200,
+    "validation_windows": 3200,
+    "qnode_calls_per_window": 44,
+    "naive_train_forward_qnode_calls_per_epoch": 492800,
+    "naive_validation_forward_qnode_calls": 140800
+  },
+  "classical_evidence": {
+    "cell141_endpoint_repeat_mse_change_pct": -0.2694130993170426,
+    "cell141_history_reverse_mse_change_pct": 0.4305490867000844,
+    "cell143_lstm_validation_wins": 5,
+    "cell143_seed_count": 5,
+    "cell143_mean_lstm_improvement_vs_mlp_pct": 5.070790959064629,
+    "cell143_median_lstm_improvement_vs_mlp_pct": 5.845170043819599
+  },
+  "package_installation_performed": false,
+  "qlstm_training_started": false,
+  "test_dataset_accessed": false,
+  "dataset_modified": false
+}

@@ -1,0 +1,28 @@
+{
+  "enrichment_stage": "TARGETED_G3_FAMILY_LABEL_DISCOVERY",
+  "cell115_r_column_source": "r_rob_target",
+  "cell135_standardized_r_column": "r_rob",
+  "existing_g3_family": "D30_L+20",
+  "new_candidate_families": [
+    "D25_L+20",
+    "D35_L+20"
+  ],
+  "new_scenario_variant_count": 20,
+  "label_search_gain_count": 150,
+  "label_search_dt_s": [
+    0.005,
+    0.0025
+  ],
+  "new_label_search_runs": 600,
+  "resolved_new_g3_families": [],
+  "projected_total_g3_independent_families": 1,
+  "g3_three_family_goal_met": false,
+  "families_requiring_lower_r_audit": [],
+  "kp_edge_families": [],
+  "resolution_disagreement_families": [],
+  "label_policy_modified": false,
+  "dataset_modified": false,
+  "split_applied": false,
+  "normalization_applied": false,
+  "training_started": false
+}

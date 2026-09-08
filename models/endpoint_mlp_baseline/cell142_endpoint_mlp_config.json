@@ -1,0 +1,29 @@
+{
+  "model_stage": "PARAMETER_MATCHED_STATIC_ENDPOINT_BASELINE",
+  "model": "ENDPOINT_MLP",
+  "input_representation": "LAST_TIMESTEP_ONLY",
+  "architecture": [
+    4,
+    64,
+    64,
+    16,
+    2
+  ],
+  "trainable_parameters": 5554,
+  "cell139_lstm_parameters": 5426,
+  "parameter_difference_percent": 2.3590121636564687,
+  "seed": 20260909,
+  "optimizer": "Adam",
+  "learning_rate": 0.001,
+  "batch_size": 256,
+  "max_epochs": 100,
+  "early_stopping_patience": 12,
+  "best_epoch": 3,
+  "best_validation_mse": 0.5198184651136398,
+  "mlp_vs_lstm_validation_mse_improvement_percent": -0.5426075969213884,
+  "mlp_vs_lstm_test_mse_improvement_percent": -194.18942521157544,
+  "hyperparameter_search_performed": false,
+  "test_used_for_early_stopping": false,
+  "dataset_modified": false,
+  "family_split_preserved": true
+}

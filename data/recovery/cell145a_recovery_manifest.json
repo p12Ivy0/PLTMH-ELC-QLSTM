@@ -1,0 +1,72 @@
+{
+  "checkpoint_stage": "AFTER_CELL_145_BEFORE_QLSTM_BENCHMARK",
+  "created_utc": "2026-09-08T19:33:27.122894+00:00",
+  "project_root": "/content/PLTMH-ELC-QLSTM",
+  "git": {
+    "branch": "main",
+    "head": "58895647c79ae38d3bcdea50acd866e37f100979",
+    "status_short": "?? data/\n?? models/\n?? src/control/pi_controller_before_event_aware_rk4.py.bak\n?? src/control/pi_controller_before_new_laptop_recovery.py.bak\n?? src/control/pi_controller_before_physics_rocof.py.bak\n?? src/control/pi_controller_before_rk4.py.bak\n?? src/control/pi_controller_before_robust_aw.py.bak\n?? src/control/pi_controller_before_solver_tolerance.py.bak\n?? src/data/logger_before_boundary_aware_metrics.py.bak\n?? src/data/logger_before_fixed_evaluation_horizon.py.bak\n?? src/data/logger_before_metrics_api_compatibility.py.bak\n?? src/data/logger_before_new_laptop_recovery.py.bak\n?? src/data/logger_before_rk4_gain_selection.py.bak\n?? src/simulation/__init__.py",
+    "remote": "origin\thttps://github.com/p12Ivy0/PLTMH-ELC-QLSTM.git (fetch)\norigin\thttps://github.com/p12Ivy0/PLTMH-ELC-QLSTM.git (push)"
+  },
+  "dataset": {
+    "path": "data/final/qlstm_lstm_dataset_final.npz",
+    "sha256": "7287018d944b7e3740aa778c78459df1142d53d77493a6193493af2009b46f60",
+    "shapes": {
+      "X_train": [
+        11200,
+        11,
+        4
+      ],
+      "y_train": [
+        11200,
+        2
+      ],
+      "X_validation": [
+        3200,
+        11,
+        4
+      ],
+      "y_validation": [
+        3200,
+        2
+      ],
+      "X_test": [
+        3200,
+        11,
+        4
+      ],
+      "y_test": [
+        3200,
+        2
+      ]
+    },
+    "ready_for_modeling": true
+  },
+  "environment": {
+    "python": "3.13.15 (main, Aug  6 2026, 11:06:23) [GCC 11.4.0]",
+    "platform": "Linux-6.6.122+-x86_64-with-glibc2.35",
+    "numpy": "2.1.3",
+    "torch": "2.11.0+cpu",
+    "cuda_available": false,
+    "pennylane": "0.45.1",
+    "pennylane_lightning": "0.45.0"
+  },
+  "recovery_artifacts": {
+    "critical_file_count": 48,
+    "total_size_bytes": 1077939,
+    "all_required_files_present": true,
+    "github_large_file_risk": false
+  },
+  "scientific_status": {
+    "dataset_complete": true,
+    "lstm_baseline_complete": true,
+    "temporal_audit_complete": true,
+    "endpoint_mlp_complete": true,
+    "multiseed_audit_complete": true,
+    "pennylane_environment_ready": true,
+    "qlstm_training_started": false,
+    "next_cell": "CELL_146_MINIMAL_QLSTM_RUNTIME_BENCHMARK"
+  },
+  "cell135_enrichment_primary_dataset": false,
+  "test_used_for_model_selection": false
+}

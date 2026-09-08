@@ -1,0 +1,15 @@
+{
+  "audit_stage": "FROZEN_LSTM_TEMPORAL_SEQUENCE_ABLATION",
+  "validation_only": true,
+  "test_accessed": false,
+  "model_retrained": false,
+  "dataset_modified": false,
+  "original_validation_mse": 0.5170130729675293,
+  "endpoint_repeated_validation_mse": 0.5156201720237732,
+  "endpoint_repeat_mse_change_percent": -0.2694130993170426,
+  "history_mean_validation_mse": 0.5170615315437317,
+  "history_mean_mse_change_percent": 0.009372795145053516,
+  "history_reversed_validation_mse": 0.519239068031311,
+  "history_reverse_mse_change_percent": 0.4305490867000844,
+  "acceptance_threshold_imposed": false
+}

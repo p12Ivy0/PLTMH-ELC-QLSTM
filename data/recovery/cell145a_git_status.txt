@@ -1,0 +1,33 @@
+CELL 145A RECOVERY GIT STATE
+
+Branch:
+main
+
+HEAD:
+58895647c79ae38d3bcdea50acd866e37f100979
+
+Last commit:
+58895647c79ae38d3bcdea50acd866e37f100979
+Yohanes Priyo Guno Sumakto
+97886489+p12Ivy0@users.noreply.github.com
+checkpoint: recover validated PI RK4 and dataset logger
+
+Remote:
+origin	https://github.com/p12Ivy0/PLTMH-ELC-QLSTM.git (fetch)
+origin	https://github.com/p12Ivy0/PLTMH-ELC-QLSTM.git (push)
+
+Status --short:
+?? data/
+?? models/
+?? src/control/pi_controller_before_event_aware_rk4.py.bak
+?? src/control/pi_controller_before_new_laptop_recovery.py.bak
+?? src/control/pi_controller_before_physics_rocof.py.bak
+?? src/control/pi_controller_before_rk4.py.bak
+?? src/control/pi_controller_before_robust_aw.py.bak
+?? src/control/pi_controller_before_solver_tolerance.py.bak
+?? src/data/logger_before_boundary_aware_metrics.py.bak
+?? src/data/logger_before_fixed_evaluation_horizon.py.bak
+?? src/data/logger_before_metrics_api_compatibility.py.bak
+?? src/data/logger_before_new_laptop_recovery.py.bak
+?? src/data/logger_before_rk4_gain_selection.py.bak
+?? src/simulation/__init__.py

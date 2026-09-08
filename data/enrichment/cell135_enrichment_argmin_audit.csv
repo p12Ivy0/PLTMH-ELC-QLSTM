@@ -1,0 +1,3 @@
+family_key,kp_best_dt005,r_best_dt005,ki_best_dt005,kp_best_dt0025,r_best_dt0025,ki_best_dt0025,best_score_dt0025,second_best_score_dt0025,best_to_second_gap,best_numerical_residual,same_argmin_two_dt,kp_at_edge,r_at_lower_edge,r_at_upper_edge,original_domain_resolved,matched_known_regime
+D25_L+20,4.08,0.55,23.566400000000005,4.08,0.55,23.566400000000005,0.2627310362302362,0.2627606726179314,2.963638769520882e-05,5.277463163150253e-05,True,False,False,False,True,NEW_OR_UNRESOLVED
+D35_L+20,2.16,0.25,5.720000000000001,2.16,0.25,5.720000000000001,0.2772365510651878,0.2779173865626255,0.0006808354974376929,3.6535862557307563e-05,True,False,False,False,True,G1

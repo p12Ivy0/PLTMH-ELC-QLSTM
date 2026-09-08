@@ -1,0 +1,44 @@
+{
+  "model_stage": "CLASSICAL_LSTM_BASELINE",
+  "framework": "PyTorch",
+  "torch_version": "2.11.0+cpu",
+  "device": "cpu",
+  "seed": 20260909,
+  "input_shape": [
+    11,
+    4
+  ],
+  "features": [
+    "frequency_deviation_hz",
+    "mechanical_power_kw",
+    "electrical_power_kw",
+    "dump_power_kw"
+  ],
+  "targets": [
+    "kp_target",
+    "ki_target"
+  ],
+  "architecture": {
+    "lstm_hidden_size": 32,
+    "lstm_layers": 1,
+    "dense_size": 16,
+    "output_size": 2
+  },
+  "trainable_parameters": 5426,
+  "batch_size": 256,
+  "optimizer": "Adam",
+  "learning_rate": 0.001,
+  "loss": "MSE_ON_TRAIN_STANDARDIZED_KP_KI",
+  "max_epochs": 100,
+  "early_stopping_patience": 12,
+  "early_stopping_min_delta": 1e-06,
+  "best_epoch": 1,
+  "best_validation_mse": 0.5170130610466004,
+  "test_not_used_for_early_stopping": true,
+  "hyperparameter_search_performed": false,
+  "family_group_split_preserved": true,
+  "g3_scope_limitation": "G3 appears in training only. Held-out validation/test contain G1 and G2.",
+  "endpoint_linear_baseline_included": true,
+  "constant_baseline_included": true,
+  "lstm_vs_endpoint_test_mse_change_percent": 16.120556807740993
+}

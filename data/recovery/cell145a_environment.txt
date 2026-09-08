@@ -1,0 +1,26 @@
+CELL 145A RECOVERY ENVIRONMENT
+
+Python:
+3.13.15 (main, Aug  6 2026, 11:06:23) [GCC 11.4.0]
+
+NumPy:
+2.1.3
+
+PyTorch:
+2.11.0+cpu
+
+CUDA available:
+False
+
+PennyLane:
+0.45.1
+
+PennyLane-Lightning:
+0.45.0
+
+Recommended restore command for PennyLane:
+pip install pennylane==0.45.1
+
+NOTE:
+PennyLane installation belongs to the Colab runtime, not to the laptop.
+A new Colab runtime must reinstall it.

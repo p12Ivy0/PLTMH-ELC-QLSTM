@@ -1,0 +1,27 @@
+{
+  "stage": "SELECTIVE_GIT_RECOVERY_CHECKPOINT_AFTER_CELL_145",
+  "created_utc": "2026-09-08T19:42:49.812806+00:00",
+  "parent_commit": "58895647c79ae38d3bcdea50acd866e37f100979",
+  "final_dataset_sha256": "7287018d944b7e3740aa778c78459df1142d53d77493a6193493af2009b46f60",
+  "recovery_scope": "FINAL_DATASET_SPLITS_AUDITS_MODELS_ENRICHMENT_PROVENANCE",
+  "intentionally_not_committed": [
+    "data/raw/",
+    "data/processed/",
+    "data/checkpoints/",
+    "*.bak"
+  ],
+  "reason_intermediate_data_not_committed": "Final leakage-free train-standardized dataset and all model-development artifacts needed to resume from Cell 146 are already persisted.",
+  "environment": {
+    "python": "3.13.15",
+    "numpy": "2.1.3",
+    "torch": "2.11.0+cpu",
+    "pennylane": "0.45.1",
+    "pennylane_lightning": "0.45.0"
+  },
+  "scientific_resume": {
+    "rerun_cells_1_to_145": false,
+    "next_cell": "CELL_146_MINIMAL_QLSTM_RUNTIME_BENCHMARK",
+    "install_pennylane_new_runtime": "pennylane==0.45.1",
+    "verify_dataset_sha": true
+  }
+}
