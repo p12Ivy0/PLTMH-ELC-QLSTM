@@ -1,0 +1,16 @@
+check,passed
+cell173_bab_iii_blueprint,True
+bab_ii_gate,True
+final_scientific_contract,True
+section_3_4_gain_envelope,True
+section_3_5_scenario_design,True
+section_3_7_dataset_split,True
+section_3_9_scheduler,True
+section_3_10_analysis,True
+section_3_10_case_false_negative_fixed,True
+g3_scope,True
+monte_carlo_scope,True
+no_inferential_overclaim,True
+no_post_result_tuning,True
+no_obsolete_affirmative_method,True
+cross_chapter_contract,True

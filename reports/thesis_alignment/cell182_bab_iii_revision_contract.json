@@ -1,0 +1,100 @@
+{
+  "audit_fix": {
+    "failed_anchor": "jumlah keluarga dinamik uji primer independen hanya dua",
+    "original_failure": "CASE_SENSITIVE_LITERAL_FALSE_NEGATIVE",
+    "revision_text_changed": false,
+    "scientific_content_changed": false,
+    "text_present_as": "Jumlah keluarga dinamik uji primer independen hanya dua."
+  },
+  "audit_pass": true,
+  "full_bab_iii_review_required": true,
+  "proposal_docx_modified": false,
+  "resolved_blueprint_alignment_ids": [
+    "A06/A07",
+    "A08",
+    "A09",
+    "A10/A11",
+    "A12",
+    "A13",
+    "A20",
+    "ADDITIONAL_FINAL_POLICY"
+  ],
+  "revision_scope": {
+    "full_replacement_sections": [
+      "3.4",
+      "3.5",
+      "3.7",
+      "3.9",
+      "3.10"
+    ],
+    "not_rewritten_yet": [
+      "3.1",
+      "3.2",
+      "3.3",
+      "3.6",
+      "3.8",
+      "3.11",
+      "3.12"
+    ]
+  },
+  "revision_sha256": "9e09024668e5d8a76d6da21c2474628b835362d720544d809d84ae1de6c7aba5",
+  "scientific_contract": {
+    "admissible_gain_envelope": {
+      "interpretation": "Finalized supervised-label envelope; not a universal physical stability guarantee.",
+      "ki_max": 14.144,
+      "ki_min": 3.0368,
+      "kp_max": 3.36,
+      "kp_min": 2.16
+    },
+    "closed_loop_run_count": 12,
+    "features": [
+      "frequency_deviation_hz",
+      "mechanical_power_kw",
+      "electrical_power_kw",
+      "dump_power_kw"
+    ],
+    "fixed_pi": {
+      "ki": 5.72,
+      "kp": 2.16
+    },
+    "gain_update_rate_hz": 10.0,
+    "observation_rate_hz": 20.0,
+    "primary_independent_family_count": 2,
+    "primary_metric": "frequency_deviation_rmse_hz",
+    "scheduler_processing_order": [
+      "raw_window",
+      "feature_standardization",
+      "frozen_model_inference",
+      "inverse_target_scaling",
+      "finite_check",
+      "admissible_gain_clipping",
+      "gain_rate_limiting",
+      "applied_gain"
+    ],
+    "sequence_length": 11,
+    "split_strategy": "LEAKAGE_FREE_DYNAMIC_FAMILY_GROUP_SPLIT",
+    "test_windows": 3200,
+    "train_windows": 11200,
+    "validation_windows": 3200,
+    "window_count": 17600
+  },
+  "scientific_policy": {
+    "exponential_smoothing_used": false,
+    "family_level_significance_claim": false,
+    "independent_g3_generalization_claim": false,
+    "monte_carlo_performed": false,
+    "multi_step_primary_evaluation": false,
+    "multiparameter_sensitivity_sweep": false,
+    "paired_t_test": false,
+    "post_result_model_retraining": false,
+    "post_result_scenario_selection": false,
+    "post_result_scheduler_change": false,
+    "qlstm_superiority_assumed": false,
+    "random_primary_evaluation": false,
+    "wilcoxon_signed_rank": false,
+    "window_level_significance_claim": false
+  },
+  "source_checkpoint": "ef96d65c4669b2a235e2fb1ec9c69dd6a14d7c64",
+  "source_proposal": "Proposal Tesis_03092026_konsep_baru.docx",
+  "stage": "TARGETED_BAB_III_FINAL_CONTRACT_REVISION"
+}

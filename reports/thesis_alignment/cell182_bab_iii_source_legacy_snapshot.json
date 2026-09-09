@@ -1,0 +1,27 @@
+{
+  "monte_carlo": {
+    "final": "Not part of the deterministic primary stage; future-work option only.",
+    "legacy_or_planned": "Potential 50-run uncertainty analysis."
+  },
+  "section_3_10": {
+    "final": "Primary family-level frequency-deviation RMSE, descriptive comparison, supporting diagnostics, no inferential significance test and no final multiparameter sensitivity sweep.",
+    "legacy": "IAE/ITAE-centered analysis, paired t-test/Wilcoxon, 95% CI, effect size, multiple-comparison correction and multiparameter sensitivity sweep."
+  },
+  "section_3_4": {
+    "final": "Exact fixed/fallback PI and the finalized supervised-label admissible envelope; no universal physical stability guarantee.",
+    "legacy": "PI baseline followed by a safe/stable gain range obtained through preliminary stability filtering."
+  },
+  "section_3_5": {
+    "final": "Four predefined deterministic closed-loop scenarios and three controllers, yielding 12 runs.",
+    "legacy": "Step, multi-step and random disturbances, including stochastic replications with multiple random seeds."
+  },
+  "section_3_7": {
+    "final": "Four exact temporal features and leakage-free dynamic-family group split: 7/2/2 families.",
+    "legacy": "Older feature vector, scenario-level split and 70:15:15 scenario proportion."
+  },
+  "section_3_9": {
+    "final": "Inverse target scaling -> finite check -> admissible clipping -> gain-rate limiting -> applied gain; no exponential smoothing.",
+    "legacy": "Output gain mapping followed by smoothing."
+  },
+  "source": "Proposal Tesis_03092026_konsep_baru.docx"
+}
