@@ -1,0 +1,59 @@
+{
+  "alignment": {
+    "aligned": 7,
+    "bab_i_iii_revision_required": true,
+    "expected_critical_revisions_detected": true,
+    "retain_with_scope": 1,
+    "revision_required": 12,
+    "total_items": 20
+  },
+  "audit_pass": true,
+  "bab_iv": {
+    "fully_reviewed": true,
+    "modified_by_cell172": false,
+    "sha256": "366c9f0ee5ec73e290876beef6e9dc6f5fd47bb4341f29902123c5efe63238e1"
+  },
+  "final_contract": {
+    "features": [
+      "frequency_deviation_hz",
+      "mechanical_power_kw",
+      "electrical_power_kw",
+      "dump_power_kw"
+    ],
+    "gain_update_rate_hz": 10.0,
+    "independent_g3_generalization": false,
+    "observation_rate_hz": 20.0,
+    "primary_independent_families": [
+      "D40_L-20",
+      "D20_L+10"
+    ],
+    "primary_metric": "frequency_deviation_rmse_hz",
+    "qlstm_superiority_supported": false,
+    "scheduler_processing_order": [
+      "raw_window",
+      "feature_standardization",
+      "frozen_model_inference",
+      "inverse_target_scaling",
+      "finite_check",
+      "admissible_gain_clipping",
+      "gain_rate_limiting",
+      "applied_gain"
+    ],
+    "significance_test_planned": false,
+    "split_strategy": "LEAKAGE_FREE_DYNAMIC_FAMILY_GROUP_SPLIT",
+    "test_family_count": 2,
+    "total_closed_loop_runs": 12,
+    "train_family_count": 7,
+    "validation_family_count": 2,
+    "window_points": 11
+  },
+  "policy": {
+    "bab_v_drafting_allowed_before_alignment_revision": false,
+    "post_result_tuning": false,
+    "scientific_result_recalculation": false
+  },
+  "proposal_source": "Proposal Tesis_03092026_konsep_baru.docx",
+  "proposal_source_note": "The DOCX is not tracked in the Git repository. Cell172 stores the reviewed semantic proposal snapshot used for this audit.",
+  "source_checkpoint": "25daee39e2a34485090d775fc1010bb623cda794",
+  "stage": "BAB_I_TO_IV_THESIS_ALIGNMENT_AUDIT"
+}

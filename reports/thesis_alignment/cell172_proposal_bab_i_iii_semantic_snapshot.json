@@ -1,0 +1,70 @@
+{
+  "items": [
+    {
+      "location": "Title",
+      "statement": "Peningkatan Kinerja ELC PLTMH Berbasis QLSTM"
+    },
+    {
+      "location": "Bab I / role of QLSTM",
+      "statement": "QLSTM is a temporal model and supervisory gain scheduler, not a direct controller and not a metaheuristic gain optimizer."
+    },
+    {
+      "location": "1.2 research question 4",
+      "statement": "Ask to what extent QLSTM adaptive PI improves frequency response compared with fixed PI and LSTM adaptive PI."
+    },
+    {
+      "location": "1.3 objective 4",
+      "statement": "Compare fixed PI, LSTM-PI and QLSTM-PI using technical indicators and paired statistical testing."
+    },
+    {
+      "location": "1.5 data split",
+      "statement": "Train, validation and test data are split by separate scenarios."
+    },
+    {
+      "location": "1.5 scenarios",
+      "statement": "Planned disturbances include step, multi-step and random load variations."
+    },
+    {
+      "location": "1.5 metrics",
+      "statement": "Evaluation includes peak deviation, settling time, IAE, ITAE, gain estimation quality and computational burden."
+    },
+    {
+      "location": "2.8 / 3.9 gain transition",
+      "statement": "Estimated gain is bounded and exponentially smoothed before application."
+    },
+    {
+      "location": "2.11 hypothesis",
+      "statement": "Formal statistical hypotheses compare QLSTM-PI against fixed PI and LSTM-PI."
+    },
+    {
+      "location": "3.7 split proportion",
+      "statement": "Initial 70:15:15 split is applied to scenario counts."
+    },
+    {
+      "location": "3.10 statistics",
+      "statement": "Paired t-test or Wilcoxon, significance threshold, 95% CI, effect size and multiple comparison correction are planned."
+    },
+    {
+      "location": "3.10 sensitivity",
+      "statement": "Sensitivity analysis planned for window length, update interval, smoothing factor, qubits and VQC depth."
+    },
+    {
+      "location": "Abstract",
+      "statement": "Expected empirical evidence of added value of QLSTM over classical LSTM."
+    },
+    {
+      "location": "1.5 / 3.4 gain range",
+      "statement": "Gain limits are described as a safe or stable gain range."
+    },
+    {
+      "location": "1.5 implementation",
+      "statement": "QLSTM uses quantum simulation in a hybrid quantum-classical framework, not quantum hardware."
+    },
+    {
+      "location": "1.6 comparison",
+      "statement": "Three configurations are compared: fixed PI, LSTM-PI and QLSTM-PI."
+    }
+  ],
+  "source": "Proposal Tesis_03092026_konsep_baru.docx",
+  "source_status": "LATEST_BAB_I_III_CONCEPT_SOURCE_REVIEWED_BEFORE_CELL172_CONSTRUCTION"
+}
