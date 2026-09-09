@@ -1,0 +1,49 @@
+{
+  "content_audit": {
+    "all_visible_text_unchanged": true,
+    "scientific_content_changed": false
+  },
+  "gates": {
+    "bab_i_final_visual_qa_pending": true,
+    "bab_ii_content_integration_authorized": false,
+    "machine_visual_fix_pass": true
+  },
+  "input_candidate": {
+    "path": "reports/thesis_integration/cell190_bab_i_candidate/Proposal_Tesis_BAB_I_CANDIDATE.docx",
+    "sha256": "d057c382d3bc3c9539de26bffcef140f5383b9cd2b27abd630012bb7bc28bc19",
+    "unchanged": true
+  },
+  "output_candidate": {
+    "healthy": true,
+    "path": "reports/thesis_integration/cell191_bab_i_visual_fix/Proposal_Tesis_BAB_I_VISUAL_FIXED.docx",
+    "sha256": "aed165decb5257c2cd60a278939ac27ca0ba8c64e5840331f0bd061d6abaa91f"
+  },
+  "parent_checkpoint": "f21ebeb55624759733d35f713581c4889a0e2ed4",
+  "protected_baselines": {
+    "cell189_baseline_unchanged": true,
+    "cell190_candidate_unchanged": true,
+    "source_docx_unchanged": true
+  },
+  "render": {
+    "bab_i_end_page": 17,
+    "bab_i_start_page": 5,
+    "bab_ii_start_page": 18,
+    "contact_sheet": "/content/PLTMH-ELC-QLSTM/data/runtime/cell191_bab_i_visual/cell191_bab_i_final_contact_sheet.png",
+    "human_final_visual_qa": "PENDING_USER_SCREENSHOT",
+    "pdf_pages": 44
+  },
+  "stage": "BAB_I_VISUAL_FORMATTING_FIX",
+  "visual_fixes": {
+    "bab_ii_new_page": {
+      "heading_text_changed": false,
+      "method": "page_break_before_on_existing_heading_1",
+      "persisted": true,
+      "render_confirmed_clean_new_page": true
+    },
+    "objective_3_orphan_and": {
+      "method": "non_breaking_space",
+      "persisted": true,
+      "visible_text_changed": false
+    }
+  }
+}
