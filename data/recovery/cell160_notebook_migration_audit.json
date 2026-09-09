@@ -1,0 +1,35 @@
+{
+  "all_target_notebooks_empty_or_placeholder": true,
+  "confirmed_late_stage_mapping": {
+    "139-145": "07_train_lstm.ipynb",
+    "146-150": "08_train_qlstm.ipynb",
+    "151-155": "09_closed_loop.ipynb",
+    "156-159": "10_final_analysis.ipynb"
+  },
+  "current_checkpoint": "fcba9d85da43232a49b55a836a34fb876738995d",
+  "migration_policy": {
+    "05_06_boundary_requires_audit": true,
+    "copy_failed_cells_blindly": false,
+    "new_notebooks_must_load_persisted_artifacts": true,
+    "new_notebooks_must_not_depend_on_old_runtime_globals": true,
+    "prefer_final_successful_fix_cells": true,
+    "rerun_experiments": false
+  },
+  "next_step": "RESOLVE_05_06_BOUNDARY_AND_BUILD_REPRODUCIBLE_NOTEBOOK_MANIFEST",
+  "notebook_modified": false,
+  "runtime_history_entries": 19,
+  "scientific_artifact_modified": false,
+  "scientific_experiment_performed": false,
+  "source_modified": false,
+  "stage": "NOTEBOOK_05_TO_10_MIGRATION_AUDIT",
+  "target_notebooks": [
+    "05_generate_dataset.ipynb",
+    "06_preprocessing.ipynb",
+    "07_train_lstm.ipynb",
+    "08_train_qlstm.ipynb",
+    "09_closed_loop.ipynb",
+    "10_final_analysis.ipynb"
+  ],
+  "unique_cell_markers": 17,
+  "unresolved_cell_markers": 0
+}

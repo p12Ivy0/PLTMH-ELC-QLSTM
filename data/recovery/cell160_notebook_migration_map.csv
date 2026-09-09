@@ -1,0 +1,18 @@
+history_index,cell_label,cell_title,source_sha256,source_chars,provisional_notebook,confidence,classification_reason,is_fix_cell,base_cell_label,base_cell_also_present
+1,145C,NEW LAPTOP / NEW COLAB RUNTIME RECOVERY LOADER,724830a10156514229936950d4970971528f7a39a7df1bf2c147bc2e938f6256,32002,07_train_lstm.ipynb,HIGH,Known classical baseline/LSTM stage,False,145C,False
+2,146,MINIMAL QLSTM RUNTIME BENCHMARK,d565b7db452a695e9546f84edce356b252e96c85353675334d5652a36a3f90fa,36420,08_train_qlstm.ipynb,HIGH,Known QLSTM readiness/training/test stage,False,146,False
+3,147,FINAL QLSTM ARCHITECTURE FREEZE,3645f328060ff8442c9c0806c5f34f9c57ec681c268f74f71e33bbff58ff6013,34575,08_train_qlstm.ipynb,HIGH,Known QLSTM readiness/training/test stage,False,147,False
+4,148,FULL QLSTM TRAINING,6071a7b69a52390fe7b330f9c510d67a77b237f005599ee044970556bc10ff1f,38792,08_train_qlstm.ipynb,HIGH,Known QLSTM readiness/training/test stage,False,148,False
+5,149,SINGLE FROZEN QLSTM TEST EVALUATION,c1deefe2d02c1253ca5ec613eaa157c3640433a973915219f51f5f345796037c,36345,08_train_qlstm.ipynb,HIGH,Known QLSTM readiness/training/test stage,False,149,False
+6,150,FINAL MODEL-STAGE AUDIT,ce5ee9f2353e5f5fc1916cbf5281068a9a9fed1c136592a0e84740b0e23b01d2,53536,08_train_qlstm.ipynb,HIGH,Known QLSTM readiness/training/test stage,False,150,False
+7,150-FIX,COMPLETE PRE-CLOSED-LOOP GIT CHECKPOINT,02a094bc06c30bed00a46a2ddf49746e7c76a46c4ef8f64de4468024347c125e,22038,08_train_qlstm.ipynb,HIGH,Known QLSTM readiness/training/test stage,True,150,True
+8,151,FROZEN SCHEDULER INTERFACE,7d22af7d93dd3faefe217b3cbbb965f93427a586dd24afca88b996342749539c,54181,09_closed_loop.ipynb,HIGH,Known frozen scheduler/closed-loop stage,False,151,False
+9,152,PREDEFINED CLOSED-LOOP SCENARIO MATRIX,1cbf8a7f0cfee921b1fdb939c7b6737b9aab6d92c09edd5d741f517d8044efc2,53283,09_closed_loop.ipynb,HIGH,Known frozen scheduler/closed-loop stage,False,152,False
+10,153,CLOSED-LOOP SIMULATOR READINESS,65a28a13a13b2e55a0e256169dbbda388daeb1f1ad612c144de4349e84fb98a0,47698,09_closed_loop.ipynb,HIGH,Known frozen scheduler/closed-loop stage,False,153,False
+11,154,ADAPTIVE RK4 SIMULATOR INTEGRATION SMOKE TEST,248d43ba825c8f352489541f083fe37a476d6220141b5f683bed7e80f0f3e145,75863,09_closed_loop.ipynb,HIGH,Known frozen scheduler/closed-loop stage,False,154,False
+12,155,FROZEN CLOSED-LOOP COMPARATIVE EXPERIMENT,968a4795bf7e67a75d5a6cd6c45d1b7cc604c313a60e533070cba4a8d32b8407,62921,09_closed_loop.ipynb,HIGH,Known frozen scheduler/closed-loop stage,False,155,False
+13,156,CLOSED-LOOP RESULT AUDIT,416a202ccdbbb364ed9e93da0aba11846922dbb788584fae17c158ce0064ed9b,73061,10_final_analysis.ipynb,HIGH,Known final-analysis/Bab-IV stage,False,156,False
+14,157,THESIS RESULTS EVIDENCE PACKAGE,3f5800a5afa2a299ef3075ca22f9236ddcfd000b2406b8b3400dfa4d4652612c,48915,10_final_analysis.ipynb,HIGH,Known final-analysis/Bab-IV stage,False,157,False
+15,158,DRAFT BAB IV — HASIL DAN PEMBAHASAN,6306b5c081e8f7303a49be88c97c2ca1a84618ac5664c879d35781ce56381371,42511,10_final_analysis.ipynb,HIGH,Known final-analysis/Bab-IV stage,False,158,False
+16,159,REVIEW + REFINE BAB IV SECTIONS 4.1–4.3,c0bdf84988770a2996467ab3b5b2f608fd9939020c862e879b5c2c972e2e0bf3,31077,10_final_analysis.ipynb,HIGH,Known final-analysis/Bab-IV stage,False,159,False
+17,159-FIX,COMPLETE BAB IV 4.1–4.3 REVIEW CHECKPOINT,3cf0acb4a4b296b252acc3f813f76465646448966e8a75729907065abc2d3088,24840,10_final_analysis.ipynb,HIGH,Known final-analysis/Bab-IV stage,True,159,True

@@ -1,0 +1,105 @@
+{
+  "boundary_05_to_06": {
+    "05_final_output": "RAW_LABELED_TEMPORAL_TRAJECTORIES",
+    "06_first_operation": "FEATURE_SELECTION_AND_CAUSAL_WINDOW_CONSTRUCTION",
+    "description": "Notebook 05 ends when scenario-specific raw temporal trajectories and their frozen Kp/Ki labels exist. Notebook 06 begins before feature reduction, causal windowing, family split, normalization, scaler fitting, or final supervised-dataset packaging.",
+    "frozen": true
+  },
+  "confirmed_late_stage_cell_mapping": {
+    "139-145": "07_train_lstm.ipynb",
+    "146-150": "08_train_qlstm.ipynb",
+    "151-155": "09_closed_loop.ipynb",
+    "156-159": "10_final_analysis.ipynb"
+  },
+  "history_limitation": {
+    "old_cell_number_boundary_inference_allowed": false,
+    "reason": "Current Colab/IPython runtime history contains only recent executed entries.",
+    "runtime_cell_1_to_138_available": false
+  },
+  "migration_order": [
+    "05_generate_dataset.ipynb",
+    "06_preprocessing.ipynb",
+    "07_train_lstm.ipynb",
+    "08_train_qlstm.ipynb",
+    "09_closed_loop.ipynb",
+    "10_final_analysis.ipynb"
+  ],
+  "next_step": "BUILD_05_GENERATE_DATASET_REPRODUCIBLE_NOTEBOOK",
+  "notebook_contracts": [
+    {
+      "boundary_end": "Raw labeled trajectories are available; NO causal ML windows, train/val/test family split, or scaler fitting yet.",
+      "boundary_start": "Validated plant/controller model available.",
+      "input_contract": "Validated PLTMH\u2013ELC source model; scenario design; fixed RK4 numerical policy.",
+      "notebook": "05_generate_dataset.ipynb",
+      "output_contract": "Scenario catalogue + gain labels + raw temporal trajectories BEFORE supervised window construction.",
+      "rerun_required_for_migration": false,
+      "scientific_role": "Membangun skenario PLTMH\u2013ELC, melakukan simulasi kandidat gain, menetapkan target Kp/Ki berbasis objective yang dibekukan, dan menghasilkan trajectory temporal mentah.",
+      "stage": "DATASET_GENERATION"
+    },
+    {
+      "boundary_end": "FINAL_LSTM_QLSTM_READY dataset and scalers are frozen.",
+      "boundary_start": "Feature selection / causal-window construction begins.",
+      "input_contract": "Raw labeled temporal trajectories from 05_generate_dataset.ipynb.",
+      "notebook": "06_preprocessing.ipynb",
+      "output_contract": "Final feature set, causal windows, family-level train/validation/test split, train-only scalers, final NPZ dataset, sample metadata.",
+      "rerun_required_for_migration": false,
+      "scientific_role": "Mengubah trajectory mentah menjadi dataset supervised yang kausal dan leakage-safe.",
+      "stage": "PREPROCESSING"
+    },
+    {
+      "boundary_end": "Classical model-stage evidence frozen before QLSTM training.",
+      "boundary_start": "Final supervised dataset frozen.",
+      "input_contract": "Frozen final dataset, train-only scaler, frozen family split.",
+      "notebook": "07_train_lstm.ipynb",
+      "output_contract": "Frozen classical LSTM + baseline models and validation/test audits.",
+      "rerun_required_for_migration": false,
+      "scientific_role": "Classical baselines, LSTM training, temporal audit, endpoint MLP, multi-seed validation stability.",
+      "stage": "CLASSICAL_MODELING"
+    },
+    {
+      "boundary_end": "Model development closed; no post-test tuning.",
+      "boundary_start": "QLSTM runtime/architecture work begins.",
+      "input_contract": "Same frozen dataset/split/scalers used by classical LSTM.",
+      "notebook": "08_train_qlstm.ipynb",
+      "output_contract": "Frozen QLSTM checkpoint, QLSTM evaluation, model comparison and interpretation freeze.",
+      "rerun_required_for_migration": false,
+      "scientific_role": "QLSTM runtime feasibility, architecture freeze, training, validation, single frozen test evaluation, model-stage interpretation.",
+      "stage": "QLSTM_MODELING"
+    },
+    {
+      "boundary_end": "Raw 12-run comparative closed-loop results checkpointed before interpretation.",
+      "boundary_start": "Scheduler interface and gain-safety policy freeze.",
+      "input_contract": "Frozen LSTM + frozen QLSTM + frozen scheduler policy + frozen physical scenarios.",
+      "notebook": "09_closed_loop.ipynb",
+      "output_contract": "Closed-loop trajectories, gain-update records, controller metrics and raw comparative results.",
+      "rerun_required_for_migration": false,
+      "scientific_role": "Mengintegrasikan Fixed PI, frozen LSTM, dan frozen QLSTM ke PLTMH\u2013ELC serta menjalankan 12 eksperimen closed-loop yang dipraregistrasikan.",
+      "stage": "CLOSED_LOOP_EVALUATION"
+    },
+    {
+      "boundary_end": "Thesis-ready scientific evidence package and Bab IV.",
+      "boundary_start": "Closed-loop results already frozen.",
+      "input_contract": "Frozen model-stage and closed-loop evidence.",
+      "notebook": "10_final_analysis.ipynb",
+      "output_contract": "Scientific interpretation, tables, figures, claim limits and Bab IV draft.",
+      "rerun_required_for_migration": false,
+      "scientific_role": "Audit hasil model dan closed-loop, scientific claim freeze, computational audit, figures/tables, dan penyusunan Bab IV.",
+      "stage": "FINAL_ANALYSIS"
+    }
+  ],
+  "reproducibility_policy": {
+    "do_not_copy_failed_cells_as_authoritative": true,
+    "do_not_reconstruct_missing_cell_numbers_by_guess": true,
+    "expensive_training_or_simulation": "SKIP_BY_DEFAULT_IF_FROZEN_ARTIFACT_EXISTS",
+    "migration_is_not_experiment_rerun": true,
+    "new_notebooks_must_import_validated_src_modules": true,
+    "new_notebooks_must_load_persisted_upstream_artifacts": true,
+    "new_notebooks_must_not_depend_on_old_colab_globals": true,
+    "new_notebooks_must_start_from_repository_checkpoint": true,
+    "prefer_final_successful_logic": true,
+    "rerun_mode": "EXPLICIT_REPRODUCTION_ONLY",
+    "scientific_results_must_match_frozen_artifacts": true
+  },
+  "source_checkpoint": "fcba9d85da43232a49b55a836a34fb876738995d",
+  "stage": "NOTEBOOK_05_TO_10_STAGE_CONTRACT_FREEZE"
+}
