@@ -1,0 +1,7 @@
+section,title,status,reason
+2.1,Dinamika Frekuensi PLTMH Terisolasi,RETAIN_WITH_SCOPE,General swing-equation theory remains useful. The realized plant simplifications are governed by Bab III and the frozen simulation contract.
+2.2,Electronic Load Controller,ALIGNED,Source explicitly describes an averaged ELC relationship and states that individual semiconductor switching events are not simulated.
+2.3,Pengendali PI dan Penjadwalan Gain,ALIGNED,"PI remains the direct controller; gain scheduling is supervisory and metaheuristics are discussed only as prior literature, not implemented method."
+2.4,Pembentukan Target Gain Berbasis Simulasi,RETAIN_WITH_SCOPE,Deterministic coarse-to-fine grid formation of supervised gain targets remains consistent. Exact realized operational details will be cross-checked again during Bab III revision.
+2.5,Long Short-Term Memory,ALIGNED,LSTM is correctly positioned as a temporal gain-regression baseline rather than a load or future-frequency predictor.
+2.6,Variational Quantum Circuit,ALIGNED,Hybrid quantum-classical VQC theory and quantum simulation scope remain consistent with the frozen QLSTM implementation.

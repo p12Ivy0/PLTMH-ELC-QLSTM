@@ -1,0 +1,17 @@
+{
+  "section_2_10_table": {
+    "review_findings": [
+      "The retained table row still states that QLSTM outputs are dibatasi, dihaluskan, and applied at the supervisory interval."
+    ],
+    "title": "Tabel II.1 — row Penelitian ini (2026)"
+  },
+  "section_2_7": {
+    "review_findings": [
+      "The source Section 2.7 still describes an older temporal-input vector rather than explicitly using the final exact four-feature vector.",
+      "Equations 2.19 and 2.20 map latent outputs through sigmoid to guarantee Kp/Ki remain inside the gain range.",
+      "The closing paragraph still refers to penerapan dan penghalusan gain in Section 2.8."
+    ],
+    "title": "Arsitektur QLSTM untuk Estimasi Gain"
+  },
+  "source": "Proposal Tesis_03092026_konsep_baru.docx"
+}

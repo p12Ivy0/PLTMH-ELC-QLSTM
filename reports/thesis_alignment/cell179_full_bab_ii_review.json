@@ -1,0 +1,97 @@
+{
+  "cell178_revision": {
+    "approved": true,
+    "scope": {
+      "full": [
+        "2.8",
+        "2.9",
+        "2.11"
+      ],
+      "partial": [
+        "2.10 research-position tail"
+      ]
+    },
+    "sha256": "fa8a8bea9fc612f7ccdc99a466acfbda0d9764b3b0c9313e26f9b65c45c44f06"
+  },
+  "final_qlstm_contract": {
+    "direct_regression_head_return": true,
+    "features": [
+      "frequency_deviation_hz",
+      "mechanical_power_kw",
+      "electrical_power_kw",
+      "dump_power_kw"
+    ],
+    "head": [
+      4,
+      64,
+      60,
+      16,
+      2
+    ],
+    "input_dim": 4,
+    "output_head_sigmoid": false,
+    "sequence_length": 11
+  },
+  "gates": {
+    "bab_iii_revision_authorized": false,
+    "bab_v_drafting_authorized": false,
+    "cell179_review_audit_pass": true,
+    "full_bab_ii_alignment": false,
+    "section_2_7_and_table_revision_authorized": true
+  },
+  "remaining_gaps": {
+    "count": 4,
+    "gap_ids": [
+      "B2-179-01",
+      "B2-179-02",
+      "B2-179-03",
+      "B2-179-04"
+    ],
+    "sections": [
+      "2.7",
+      "2.10 / Tabel II.1"
+    ]
+  },
+  "retained_sections": {
+    "2.1_to_2.6_acceptable": true,
+    "statuses": [
+      {
+        "section": "2.1",
+        "status": "RETAIN_WITH_SCOPE"
+      },
+      {
+        "section": "2.2",
+        "status": "ALIGNED"
+      },
+      {
+        "section": "2.3",
+        "status": "ALIGNED"
+      },
+      {
+        "section": "2.4",
+        "status": "RETAIN_WITH_SCOPE"
+      },
+      {
+        "section": "2.5",
+        "status": "ALIGNED"
+      },
+      {
+        "section": "2.6",
+        "status": "ALIGNED"
+      }
+    ]
+  },
+  "scientific_files_modified": false,
+  "scientific_policy": {
+    "exponential_smoothing_used": false,
+    "independent_g3_generalization_claim": false,
+    "monte_carlo_performed": false,
+    "post_result_tuning": false,
+    "qlstm_superiority_claim": false,
+    "quantum_advantage_claim": false,
+    "statistical_significance_claim": false
+  },
+  "source_checkpoint": "97c53dc60b9ca8260c42e59e155bd294c8ec007c",
+  "source_proposal": "Proposal Tesis_03092026_konsep_baru.docx",
+  "stage": "FULL_BAB_II_2_1_TO_2_11_REVIEW"
+}
