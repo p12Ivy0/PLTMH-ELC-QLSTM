@@ -1,0 +1,107 @@
+{
+  "adaptive_causality": {
+    "endpoint_strictly_post_disturbance": true,
+    "first_update_s": 2.6,
+    "first_window_end_s": 2.6,
+    "first_window_start_s": 2.1
+  },
+  "cell152_policy": {
+    "path": "data/closed_loop/cell152_pre_simulation_policy.json",
+    "sha256": "9ab3b1e070e2c7e7ad056f68e85aa0620364a5eb5ed12c285ddd883ec18281d4"
+  },
+  "family_semantics": {
+    "D": "initial_dump_power_kw",
+    "L": "consumer_load_step_kw"
+  },
+  "feature_contract": {
+    "dump_power_kw": "dump_power_kw",
+    "electrical_power_kw": "consumer_power_kw + dump_power_kw",
+    "frequency_deviation_hz": "frequency_hz - nominal_frequency_hz",
+    "mechanical_power_kw": "pm_pu * generator_rated_power_kw"
+  },
+  "fixed_pi_structural_smoke": {
+    "all_pass": true,
+    "performance_ranking_performed": false,
+    "rmse_comparison_performed": false,
+    "scenario_count": 4
+  },
+  "next_cell": "CELL_154_ADAPTIVE_RK4_SIMULATOR_INTEGRATION_SMOKE_TEST",
+  "physical_model": {
+    "dump_load_rated_power_kw": 100.0,
+    "elc_actuator_time_constant_s": 0.05,
+    "elc_model": "AVERAGED_FIRST_ORDER_DUMP_LOAD",
+    "generator_damping_pu": 2.0,
+    "generator_inertia_constant_s": 2.5,
+    "governor_active": false,
+    "mechanical_power_kw": 90.0,
+    "mechanical_power_profile": "CONSTANT",
+    "nominal_frequency_hz": 50.0,
+    "rated_power_kw": 100.0,
+    "waterway_dynamic_state_active": false
+  },
+  "pre_simulation_checkpoint": "ec2b0eb88da803dbbfd0ad7c58c107e857b2be47",
+  "scenario_resolution": {
+    "CL01": {
+      "family_key": "D40_L-20",
+      "final_consumer_power_kw": 30.0,
+      "initial_consumer_power_kw": 50.0,
+      "initial_dump_power_kw": 40.0,
+      "load_step_kw": -20.0,
+      "native_dataset_scenario_id": "S065",
+      "pi_output_bias": 0.4,
+      "required_final_dump_power_kw": 60.0
+    },
+    "CL02": {
+      "family_key": "D20_L+10",
+      "final_consumer_power_kw": 80.0,
+      "initial_consumer_power_kw": 70.0,
+      "initial_dump_power_kw": 20.0,
+      "load_step_kw": 10.0,
+      "native_dataset_scenario_id": "S053",
+      "pi_output_bias": 0.2,
+      "required_final_dump_power_kw": 10.0
+    },
+    "CL03": {
+      "family_key": "D20_L+20",
+      "final_consumer_power_kw": 90.0,
+      "initial_consumer_power_kw": 70.0,
+      "initial_dump_power_kw": 20.0,
+      "load_step_kw": 20.0,
+      "native_dataset_scenario_id": "S055",
+      "pi_output_bias": 0.2,
+      "required_final_dump_power_kw": 0.0
+    },
+    "CL04": {
+      "family_key": "D30_L+20",
+      "final_consumer_power_kw": 80.0,
+      "initial_consumer_power_kw": 60.0,
+      "initial_dump_power_kw": 30.0,
+      "load_step_kw": 20.0,
+      "native_dataset_scenario_id": "S063",
+      "pi_output_bias": 0.3,
+      "required_final_dump_power_kw": 10.0
+    }
+  },
+  "scientific_policy": {
+    "controller_comparison_performed": false,
+    "lstm_closed_loop_inference_performed": false,
+    "post_result_tuning_allowed": false,
+    "qlstm_closed_loop_inference_performed": false,
+    "scenario_matrix_changed": false
+  },
+  "solver": {
+    "disturbance_time_s": 2.5,
+    "dt_s": 0.0025,
+    "method": "FIXED_STEP_RK4",
+    "simulation_end_s": 10.0
+  },
+  "source_contract_sha256": {
+    "dump_load": "4c49962c3c79e6efda9424e7e83aea1b241344968741c607e4de77208128d5b0",
+    "elc": "98506fddd6e760a2d5075fd7f521876784c41f37959406b72e23df76095784d5",
+    "generator": "1ec3f5e26bab726afddfc38e7fab2931b74068bc02cb19be280cb6a03d76157b",
+    "logger": "35fae416b60bccdb2cee5597d8f811ba8ccb95aaa9ae84145cd7787b26e391c0",
+    "pi_controller": "7722548bb98edf994252ace0eb969b425647a01ce05d09038ec29fd5ed82cfb1",
+    "scenario": "973bc400a8e0b542c1837f940c5989e0203805bb2ff74b706d058675e6a23cb8"
+  },
+  "stage": "CLOSED_LOOP_SIMULATOR_READINESS"
+}

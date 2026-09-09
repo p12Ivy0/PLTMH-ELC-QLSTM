@@ -1,0 +1,5 @@
+scenario_id,family_key,native_dataset_scenario_id,mechanical_power_pu,mechanical_power_kw,initial_dump_power_kw,initial_consumer_power_kw,load_step_kw,final_consumer_power_kw,required_final_dump_power_kw,initial_duty,required_final_duty,required_final_boundary,disturbance_time_s
+CL01,D40_L-20,S065,0.9,90.0,40.0,50.0,-20.0,30.0,60.0,0.4,0.6,INTERIOR,2.5
+CL02,D20_L+10,S053,0.9,90.0,20.0,70.0,10.0,80.0,10.0,0.2,0.1,INTERIOR,2.5
+CL03,D20_L+20,S055,0.9,90.0,20.0,70.0,20.0,90.0,0.0,0.2,0.0,LOWER,2.5
+CL04,D30_L+20,S063,0.9,90.0,30.0,60.0,20.0,80.0,10.0,0.3,0.1,INTERIOR,2.5

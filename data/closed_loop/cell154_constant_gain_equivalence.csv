@@ -1,0 +1,5 @@
+scenario_id,family_key,source_rows,variable_gain_rows,time_grid_exact,gain_constant,adaptive_updates,max_abs_difference,frequency_max_abs_difference,dump_power_max_abs_difference,integral_state_max_abs_difference,duty_max_abs_difference,all_finite,equivalence_pass
+CL01,D40_L-20,4001,4001,True,True,0,0.0,0.0,0.0,0.0,0.0,True,True
+CL02,D20_L+10,4001,4001,True,True,0,0.0,0.0,0.0,0.0,0.0,True,True
+CL03,D20_L+20,4001,4001,True,True,0,0.0,0.0,0.0,0.0,0.0,True,True
+CL04,D30_L+20,4001,4001,True,True,0,0.0,0.0,0.0,0.0,0.0,True,True

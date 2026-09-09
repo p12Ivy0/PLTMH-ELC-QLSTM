@@ -1,0 +1,87 @@
+{
+  "cell153_readiness": {
+    "path": "data/closed_loop/cell153_simulator_readiness.json",
+    "sha256": "1f75fe58c40d8f371d194ed9bd71cf91cff835ffd332272106ac586a456d5e03"
+  },
+  "constant_gain_equivalence": {
+    "all_pass": true,
+    "gain": [
+      2.16,
+      5.72
+    ],
+    "maximum_absolute_error": 0.0,
+    "scenarios": [
+      "CL01",
+      "CL02",
+      "CL03",
+      "CL04"
+    ],
+    "tolerance": 1e-12
+  },
+  "feature_contract": [
+    "frequency_deviation_hz",
+    "mechanical_power_kw",
+    "electrical_power_kw",
+    "dump_power_kw"
+  ],
+  "gain_application": {
+    "adaptive_update_requires_time_strictly_after_disturbance": true,
+    "between_updates": "ZERO_ORDER_HOLD",
+    "bumpless_transfer_state_correction": false,
+    "common_cell151_gain_guard": true,
+    "first_adaptive_update_s": 2.6,
+    "integral_reset_on_gain_change": false,
+    "output_bias": "FIXED_SCENARIO_SPECIFIC_INITIAL_DUTY",
+    "pi_integral_state": "CONTINUOUS_ACROSS_GAIN_UPDATES",
+    "steps_per_gain_update": 40,
+    "update_dt_s": 0.1,
+    "update_rate_hz": 10.0,
+    "updated_gain_applies_from_update_instant_forward": true
+  },
+  "next_cell": "CELL_155_FROZEN_CLOSED_LOOP_COMPARATIVE_EXPERIMENT",
+  "observation": {
+    "collected_from_simulation_start": true,
+    "dt_s": 0.05,
+    "rate_hz": 20.0,
+    "steps_per_observation": 20,
+    "window_points": 11,
+    "window_span_s": 0.5
+  },
+  "pre_simulation_checkpoint": "ec2b0eb88da803dbbfd0ad7c58c107e857b2be47",
+  "rk4": {
+    "controller_gain_constant_within_each_rk4_step": true,
+    "dt_s": 0.0025,
+    "k4_event_semantics": "LEFT_LIMIT_NEXTAFTER",
+    "method": "FIXED_STEP_RK4",
+    "uses_project_closed_loop_rhs": true
+  },
+  "scientific_policy": {
+    "controller_comparison_performed": false,
+    "lstm_closed_loop_inference_performed": false,
+    "model_retraining_allowed": false,
+    "performance_ranking_performed": false,
+    "qlstm_closed_loop_inference_performed": false,
+    "rmse_comparison_performed": false,
+    "scheduler_policy_change_after_comparison_allowed": false,
+    "simulator_algorithm_change_after_comparison_allowed": false
+  },
+  "scripted_structural_smoke": {
+    "actuator_domain_ok": true,
+    "all_states_finite": true,
+    "cadence_ok": true,
+    "first_update_ok": true,
+    "gain_bounds_ok": true,
+    "gain_step_limit_ok": true,
+    "integral_reset_applied": false,
+    "model_inference_used": false,
+    "no_pre_event_gain_change": true,
+    "requested_gain": [
+      3.36,
+      14.144
+    ],
+    "scenario": "CL01",
+    "smoke_pass": true,
+    "zero_order_hold_ok": true
+  },
+  "stage": "ADAPTIVE_RK4_SIMULATOR_INTEGRATION_FREEZE"
+}

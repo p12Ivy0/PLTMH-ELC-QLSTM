@@ -1,0 +1,5 @@
+scenario_id,family_key,initial_dump_power_kw,initial_duty,pi_output_bias
+CL01,D40_L-20,40.0,0.4,0.4
+CL02,D20_L+10,20.0,0.2,0.2
+CL03,D20_L+20,20.0,0.2,0.2
+CL04,D30_L+20,30.0,0.3,0.3
