@@ -1,0 +1,82 @@
+{
+  "audit_check_count": 26,
+  "audit_pass": true,
+  "bab_i_candidate": {
+    "modified_by_cell177": false,
+    "path": "reports/thesis_alignment/cell176_bab_i_full_revised_candidate.md",
+    "sections": [
+      "1.1",
+      "1.2",
+      "1.3",
+      "1.4",
+      "1.5",
+      "1.6"
+    ],
+    "sha256": "f3177316be40a527466f1270d7f0f3acfd2694f14d39d30b1fa824abf0faff98"
+  },
+  "bab_ii_revision_authorized": true,
+  "bab_v_drafting_authorized": false,
+  "cross_chapter": {
+    "bab_i_bab_iv_alignment": true
+  },
+  "editorial": {
+    "duplicate_long_paragraph_count": 0,
+    "placeholders": []
+  },
+  "execution": {
+    "bab_i_rewritten": false,
+    "bab_iv_modified": false,
+    "inference": false,
+    "monte_carlo": false,
+    "proposal_docx_modified": false,
+    "significance_test": false,
+    "simulation": false,
+    "training": false
+  },
+  "failed_check_count": 0,
+  "full_bab_i_scientific_alignment": true,
+  "method_contract": {
+    "closed_loop_run_count": 12,
+    "features": [
+      "frequency_deviation_hz",
+      "mechanical_power_kw",
+      "electrical_power_kw",
+      "dump_power_kw"
+    ],
+    "gain_update_rate_hz": 10.0,
+    "independent_primary_family_count": 2,
+    "observation_rate_hz": 20.0,
+    "scheduler_processing_order": [
+      "raw_window",
+      "feature_standardization",
+      "frozen_model_inference",
+      "inverse_target_scaling",
+      "finite_check",
+      "admissible_gain_clipping",
+      "gain_rate_limiting",
+      "applied_gain"
+    ],
+    "sequence_length": 11,
+    "split_strategy": "LEAKAGE_FREE_DYNAMIC_FAMILY_GROUP_SPLIT",
+    "test_family_count": 2,
+    "train_family_count": 7,
+    "validation_family_count": 2,
+    "window_count": 17600
+  },
+  "research_alignment": {
+    "objective_count": 4,
+    "question_count": 4,
+    "question_objective_alignment": true
+  },
+  "scientific_policy": {
+    "exponential_smoothing_used": false,
+    "independent_g3_generalization_claim": false,
+    "monte_carlo_performed": false,
+    "post_result_tuning": false,
+    "qlstm_superiority_claim": false,
+    "quantum_advantage_claim": false,
+    "statistical_significance_claim": false
+  },
+  "source_checkpoint": "796c4408fdd566c616ad3e1301207953788260a3",
+  "stage": "FINAL_FULL_BAB_I_1_1_TO_1_6_CONSISTENCY_AUDIT"
+}
