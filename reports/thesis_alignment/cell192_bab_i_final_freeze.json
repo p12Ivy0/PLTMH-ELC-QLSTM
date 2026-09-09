@@ -1,0 +1,67 @@
+{
+  "authoritative_bab_i_docx": {
+    "docx_frozen": true,
+    "path": "reports/thesis_integration/cell191_bab_i_visual_fix/Proposal_Tesis_BAB_I_VISUAL_FIXED.docx",
+    "scientific_text_frozen": true,
+    "sha256": "aed165decb5257c2cd60a278939ac27ca0ba8c64e5840331f0bd061d6abaa91f"
+  },
+  "deferred_front_matter": {
+    "abstract_bahasa_indonesia": "DEFERRED — source/front-matter text must be aligned with frozen final scientific results after Bab I–V.",
+    "abstract_english": "DEFERRED — source/front-matter text must be aligned with frozen final scientific results after Bab I–V.",
+    "list_of_figures": "DEFERRED — update only after final figure integration.",
+    "list_of_tables": "DEFERRED — update only after final table integration.",
+    "table_of_contents": "DEFERRED — update only after final Bab I–V pagination."
+  },
+  "execution": {
+    "docx_modified": false,
+    "inference": false,
+    "monte_carlo": false,
+    "notebooks_modified": false,
+    "post_result_tuning": false,
+    "scientific_text_modified": false,
+    "significance_testing": false,
+    "simulation": false,
+    "src_modified": false,
+    "training": false
+  },
+  "front_matter_finalized": false,
+  "gates": {
+    "bab_i_final_docx_frozen": true,
+    "bab_i_final_text_frozen": true,
+    "bab_i_final_visual_qa_pass": true,
+    "bab_ii_docx_integration_authorized": true
+  },
+  "parent_checkpoint": "b1e8da561924f866be234b013697d7197375f170",
+  "protected_baselines": {
+    "cell189_baseline_unchanged": true,
+    "cell190_candidate_unchanged": true,
+    "cell191_candidate_modified_by_cell192": false,
+    "source_docx_unchanged": true
+  },
+  "render": {
+    "bab_i_end_page": 17,
+    "bab_i_start_page": 5,
+    "bab_ii_clean_new_page": true,
+    "bab_ii_start_page": 18,
+    "pdf_page_count": 44
+  },
+  "stage": "BAB_I_FINAL_FREEZE",
+  "visual_qa": {
+    "findings": {
+      "bab_i_chapter_heading": true,
+      "bab_i_to_bab_ii_transition": true,
+      "bab_ii_clean_new_page": true,
+      "italic_terms": true,
+      "kp_ki_notation_visible": true,
+      "list_indentation": true,
+      "no_unexpected_blank_page": true,
+      "no_visible_clipping": true,
+      "no_visible_overlap": true,
+      "objective_3_orphan_fix": true,
+      "paragraph_alignment_and_margins": true,
+      "section_headings_1_1_to_1_6": true
+    },
+    "pass": true,
+    "source": "Cell191 rendered contact-sheet screenshots reviewed in conversation"
+  }
+}
