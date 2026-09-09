@@ -3,78 +3,116 @@
 
 ## 4.1 Kerangka Evaluasi Hasil
 
-Evaluasi penelitian dilakukan setelah model plant, pembentukan dataset,
-pembagian keluarga dinamik, pelatihan model, serta antarmuka penjadwalan gain
-dibekukan. Tahap evaluasi *closed-loop* membandingkan tiga konfigurasi, yaitu
-PI dengan gain tetap, LSTM–PI, dan QLSTM–PI. Ketiga konfigurasi diuji dengan
-model PLTMH–ELC, kondisi numerik, batas gain, periode observasi, periode
-pembaruan gain, serta mekanisme *rate limiting* yang sama.
+Evaluasi hasil dilakukan setelah model PLTMH–ELC, dataset, pembagian keluarga
+dinamik, model pembelajaran, serta kebijakan penjadwalan gain ditetapkan.
+Tahap *closed-loop* membandingkan tiga konfigurasi pengendali, yaitu PI dengan
+gain tetap, LSTM–PI, dan QLSTM–PI. Ketiga konfigurasi menggunakan model plant,
+solver, kondisi operasi, batas gain, periode observasi, periode pembaruan gain,
+dan mekanisme pembatasan laju perubahan gain yang sama. Dengan rancangan
+tersebut, perbedaan respons yang diperoleh tidak berasal dari perubahan
+konfigurasi simulasi setelah hasil pengujian diketahui.
 
-Evaluasi primer menggunakan dua keluarga dinamik yang tidak digunakan sebagai
-keluarga pelatihan, yaitu CL01 (D40_L-20) dan CL02 (D20_L+10). Kedua skenario
-ini menjadi unit evaluasi independen utama. CL03 (D20_L+20) digunakan sebagai
-skenario *boundary stress*, sedangkan CL04 (D30_L+20) digunakan sebagai
-diagnostik G3 dalam distribusi pelatihan. Oleh karena itu, CL03 dan CL04 tidak
-digunakan untuk memperluas klaim generalisasi primer.
+Evaluasi primer menggunakan dua keluarga dinamik uji independen, yaitu CL01
+(D40_L-20) dan CL02 (D20_L+10). Kedua keluarga tersebut tidak digunakan sebagai
+keluarga pelatihan. CL03 (D20_L+20) ditempatkan sebagai skenario
+*boundary stress* tanpa target gain supervisi yang keras, sedangkan CL04
+(D30_L+20) digunakan sebagai diagnostik G3 dalam distribusi pelatihan.
+Oleh karena itu, hasil CL03 dan CL04 dibahas secara terpisah dan tidak
+digunakan untuk memperluas klaim generalisasi pada evaluasi primer.
 
-Seluruh simulasi menggunakan solver RK4 dengan langkah 0,0025 s. Gangguan
-diterapkan pada t = 2,50 s dengan horizon evaluasi 7,50 s setelah gangguan.
-Pengamatan untuk model adaptif dilakukan pada 20 Hz, sedangkan pembaruan gain
-dilakukan pada 10 Hz. Pembaruan gain adaptif pertama baru diizinkan pada
-t = 2,60 s. Rancangan tersebut telah ditetapkan sebelum hasil komparatif
-diperoleh sehingga hasil pada bab ini tidak digunakan untuk melakukan
-penalaan ulang model maupun pengendali.
+Simulasi menggunakan RK4 langkah tetap dengan interval 0,0025 s. Gangguan
+diterapkan pada t = 2,50 s dan respons dievaluasi selama 7,50 s setelah
+gangguan. Data masukan model adaptif diamati pada 20 Hz, sedangkan gain PI
+diperbarui pada 10 Hz dengan mekanisme *zero-order hold* di antara dua
+pembaruan. Pembaruan gain adaptif pertama diizinkan pada t = 2,60 s.
+Pengaturan tersebut telah ditetapkan sebelum simulasi komparatif dan tidak
+diubah berdasarkan hasil yang diperoleh.
 
 ## 4.2 Kinerja Model dalam Mengestimasi Gain PI
 
-Sebelum model diintegrasikan ke simulasi *closed-loop*, kemampuan model dalam
-mengestimasi parameter PI dievaluasi pada data uji yang telah dibekukan.
-LSTM menghasilkan MSE terstandar sebesar 0.868629, sedangkan
-QLSTM menghasilkan MSE sebesar 2.963549. Dengan demikian,
-galat QLSTM pada tahap estimasi gain sekitar
-241.18% lebih tinggi dibandingkan LSTM.
+Sebelum integrasi ke sistem *closed-loop*, model LSTM dan QLSTM dievaluasi
+terhadap target gain PI pada data uji yang telah dibekukan. MSE yang digunakan
+pada tahap ini dihitung terhadap target Kp dan Ki yang telah distandardisasi,
+sehingga nilainya merupakan ukuran galat regresi pada ruang target
+terstandardisasi dan bukan galat frekuensi dalam satuan hertz.
 
-Perbedaan tersebut menunjukkan bahwa pada konfigurasi arsitektur, dataset,
-dan proses pelatihan yang digunakan dalam penelitian ini, penyisipan komponen
-kuantum pada recurrent gate belum memberikan peningkatan akurasi estimasi
-parameter PI. Temuan ini perlu dibaca sesuai struktur model yang digunakan.
-QLSTM mempunyai 5.422 parameter total, tetapi hanya 48 parameter yang merupakan
-parameter kuantum. Sebagian besar kapasitas model tetap berada pada komponen
-klasik dari arsitektur *hybrid quantum–classical*.
+**Tabel 4.1. Kinerja estimasi gain PI pada data uji**
 
-Namun, galat estimasi gain tidak dapat langsung digunakan sebagai ukuran
-akhir keberhasilan pengendali. Dampak kesalahan estimasi gain terhadap
-frekuensi bergantung pada dinamika plant, kondisi operasi, pembatasan gain,
-serta sensitivitas *closed-loop* terhadap perubahan Kp dan Ki. Oleh karena
-itu, evaluasi model selanjutnya dilakukan pada sistem *closed-loop*.
+| Model | MSE target terstandardisasi | RMSE Kp | RMSE Ki |
+|---|---:|---:|---:|
+| LSTM | 0,868629 | 0,289101 | 4,157301 |
+| QLSTM | 2,963549 | 0,515339 | 7,789278 |
+
+Tabel 4.1 menunjukkan bahwa LSTM menghasilkan MSE terstandardisasi
+0,868629, sedangkan QLSTM menghasilkan
+2,963549. Pada model beku yang dievaluasi, MSE QLSTM
+sekitar 241,18% lebih tinggi daripada LSTM.
+RMSE Kp dan Ki QLSTM juga lebih tinggi daripada LSTM pada data uji yang sama.
+
+Hasil tersebut menunjukkan bahwa **arsitektur QLSTM yang digunakan dalam
+konfigurasi penelitian ini belum menghasilkan akurasi estimasi gain yang lebih
+baik daripada LSTM**. Temuan ini tidak ditafsirkan sebagai bukti bahwa komponen
+kuantum secara umum menurunkan kinerja. QLSTM yang diuji merupakan arsitektur
+*hybrid quantum–classical* dengan 5.422 parameter, yang terdiri atas 48
+parameter kuantum dan komponen klasik yang membentuk sebagian besar parameter
+model. Kesimpulan karena itu dibatasi pada arsitektur, dataset, proses
+pelatihan, dan pembagian data yang digunakan dalam penelitian ini.
+
+Galat estimasi gain juga tidak dapat digunakan secara langsung sebagai ukuran
+akhir kinerja pengendalian. Pengaruh suatu pasangan Kp dan Ki terhadap respons
+frekuensi ditentukan oleh dinamika plant, kondisi operasi, pembatasan gain,
+dan sensitivitas sistem *closed-loop*. Evaluasi berikutnya karena itu
+memeriksa secara langsung respons frekuensi setelah LSTM dan QLSTM
+diintegrasikan sebagai penjadwal gain PI.
 
 ## 4.3 Hasil Utama Closed-Loop pada Keluarga Uji Independen
 
-Hasil utama ditentukan menggunakan RMSE deviasi frekuensi pada CL01 dan CL02.
-Rerata RMSE PI gain tetap sebesar 0.012478 Hz. LSTM–PI
-menghasilkan 0.013810 Hz, sedangkan QLSTM–PI menghasilkan
-0.016150 Hz.
+Evaluasi primer *closed-loop* menggunakan CL01 dan CL02 sebagai dua keluarga
+dinamik uji independen. Metrik utama yang telah ditetapkan adalah RMSE deviasi
+frekuensi selama horizon 7,50 s setelah gangguan. Hasil setiap keluarga
+disajikan pada Tabel 4.2.
 
-Dibandingkan PI gain tetap, rerata RMSE LSTM–PI meningkat
-10.67%, sedangkan QLSTM–PI meningkat
-29.42%. Rerata RMSE QLSTM–PI juga
-16.95% lebih tinggi dibandingkan LSTM–PI.
+**Tabel 4.2. RMSE deviasi frekuensi pada keluarga uji independen**
+
+| Skenario | Keluarga | PI gain tetap (Hz) | LSTM–PI (Hz) | QLSTM–PI (Hz) | RMSE terendah |
+|---|---|---:|---:|---:|---|
+| CL01 | D40_L-20 | 0,016638 | 0,020160 | 0,023913 | PI gain tetap |
+| CL02 | D20_L+10 | 0,008319 | 0,007460 | 0,008388 | LSTM–PI |
+| **Rerata tidak tertimbang** | **2 keluarga** | **0,012478** | **0,013810** | **0,016150** | **PI gain tetap** |
+
+Rerata tidak tertimbang dari kedua keluarga uji menghasilkan RMSE
+0,012478 Hz untuk PI gain tetap,
+0,013810 Hz untuk LSTM–PI, dan
+0,016150 Hz untuk QLSTM–PI. Dibandingkan PI gain tetap,
+rerata RMSE LSTM–PI lebih tinggi 10,67%,
+sedangkan QLSTM–PI lebih tinggi 29,42%.
+Rerata RMSE QLSTM–PI juga lebih tinggi
+16,95% dibandingkan LSTM–PI.
+
+Rerata tersebut bersifat **deskriptif**, karena evaluasi primer hanya terdiri
+atas dua keluarga dinamik independen. Ribuan titik waktu hasil RK4 maupun
+*window* temporal dari masing-masing keluarga tidak diperlakukan sebagai
+observasi independen. Oleh karena itu, hasil pada bagian ini tidak digunakan
+untuk membuat klaim signifikansi statistik.
 
 **[Masukkan Gambar 4.1 — fig157_primary_rmse_comparison.png]**
 
 **Gambar 4.1.** Perbandingan RMSE deviasi frekuensi PI gain tetap, LSTM–PI,
 dan QLSTM–PI pada dua keluarga dinamik uji independen.
 
-Hasil tersebut memperlihatkan bahwa tidak terdapat satu pengendali adaptif
-yang memberikan peningkatan konsisten pada kedua keluarga uji. PI gain tetap
-menghasilkan RMSE terendah pada CL01, sedangkan LSTM–PI menghasilkan RMSE
-terendah pada CL02. QLSTM–PI tidak menghasilkan RMSE terendah pada salah satu
-dari dua keluarga uji independen.
+Tabel 4.2 dan Gambar 4.1 memperlihatkan perbedaan kinerja yang bergantung pada
+kondisi operasi. PI gain tetap menghasilkan RMSE terendah pada CL01, sedangkan
+LSTM–PI menghasilkan RMSE terendah pada CL02. Dengan demikian, LSTM–PI belum
+menunjukkan peningkatan yang konsisten terhadap PI gain tetap pada kedua
+keluarga uji. QLSTM–PI tidak menghasilkan RMSE terendah pada salah satu dari
+dua keluarga uji independen.
 
-Temuan ini tidak mendukung pernyataan bahwa QLSTM–PI meningkatkan kinerja
-pengendalian frekuensi dibandingkan PI gain tetap maupun LSTM–PI pada ruang
-uji primer penelitian ini. Hasil tersebut dipertahankan tanpa melakukan
-pelatihan ulang atau perubahan parameter setelah data uji diperiksa.
+Bukti primer tersebut **tidak mendukung klaim bahwa QLSTM–PI meningkatkan
+kinerja pengendalian frekuensi dibandingkan PI gain tetap maupun LSTM–PI**
+pada dua keluarga uji independen yang tersedia. Hasil ini dipertahankan
+sebagaimana diperoleh dari protokol yang telah dibekukan dan tidak digunakan
+untuk melakukan pelatihan ulang model, perubahan skenario, maupun penalaan
+ulang pengendali.
 
 ## 4.4 Respons Closed-Loop pada CL01 (D40_L-20)
 
