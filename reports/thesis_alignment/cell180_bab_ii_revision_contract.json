@@ -1,0 +1,77 @@
+{
+  "additional_consistency_correction": {
+    "final_contract": "unweighted MSE on train-standardized Kp/Ki",
+    "old_source": "weighted squared error",
+    "resolved": true,
+    "topic": "Equation 2.21 loss formulation",
+    "within_authorized_section_2_7": true
+  },
+  "all_cell179_gaps_resolved": true,
+  "audit_pass": true,
+  "cell179_authorized_gap_ids": [
+    "B2-179-01",
+    "B2-179-02",
+    "B2-179-03",
+    "B2-179-04"
+  ],
+  "cell179_gap_count": 4,
+  "final_bab_ii_review_required": true,
+  "proposal_docx_modified": false,
+  "revised_scope": {
+    "literature_rows_modified": false,
+    "section_2_10_position_tail_modified": false,
+    "section_2_11_modified": false,
+    "section_2_7": true,
+    "section_2_8_modified": false,
+    "section_2_9_modified": false,
+    "table_ii_1_research_row": "Penelitian ini (2026)"
+  },
+  "revision_sha256": "2ea72bfe59b2671840580d74d07fcdc8cbf3d9bd34e482ba82a96a43f96e2a7a",
+  "scheduler_processing_order": [
+    "raw_window",
+    "feature_standardization",
+    "frozen_model_inference",
+    "inverse_target_scaling",
+    "finite_check",
+    "admissible_gain_clipping",
+    "gain_rate_limiting",
+    "applied_gain"
+  ],
+  "scientific_policy": {
+    "exponential_smoothing_used": false,
+    "independent_g3_generalization_claim": false,
+    "monte_carlo_performed": false,
+    "post_result_tuning": false,
+    "qlstm_superiority_claim": false,
+    "quantum_advantage_claim": false,
+    "statistical_significance_claim": false
+  },
+  "section_2_7_contract": {
+    "equation_2_19": "STANDARDIZED_REGRESSION_OUTPUT",
+    "equation_2_20": "INVERSE_TARGET_STANDARDIZATION",
+    "equation_2_21": "UNWEIGHTED_MSE_ON_STANDARDIZED_TARGETS",
+    "equations_2_17_2_18": "RETAIN_SOURCE_THEORY",
+    "features": [
+      "frequency_deviation_hz",
+      "mechanical_power_kw",
+      "electrical_power_kw",
+      "dump_power_kw"
+    ],
+    "gain_safety_location": "SECTION_2_8_SCHEDULER",
+    "observation_rate_hz": 20.0,
+    "output_head_sigmoid": false,
+    "qlstm_head": [
+      4,
+      64,
+      60,
+      16,
+      2
+    ],
+    "qlstm_input_dim": 4,
+    "sequence_length": 11,
+    "target_standardization": "TRAIN_ONLY_WINDOW_TARGET_Z_SCORE"
+  },
+  "source_checkpoint": "f1b46fabe7ce62a6a26b5979acbd2de254a20d32",
+  "source_proposal": "Proposal Tesis_03092026_konsep_baru.docx",
+  "stage": "BAB_II_SECTION_2_7_AND_TABLE_FINAL_CONTRACT_REVISION"
+}

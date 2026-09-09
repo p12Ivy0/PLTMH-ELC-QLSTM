@@ -1,0 +1,5 @@
+gap_id,resolved,resolution
+B2-179-01,True,Section 2.7 now uses the exact final four-feature temporal input.
+B2-179-02,True,Output sigmoid bounding replaced with standardized regression output and inverse target scaling; safety bounding remains in scheduler.
+B2-179-03,True,Obsolete gain-smoothing reference removed and replaced by clipping plus rate limiting.
+B2-179-04,True,Only the Penelitian ini (2026) row is replaced using the frozen scheduler contract.

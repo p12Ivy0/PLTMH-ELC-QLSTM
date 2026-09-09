@@ -1,0 +1,16 @@
+check,passed
+cell179_gap_contract,True
+final_feature_contract,True
+target_standardization,True
+qlstm_regression_head,True
+final_unweighted_mse_loss,True
+section_2_7_revision,True
+equations_2_19_to_2_21,True
+no_output_sigmoid_bounding,True
+no_weighted_loss_claim,True
+no_gain_smoothing,True
+table_ii_1_research_row,True
+all_cell179_gaps_resolved,True
+equation_2_21_loss_correction,True
+cell178_crosscheck,True
+scientific_restraint,True
