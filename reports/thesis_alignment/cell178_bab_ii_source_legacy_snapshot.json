@@ -1,0 +1,36 @@
+{
+  "section_2_10_tail": {
+    "legacy_points": [
+      "Gain hasil estimasi dinyatakan dibatasi dan dihaluskan.",
+      "Nilai tambah QLSTM diuji terhadap LSTM tanpa batasan eksplisit G3."
+    ],
+    "title": "Kajian Penelitian Terdahulu dan Posisi Penelitian"
+  },
+  "section_2_11": {
+    "legacy_points": [
+      "Hipotesis utama mengharapkan QLSTM-PI lebih rendah galatnya daripada PI tetap.",
+      "Hipotesis kedua menguji nilai tambah QLSTM terhadap LSTM.",
+      "Persamaan 2.28 dan 2.29 adalah hipotesis statistik."
+    ],
+    "title": "Hipotesis Penelitian"
+  },
+  "section_2_8": {
+    "legacy_points": [
+      "Gain yang diterapkan dihaluskan.",
+      "Persamaan 2.22 dan 2.23 digunakan sebagai exponential/smoothing transition.",
+      "Fallback disebut gain aman hasil penalaan awal."
+    ],
+    "title": "Penerapan Gain dalam Loop Kendali"
+  },
+  "section_2_9": {
+    "legacy_points": [
+      "ITAE dinyatakan sebagai indikator evaluasi tambahan.",
+      "Pengujian statistik dilakukan pada skenario yang sama.",
+      "Normalitas selisih diperiksa.",
+      "Paired t-test atau Wilcoxon signed-rank test direncanakan.",
+      "Effect size dan interval kepercayaan 95% direncanakan."
+    ],
+    "title": "Indikator Kinerja dan Pengujian"
+  },
+  "source": "Proposal Tesis_03092026_konsep_baru.docx"
+}

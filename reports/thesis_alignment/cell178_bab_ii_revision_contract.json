@@ -1,0 +1,73 @@
+{
+  "audit_pass": true,
+  "equation_policy": {
+    "removed_statistical_hypothesis_equations": [
+      "2.28",
+      "2.29"
+    ],
+    "section_2_8": [
+      "2.22",
+      "2.23"
+    ],
+    "section_2_9": [
+      "2.24",
+      "2.25",
+      "2.26",
+      "2.27"
+    ]
+  },
+  "full_bab_ii_review_required": true,
+  "method_contract": {
+    "closed_loop_run_count": 12,
+    "gain_update_rate_hz": 10.0,
+    "observation_rate_hz": 20.0,
+    "primary_independent_family_count": 2,
+    "primary_metric": "frequency_deviation_rmse_hz",
+    "scheduler_processing_order": [
+      "raw_window",
+      "feature_standardization",
+      "frozen_model_inference",
+      "inverse_target_scaling",
+      "finite_check",
+      "admissible_gain_clipping",
+      "gain_rate_limiting",
+      "applied_gain"
+    ]
+  },
+  "proposal_docx_modified": false,
+  "revision_scope": {
+    "full_replacement_sections": [
+      "2.8",
+      "2.9",
+      "2.11"
+    ],
+    "not_rewritten_yet": [
+      "2.1",
+      "2.2",
+      "2.3",
+      "2.4",
+      "2.5",
+      "2.6",
+      "2.7",
+      "2.10 literature synthesis/table"
+    ],
+    "partial_replacement_sections": [
+      "2.10 research-position tail"
+    ]
+  },
+  "revision_sha256": "fa8a8bea9fc612f7ccdc99a466acfbda0d9764b3b0c9313e26f9b65c45c44f06",
+  "scientific_policy": {
+    "exponential_smoothing_used": false,
+    "independent_g3_generalization_claim": false,
+    "monte_carlo_performed": false,
+    "paired_t_test": false,
+    "post_result_tuning": false,
+    "qlstm_superiority_claim": false,
+    "quantum_advantage_claim": false,
+    "statistical_significance_claim": false,
+    "wilcoxon_signed_rank": false
+  },
+  "source_checkpoint": "328af851f9bac58abd85be3e1b976a06125f68a7",
+  "source_proposal": "Proposal Tesis_03092026_konsep_baru.docx",
+  "stage": "TARGETED_BAB_II_FINAL_CONTRACT_REVISION"
+}
