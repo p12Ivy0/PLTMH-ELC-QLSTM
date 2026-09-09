@@ -283,70 +283,152 @@ diuji.
 
 ## 4.8 Sintesis Hasil dan Posisi QLSTM
 
-Hasil penelitian memperlihatkan perbedaan antara kemampuan model dalam
-mengestimasi gain dan dampaknya terhadap respons *closed-loop*. Pada pengujian
-model, MSE terstandar QLSTM sekitar 241.18% lebih
-tinggi daripada LSTM. Pada evaluasi *closed-loop*, rerata RMSE QLSTM hanya
-16.95% lebih tinggi daripada LSTM. Perbedaan tersebut
-menunjukkan bahwa galat estimasi gain dan degradasi pengendalian frekuensi
-bukan besaran yang mempunyai hubungan proporsional langsung.
+Hasil penelitian menunjukkan bahwa kinerja model dalam mengestimasi gain dan
+kinerja sistem setelah gain tersebut diterapkan pada *closed-loop* perlu
+dibedakan secara eksplisit. Pada data uji model, MSE target terstandardisasi
+QLSTM sebesar 2,963549 atau sekitar 241,18% lebih tinggi daripada LSTM yang
+menghasilkan MSE 0,868629. Pada evaluasi *closed-loop* primer, rerata RMSE
+QLSTM–PI sebesar 0,016150 Hz atau 16,95% lebih tinggi daripada LSTM–PI yang
+menghasilkan 0,013810 Hz. Perbedaan besarnya kedua persentase tersebut
+menunjukkan bahwa galat estimasi gain dan perubahan kinerja pengendalian
+frekuensi tidak membentuk hubungan proporsional langsung.
 
-Secara keseluruhan, hasil primer tidak mendukung hipotesis bahwa QLSTM–PI
-memberikan peningkatan kinerja ELC dibandingkan PI gain tetap atau LSTM–PI
-pada dua keluarga dinamik uji independen yang tersedia. PI gain tetap
-menghasilkan rerata RMSE terendah, sedangkan LSTM–PI memberikan manfaat
-hanya pada salah satu dari dua kondisi uji utama.
+Hubungan antara keluaran model dan respons pengendalian dipengaruhi oleh
+penerapan *inverse scaling*, pembatasan gain, pembatasan laju perubahan gain,
+dinamika plant, kondisi operasi, serta sensitivitas sistem terhadap pasangan Kp
+dan Ki yang diaplikasikan. Oleh karena itu, peningkatan galat regresi gain tidak
+ditafsirkan sebagai peningkatan galat frekuensi dengan faktor yang sama.
+Sebaliknya, kualitas model juga tidak dinilai hanya dari MSE regresi tanpa
+memeriksa konsekuensinya setelah diintegrasikan ke sistem *closed-loop*.
 
-Meskipun demikian, hasil ini tetap memberikan informasi penting mengenai
-kelayakan penggunaan QLSTM sebagai penjadwal gain. Sistem QLSTM dapat
-diintegrasikan ke *closed-loop*, menghasilkan gain yang terbatas dalam
-rentang aman penelitian, dan mempertahankan kestabilan simulasi. Hambatan
-utama pada konfigurasi saat ini adalah kemampuan generalisasi gain, aktivitas
-pengendalian yang lebih besar, serta kebutuhan komputasi yang jauh lebih tinggi.
+Pada empat skenario deterministik yang telah ditetapkan sebelum eksperimen,
+LSTM–PI menghasilkan RMSE lebih rendah daripada QLSTM–PI pada empat dari empat
+skenario. Temuan tersebut tetap memerlukan pembatasan ruang lingkup karena
+hanya CL01 dan CL02 yang merupakan keluarga dinamik uji independen untuk klaim
+primer. CL03 merupakan *boundary stress*, sedangkan CL04 merupakan diagnostik
+G3 dalam distribusi pelatihan. Dengan demikian, hasil empat skenario tidak
+diperlakukan sebagai empat replikasi independen untuk inferensi statistik.
 
-Hasil CL04 menunjukkan bahwa LSTM–PI dan QLSTM–PI dapat memperbaiki RMSE pada
-kasus G3 dalam distribusi pelatihan. Akan tetapi, CL04 berasal dari keluarga
-pelatihan sehingga hasil tersebut hanya bersifat diagnostik. Hasil ini tidak
-dapat digunakan sebagai bukti generalisasi independen terhadap regime G3.
+Pada CL03, RMSE PI gain tetap, LSTM–PI, dan QLSTM–PI masing-masing sebesar
+0,059777 Hz, 0,059768 Hz, dan 0,060131 Hz. Perbedaan tersebut sangat kecil dan
+hanya digunakan untuk menggambarkan perilaku pengendali pada kondisi
+*boundary stress*. Hasil CL03 tidak digunakan untuk memperluas klaim kinerja
+primer.
+
+Pada CL04, PI gain tetap menghasilkan RMSE 0,016638 Hz, LSTM–PI
+0,015532 Hz, dan QLSTM–PI 0,015833 Hz. Dibandingkan PI gain tetap, RMSE
+LSTM–PI menurun sekitar 6,65% dan RMSE QLSTM–PI menurun sekitar 4,84%.
+Walaupun kedua penjadwal adaptif memberikan RMSE yang lebih rendah pada kasus
+tersebut, CL04 berasal dari keluarga G3 yang berada dalam distribusi pelatihan.
+Hasil tersebut karena itu hanya berfungsi sebagai diagnostik dan **tidak
+menjadi bukti generalisasi independen terhadap G3**.
+
+Posisi QLSTM dalam penelitian ini dengan demikian bukan sebagai metode yang
+terbukti lebih unggul daripada LSTM atau PI gain tetap. QLSTM menunjukkan bahwa
+arsitektur *hybrid quantum–classical* dapat diintegrasikan sebagai penjadwal
+gain PI, menghasilkan gain yang tetap berada dalam kebijakan keselamatan yang
+dibekukan, dan menyelesaikan seluruh skenario deterministik dalam rentang
+kestabilan diagnostik 45–55 Hz. Namun, pada konfigurasi yang diuji, QLSTM belum
+menghasilkan akurasi estimasi gain maupun RMSE *closed-loop* primer yang lebih
+baik daripada LSTM. QLSTM juga disertai aktivitas *dump-duty* dan beban
+komputasi yang lebih besar pada implementasi simulasi yang digunakan.
+
+Hasil negatif tersebut dipertahankan sebagai bagian dari temuan penelitian.
+Evaluasi ini menunjukkan kondisi dan batas implementasi QLSTM sebagai penjadwal
+gain PI pada ELC PLTMH tanpa mengubah model, skenario, scheduler, ataupun
+simulator setelah hasil pengujian diketahui.
+
 
 ## 4.9 Keterbatasan Hasil
 
-Interpretasi hasil dibatasi oleh beberapa karakteristik rancangan penelitian.
-Pertama, evaluasi primer hanya memiliki dua keluarga dinamik uji independen.
-Jumlah tersebut tidak memadai untuk mendukung uji signifikansi statistik pada
-tingkat keluarga.
+Interpretasi hasil dibatasi oleh rancangan penelitian dan ruang model yang
+digunakan. Keterbatasan pertama berkaitan dengan jumlah unit evaluasi
+independen. Evaluasi primer hanya memiliki dua keluarga dinamik uji independen,
+yaitu D40_L-20 dan D20_L+10. Jumlah tersebut belum memadai untuk mendukung uji
+signifikansi statistik pada tingkat keluarga. Oleh sebab itu, perbandingan
+rerata RMSE pada penelitian ini diperlakukan sebagai hasil deskriptif.
 
-Kedua, ribuan titik RK4 maupun *window* temporal yang berasal dari satu
-keluarga dinamik tidak diperlakukan sebagai observasi independen. Oleh karena
-itu, penelitian ini tidak menggunakan jumlah titik waktu untuk menghasilkan
-nilai p atau klaim signifikansi statistik.
+Keterbatasan kedua berkaitan dengan struktur data temporal. Ribuan titik waktu
+RK4 maupun *window* temporal dari satu keluarga dinamik berasal dari realisasi
+sistem yang sama dan tidak diperlakukan sebagai observasi independen.
+Konsekuensinya, jumlah titik waktu tersebut tidak digunakan untuk memperbesar
+ukuran sampel statistik, menghitung nilai p, atau membuat klaim signifikansi
+yang tidak didukung oleh jumlah keluarga independen.
 
-Ketiga, model plant menggunakan ELC *averaged*, daya mekanik konstan,
-generator sinkron dengan model dinamik yang telah ditetapkan, dan tidak
-mengaktifkan dinamika governor maupun waterway. Kesimpulan penelitian
-berlaku pada ruang model tersebut.
+Keterbatasan ketiga berasal dari ruang model plant. Simulasi menggunakan ELC
+*averaged*, daya mekanik konstan, serta model generator sinkron yang telah
+ditetapkan, tanpa mengaktifkan dinamika governor dan *waterway*. Dengan
+demikian, hasil penelitian berlaku pada konfigurasi model tersebut dan belum
+secara langsung menunjukkan kinerja pada plant fisik dengan seluruh dinamika
+hidraulik, aktuator, pengukuran, dan ketidakpastian lapangan.
 
-Keempat, periode pengamatan 20 Hz dan pembaruan gain 10 Hz merupakan bagian
-dari rancangan eksperimen yang telah dibekukan. Pembaruan pertama setelah
-gangguan menyebabkan penjadwal adaptif tidak dapat memengaruhi RoCoF maksimum
-dan puncak awal pada skenario primer.
+Keterbatasan keempat berkaitan dengan kebijakan temporal pengendali. Observasi
+model dilakukan pada 20 Hz dan pembaruan gain pada 10 Hz, dengan pembaruan
+adaptif pertama pada t = 2,60 s setelah gangguan diterapkan pada t = 2,50 s.
+RoCoF maksimum pada dua skenario primer terjadi pada t = 2,50 s, sedangkan
+simpangan frekuensi absolut maksimum terjadi pada t = 2,60 s. Karena simpangan
+puncak terjadi tidak lebih lambat daripada pembaruan adaptif pertama dan
+nilainya identik untuk ketiga konfigurasi, eksperimen ini tidak menunjukkan
+adanya pengurangan ekstrem awal oleh penjadwal adaptif pada kebijakan waktu
+yang dibekukan. Temuan tersebut tidak digunakan untuk menyimpulkan perilaku
+pada cadence observasi atau pembaruan gain yang berbeda.
 
-Kelima, regime G3 hanya tersedia sebagai keluarga pelatihan pada evaluasi
-akhir. Karena itu, penelitian ini tidak membuat klaim generalisasi independen
-untuk G3.
+Keterbatasan kelima berkaitan dengan cakupan regime target. Regime G3 tidak
+tersedia sebagai keluarga uji independen pada pembagian data akhir. CL04 yang
+menggunakan G3 berasal dari keluarga pelatihan dan hanya digunakan sebagai
+diagnostik dalam distribusi. Oleh karena itu, penelitian ini tidak membuat
+klaim generalisasi independen terhadap G3.
+
+Keterbatasan keenam berkaitan dengan beban komputasi. Pengukuran pada
+implementasi CPU/PennyLane menunjukkan bahwa QLSTM–PI belum memenuhi anggaran
+waktu nominal pembaruan gain 10 Hz pada konfigurasi perangkat lunak yang diuji.
+Pengukuran tersebut mencakup overhead simulasi dan bukan latensi inferensi
+perangkat keras kuantum secara terisolasi. Karena itu, hasil ini tidak dapat
+digunakan sebagai dasar untuk menyatakan *quantum speedup* ataupun
+membandingkan efisiensi intrinsik perangkat keras klasik dan kuantum.
+
+Keterbatasan-keterbatasan tersebut menentukan ruang berlakunya kesimpulan.
+Perluasan hasil di luar ruang tersebut memerlukan evaluasi tambahan yang
+dirancang terlebih dahulu, bukan perubahan *post hoc* terhadap model atau
+protokol yang telah menghasilkan hasil primer penelitian ini.
+
 
 ## 4.10 Ringkasan Bab
 
-Hasil utama menunjukkan bahwa seluruh konfigurasi mampu mempertahankan
-kestabilan frekuensi pada skenario yang diuji, tetapi peningkatan kinerja
-akibat penjadwalan gain tidak konsisten. PI gain tetap menghasilkan rerata
-RMSE terendah pada dua keluarga uji independen. LSTM–PI memperbaiki kinerja
-pada D20_L+10 tetapi menurunkannya pada D40_L-20. QLSTM–PI tidak menghasilkan
-RMSE terendah pada kedua skenario primer serta membutuhkan variasi duty dan
-beban komputasi yang lebih besar.
+Bab ini mengevaluasi LSTM–PI dan QLSTM–PI sebagai penjadwal gain pada ELC PLTMH
+dengan PI gain tetap sebagai pembanding. Pada tahap estimasi gain, LSTM
+menghasilkan galat lebih rendah daripada QLSTM pada data uji yang dibekukan.
+Setelah diintegrasikan ke *closed-loop*, seluruh dua belas run deterministik
+tetap berada dalam rentang kestabilan diagnostik 45–55 Hz, tetapi peningkatan
+kinerja akibat penjadwalan gain tidak konsisten antar-kondisi operasi.
 
-Dengan demikian, kontribusi hasil penelitian bukan berupa pembuktian
-superioritas QLSTM, melainkan evaluasi terkontrol mengenai penggunaan QLSTM
-sebagai penjadwal gain PI pada ELC PLTMH dan identifikasi kondisi ketika
-pendekatan tersebut belum memberikan keuntungan dibandingkan pengendali yang
-lebih sederhana.
+Pada dua keluarga dinamik uji independen, PI gain tetap menghasilkan rerata
+RMSE terendah sebesar 0,012478 Hz. LSTM–PI menghasilkan 0,013810 Hz dan
+QLSTM–PI 0,016150 Hz. LSTM–PI menghasilkan RMSE lebih rendah daripada PI gain
+tetap pada CL02 tetapi lebih tinggi pada CL01, sedangkan QLSTM–PI tidak
+menghasilkan RMSE terendah pada salah satu dari kedua skenario primer.
+Perbandingan tersebut bersifat deskriptif karena unit evaluasi independen
+primer hanya terdiri atas dua keluarga dinamik.
+
+Hasil model dan hasil *closed-loop* juga menunjukkan bahwa galat estimasi gain
+tidak mempunyai hubungan proporsional langsung dengan degradasi respons
+frekuensi. Selain itu, implementasi QLSTM–PI menghasilkan variasi *dump-duty*
+yang lebih besar dan membutuhkan waktu komputasi yang jauh lebih tinggi
+daripada LSTM–PI pada lingkungan simulasi CPU/PennyLane yang digunakan. Hasil
+beban komputasi tersebut merupakan karakteristik implementasi penelitian dan
+bukan bukti mengenai keunggulan atau kelemahan intrinsik perangkat keras
+kuantum.
+
+Bukti primer penelitian ini tidak mendukung superioritas QLSTM–PI terhadap PI
+gain tetap maupun LSTM–PI. Hasil CL03 tetap diposisikan sebagai
+*boundary stress*, sedangkan hasil CL04 hanya merupakan diagnostik G3 dalam
+distribusi pelatihan dan tidak digunakan sebagai bukti generalisasi G3
+independen. Tidak ada klaim signifikansi statistik maupun *quantum advantage*
+yang dibuat dari hasil tersebut.
+
+Dengan demikian, kontribusi hasil penelitian terletak pada evaluasi terkontrol
+terhadap penggunaan QLSTM sebagai penjadwal gain PI pada ELC PLTMH, termasuk
+identifikasi keterbatasan akurasi, kinerja *closed-loop*, aktivitas kendali,
+dan beban komputasi pada konfigurasi yang diuji. Hasil negatif QLSTM
+dipertahankan sebagai temuan ilmiah dan menjadi dasar yang objektif untuk
+perumusan kesimpulan serta rekomendasi penelitian selanjutnya pada Bab V.
