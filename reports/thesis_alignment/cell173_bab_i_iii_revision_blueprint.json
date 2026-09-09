@@ -1,0 +1,104 @@
+{
+  "additional_alignment": {
+    "monte_carlo_50_run": {
+      "final_status": "NOT_PERFORMED",
+      "primary_stage": "NOT_PART_OF_THIS_DETERMINISTIC_PRIMARY_STAGE",
+      "recommended_disposition": "MOVE_TO_FUTURE_WORK"
+    }
+  },
+  "bab_v_gate": {
+    "authorized": false,
+    "unlock_condition": "Bab I–III revisions completed and cross-chapter alignment audit passed."
+  },
+  "blueprint_item_count": 16,
+  "blueprint_pass": true,
+  "cell172_revision_ids": [
+    "A04",
+    "A05",
+    "A06",
+    "A07",
+    "A08",
+    "A09",
+    "A10",
+    "A11",
+    "A12",
+    "A13",
+    "A16",
+    "A20"
+  ],
+  "final_method_contract": {
+    "deterministic_run_count": 12,
+    "features": [
+      "frequency_deviation_hz",
+      "mechanical_power_kw",
+      "electrical_power_kw",
+      "dump_power_kw"
+    ],
+    "independent_g3_generalization": false,
+    "independent_primary_family_count": 2,
+    "monte_carlo": false,
+    "primary_metric": "frequency_deviation_rmse_hz",
+    "qlstm_superiority_supported": false,
+    "scheduler_processing_order": [
+      "raw_window",
+      "feature_standardization",
+      "frozen_model_inference",
+      "inverse_target_scaling",
+      "finite_check",
+      "admissible_gain_clipping",
+      "gain_rate_limiting",
+      "applied_gain"
+    ],
+    "sequence_length": 11,
+    "significance_test": false,
+    "split_strategy": "LEAKAGE_FREE_DYNAMIC_FAMILY_GROUP_SPLIT",
+    "test_families": [
+      "D20_L+10",
+      "D40_L-20"
+    ],
+    "train_families": [
+      "D20_L-10",
+      "D30_L+10",
+      "D30_L+20",
+      "D30_L-10",
+      "D30_L-20",
+      "D40_L+20",
+      "D40_L-10"
+    ],
+    "validation_families": [
+      "D20_L-20",
+      "D40_L+10"
+    ]
+  },
+  "proposal_source": "Proposal Tesis_03092026_konsep_baru.docx",
+  "revision_sequence": [
+    {
+      "phase": 1,
+      "reason": "Research questions, objectives and scope must be neutral and consistent with the actual experiment.",
+      "scope": "Bab I"
+    },
+    {
+      "phase": 2,
+      "reason": "Conceptual framework and evaluation terminology must match the method actually implemented.",
+      "scope": "Bab II"
+    },
+    {
+      "phase": 3,
+      "reason": "Methodology must describe the realized dataset, scheduler, split, scenarios and analysis.",
+      "scope": "Bab III"
+    },
+    {
+      "phase": 4,
+      "reason": "Abstract must be rewritten only after Bab I–III and Bab IV are scientifically aligned.",
+      "scope": "Abstract"
+    },
+    {
+      "phase": 5,
+      "reason": "Verify all revised claims before unlocking Bab V.",
+      "scope": "Bab I–IV cross-audit"
+    }
+  ],
+  "scientific_files_modified": false,
+  "source_checkpoint": "f4544f83612769b5cf914391e3a3b4d6475e0f4c",
+  "stage": "EXACT_BAB_I_III_REVISION_BLUEPRINT"
+}
