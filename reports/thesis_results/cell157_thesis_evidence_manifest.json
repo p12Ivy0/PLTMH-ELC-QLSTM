@@ -1,0 +1,51 @@
+{
+  "computational_result": {
+    "qlstm_10hz_cpu_budget_demonstrated": false,
+    "qlstm_to_lstm_runtime_ratio": 36.32909959086911
+  },
+  "control_effort": {
+    "qlstm_duty_tv_ratio_vs_fixed": 6.404012444456979,
+    "qlstm_duty_tv_ratio_vs_lstm": 5.5674973577030435
+  },
+  "figure_captions": "reports/thesis_results/cell157_figure_captions.csv",
+  "figures": [
+    "reports/thesis_results/figures/fig157_primary_rmse_comparison.png",
+    "reports/thesis_results/figures/fig157_cl01_frequency_response.png",
+    "reports/thesis_results/figures/fig157_cl02_frequency_response.png",
+    "reports/thesis_results/figures/fig157_cl01_applied_gain_trajectories.png",
+    "reports/thesis_results/figures/fig157_cl02_applied_gain_trajectories.png",
+    "reports/thesis_results/figures/fig157_cl01_dump_duty_response.png",
+    "reports/thesis_results/figures/fig157_cl02_dump_duty_response.png",
+    "reports/thesis_results/figures/fig157_computational_runtime_comparison.png"
+  ],
+  "model_inference_performed": false,
+  "model_training_performed": false,
+  "new_experiment_performed": false,
+  "next_stage": "THESIS_CHAPTER_IV_RESULTS_AND_DISCUSSION",
+  "primary_result": {
+    "fixed_pi_mean_rmse_hz": 0.0124783961165236,
+    "lstm_pi_mean_rmse_hz": 0.0138099472524795,
+    "lstm_rmse_increase_vs_fixed_pct": 10.670851634471603,
+    "qlstm_pi_mean_rmse_hz": 0.0161501286965811,
+    "qlstm_rmse_increase_vs_fixed_pct": 29.424715690788805,
+    "qlstm_rmse_increase_vs_lstm_pct": 16.945621886292393,
+    "qlstm_superiority_supported": false
+  },
+  "scientific_policy": {
+    "independent_g3_claim": false,
+    "negative_primary_result_retained": true,
+    "post_result_retuning": false,
+    "primary_result_replacement": false,
+    "statistical_significance_claim": false
+  },
+  "simulation_rerun": false,
+  "source_interpretation_checkpoint": "3b678d8e8aaba50160ce6705d25006f34555b30b",
+  "stage": "THESIS_RESULTS_EVIDENCE_PACKAGE",
+  "statistical_significance_test_performed": false,
+  "summary": "reports/thesis_results/cell157_thesis_results_summary.md",
+  "tables": [
+    "reports/thesis_results/tables/table157_primary_heldout_controller_comparison.csv",
+    "reports/thesis_results/tables/table157_primary_descriptive_summary.csv",
+    "reports/thesis_results/tables/table157_computational_burden.csv"
+  ]
+}

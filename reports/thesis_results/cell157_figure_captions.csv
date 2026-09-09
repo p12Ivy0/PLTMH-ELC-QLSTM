@@ -1,0 +1,9 @@
+figure_file,suggested_caption
+fig157_primary_rmse_comparison.png,"Perbandingan RMSE deviasi frekuensi Fixed PI, LSTM–PI, dan QLSTM–PI pada dua keluarga dinamik uji independen."
+fig157_cl01_frequency_response.png,"Respons deviasi frekuensi pada CL01 (D40_L-20). Garis putus-putus menunjukkan waktu pembaruan gain adaptif pertama, 0,10 s setelah gangguan."
+fig157_cl02_frequency_response.png,Respons deviasi frekuensi pada CL02 (D20_L+10). LSTM–PI menghasilkan RMSE terendah pada skenario ini.
+fig157_cl01_applied_gain_trajectories.png,Trajektori Kp dan Ki yang diaplikasikan pada CL01 setelah melalui kebijakan pembatasan gain yang sama.
+fig157_cl02_applied_gain_trajectories.png,Trajektori Kp dan Ki yang diaplikasikan pada CL02; keluaran QLSTM mendekati batas atas gain pada sebagian interval.
+fig157_cl01_dump_duty_response.png,Respons duty dump load pada CL01 untuk ketiga konfigurasi pengendali.
+fig157_cl02_dump_duty_response.png,Respons duty dump load pada CL02 untuk ketiga konfigurasi pengendali.
+fig157_computational_runtime_comparison.png,Perbandingan rerata waktu komputasi simulasi closed-loop pada implementasi CPU yang digunakan.
