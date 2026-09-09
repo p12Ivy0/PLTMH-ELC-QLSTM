@@ -1,0 +1,123 @@
+{
+  "computational_context": {
+    "qlstm_10hz_cpu_budget_demonstrated": false,
+    "qlstm_duty_tv_ratio_vs_fixed": 6.404012444456979,
+    "qlstm_duty_tv_ratio_vs_lstm": 5.5674973577030435,
+    "qlstm_to_lstm_runtime_ratio": 36.32909959086911,
+    "quantum_speedup_claim": false
+  },
+  "critical_input_sha256": {
+    "data/closed_loop/cell155_closed_loop_metrics.csv": "a9386b074dd5f5476b08439de2708826053d2c8db475233ea91f00bccd60c526",
+    "data/closed_loop/cell155_primary_family_summary.csv": "e167773ea800de79b599196d79b94426121801ae9e68761bd2b3b16334dca1d5",
+    "data/closed_loop/cell156_computational_burden_audit.csv": "81ba7ff0adafc7d4309dd193c9136f3d3d28c0ee5a795937669e86dee8c944ed",
+    "data/closed_loop/cell156_model_control_link_audit.csv": "5ae2a03ebf83ea6785af9def0fa84c90374c83cf8157934c1b4444305e1c68b0",
+    "data/closed_loop/cell156_peak_rocof_timing_audit.csv": "e9299857922ea629a1fd3d35c2b9ec0aba1eb8103a892eb8430c55f3cfccbe70",
+    "data/closed_loop/cell156_primary_family_effect_audit.csv": "5a78a87578a5d4fb166ae9c5b53ba7085db1874b73a8e787b03655d0ce3182f6",
+    "data/closed_loop/cell156_scheduler_control_effort_audit.csv": "cfd2747e7a58e3c2065521c276536ad4000be9db34bd7748097626d93c6fc75e",
+    "data/closed_loop/cell156_scientific_claim_freeze.csv": "4b9b0c612998ba9b944c21f4feb64ef7bec0a9807d0b2a73bcdf7bda62170581",
+    "data/recovery/cell156_closed_loop_interpretation_freeze.json": "650a3ad9c9ba0bf32b3f7cce3b6bf254202406860f3850fe270f4d50e2dbf41d",
+    "models/qlstm/cell149_frozen_model_test_comparison.csv": "a0e2ae1f662e00821d795d4180bcd8312d8e8f568f1855a550fbae4edb16a45f",
+    "reports/thesis_results/cell157_figure_captions.csv": "437c90d844f80d0b7cca0f0131aed2f1a025ae53471232b5e4836d76ce5f5c35",
+    "reports/thesis_results/cell157_thesis_evidence_manifest.json": "424d99e5ad57aa409f349ba598ff0785f8e543860d001b097358d5835883a0df",
+    "reports/thesis_results/cell157_thesis_results_summary.md": "4f99b38505a78c42a11fbba90406e25491fdf3f6cb3ba5f00902428cf5b12993",
+    "reports/thesis_results/chapter_iv/Bab_IV_Hasil_dan_Pembahasan_draft.md": "edd37a5221893a126ba71b313d1bf0c483897ba242f5d4c14278ee7bb2dadc3b",
+    "reports/thesis_results/chapter_iv/cell158_bab_iv_evidence_map.csv": "85d160ac642c6a2f23cb8e1bc2d4de424d99b07d317f143df899f461fcfa4026",
+    "reports/thesis_results/chapter_iv/cell159_review_sections_4_1_to_4_3.md": "5b8c64747885d5c00bd1f0647ff9741b14042ed039547ae5bdffc85abbcb4511"
+  },
+  "frozen_final_analysis_artifact_sha256": {
+    "data/closed_loop/cell156_computational_burden_audit.csv": "81ba7ff0adafc7d4309dd193c9136f3d3d28c0ee5a795937669e86dee8c944ed",
+    "data/closed_loop/cell156_model_control_link_audit.csv": "5ae2a03ebf83ea6785af9def0fa84c90374c83cf8157934c1b4444305e1c68b0",
+    "data/closed_loop/cell156_peak_rocof_timing_audit.csv": "e9299857922ea629a1fd3d35c2b9ec0aba1eb8103a892eb8430c55f3cfccbe70",
+    "data/closed_loop/cell156_primary_family_effect_audit.csv": "5a78a87578a5d4fb166ae9c5b53ba7085db1874b73a8e787b03655d0ce3182f6",
+    "data/closed_loop/cell156_scheduler_control_effort_audit.csv": "cfd2747e7a58e3c2065521c276536ad4000be9db34bd7748097626d93c6fc75e",
+    "data/closed_loop/cell156_scientific_claim_freeze.csv": "4b9b0c612998ba9b944c21f4feb64ef7bec0a9807d0b2a73bcdf7bda62170581",
+    "data/recovery/cell156_closed_loop_interpretation_freeze.json": "650a3ad9c9ba0bf32b3f7cce3b6bf254202406860f3850fe270f4d50e2dbf41d",
+    "data/recovery/cell156_closed_loop_resume_notes.txt": "e826208042df6a063171cdd5ab2b2363866692df71a66c8dc6ff18d616e8c08e",
+    "reports/thesis_results/cell157_figure_captions.csv": "437c90d844f80d0b7cca0f0131aed2f1a025ae53471232b5e4836d76ce5f5c35",
+    "reports/thesis_results/cell157_thesis_evidence_manifest.json": "424d99e5ad57aa409f349ba598ff0785f8e543860d001b097358d5835883a0df",
+    "reports/thesis_results/cell157_thesis_results_summary.md": "4f99b38505a78c42a11fbba90406e25491fdf3f6cb3ba5f00902428cf5b12993",
+    "reports/thesis_results/chapter_iv/Bab_IV_Hasil_dan_Pembahasan_draft.md": "edd37a5221893a126ba71b313d1bf0c483897ba242f5d4c14278ee7bb2dadc3b",
+    "reports/thesis_results/chapter_iv/cell158_bab_iv_evidence_map.csv": "85d160ac642c6a2f23cb8e1bc2d4de424d99b07d317f143df899f461fcfa4026",
+    "reports/thesis_results/chapter_iv/cell159_review_sections_4_1_to_4_3.md": "5b8c64747885d5c00bd1f0647ff9741b14042ed039547ae5bdffc85abbcb4511",
+    "reports/thesis_results/figures/fig157_cl01_applied_gain_trajectories.png": "7ec96f353ce6684dd798dfb81e332c88a2d3b7105b742a04d60f5881afefbd12",
+    "reports/thesis_results/figures/fig157_cl01_dump_duty_response.png": "52b6ce377c621be4f5ce2f408dfa5c3e451608797af34bccf0c4f1b1708a77e1",
+    "reports/thesis_results/figures/fig157_cl01_frequency_response.png": "b411f95fcae6eaa85e37d56895fb77a85ba584ff80dee3c18555e32fdc669215",
+    "reports/thesis_results/figures/fig157_cl02_applied_gain_trajectories.png": "7fb5e878e00f8b27006187e1c79a6923a13eb88a11b5ffa5753158a3b7cae8f8",
+    "reports/thesis_results/figures/fig157_cl02_dump_duty_response.png": "a1a8e741092112e7c253d10b41def2f754a2fd9addcb60bf98128599e52f94f7",
+    "reports/thesis_results/figures/fig157_cl02_frequency_response.png": "d1377e5144b425c5c9612441457e693880fc8f86b75656f1c0a99fb64259cd70",
+    "reports/thesis_results/figures/fig157_computational_runtime_comparison.png": "8e1840e1d8f65dab493d4e8d8584eb613f635c08726ef5872a4db3e99d127c6f",
+    "reports/thesis_results/figures/fig157_primary_rmse_comparison.png": "4b762acea8e1816ae8a5dc94a37886f07189610c282f1c4f5d285b6c7cf6218f",
+    "reports/thesis_results/tables/table157_computational_burden.csv": "87c9c458ee9e8ee858bae076c82aee3c81f6cfc3f9ba9d910412cf277b7ff339",
+    "reports/thesis_results/tables/table157_primary_descriptive_summary.csv": "953166f449359c9603b6261e31ce456ac9498ab4123519bf5e7d67baf0947d9d",
+    "reports/thesis_results/tables/table157_primary_heldout_controller_comparison.csv": "81f2ff11310aa11c035a23feea5eb86ec6d1d4d1aa6516de85c39aa28439e832"
+  },
+  "migration_execution": {
+    "lstm_inference": false,
+    "model_training": false,
+    "primary_result_replaced": false,
+    "qlstm_inference": false,
+    "scientific_result_modified": false,
+    "simulation_rerun": false,
+    "src_modified": false
+  },
+  "next_stage": "NOTEBOOK_05_10_CROSS_NOTEBOOK_INTEGRITY_AUDIT",
+  "notebook_sha256": "a0b5ccd9ff4fa850b1fdf1e05007d69ea0cd59a7395745ca904cbc2f1ba9a12a",
+  "notebook_suite": {
+    "all_nonplaceholder": true,
+    "notebooks": [
+      "05_generate_dataset.ipynb",
+      "06_preprocessing.ipynb",
+      "07_train_lstm.ipynb",
+      "08_train_qlstm.ipynb",
+      "09_closed_loop.ipynb",
+      "10_final_analysis.ipynb"
+    ],
+    "target_count": 6
+  },
+  "runtime_source_snapshot": {
+    "authoritative_cells": [
+      "156",
+      "157",
+      "158",
+      "159-FIX"
+    ],
+    "cell159_superseded": true,
+    "cells": [
+      "156",
+      "157",
+      "158",
+      "159",
+      "159-FIX"
+    ],
+    "exact_source_recovered": true,
+    "path": "data/recovery/cell167_final_analysis_runtime_source_snapshot.json",
+    "sha256": "259774a1296d9723fbb451e3b2e9d68ef7f8c106ce7c248b2f5ed370ad58f043"
+  },
+  "scientific_conclusion": {
+    "fixed_pi_mean_primary_rmse_hz": 0.012478396116523651,
+    "independent_g3_claim": false,
+    "independent_primary_families": 2,
+    "lstm_increase_vs_fixed_pct": 10.670851634471155,
+    "lstm_pi_mean_primary_rmse_hz": 0.0138099472524795,
+    "negative_result_retained": true,
+    "qlstm_increase_vs_fixed_pct": 29.424715690787867,
+    "qlstm_increase_vs_lstm_pct": 16.945621886292017,
+    "qlstm_pi_mean_primary_rmse_hz": 0.01615012869658105,
+    "qlstm_superiority_supported": false,
+    "statistical_significance_claim": false
+  },
+  "source_checkpoint": "2dc597f785fce3ecc0ddffa5c3fd3f19ee0c56dc",
+  "stage": "BUILD_10_FINAL_ANALYSIS_NOTEBOOK",
+  "target_notebook": "notebooks/10_final_analysis.ipynb",
+  "thesis_package": {
+    "bab_iv_4_1_to_4_3_reviewed": true,
+    "bab_iv_sections_4_1_to_4_10": true,
+    "figures": 8,
+    "package_files_valid": true,
+    "tables": 3
+  },
+  "upstream_notebook": {
+    "path": "notebooks/09_closed_loop.ipynb",
+    "sha256": "1a882fd7698990826f571b44bc053e0e86d9125116c6c316a1ae2695824382ff"
+  }
+}
