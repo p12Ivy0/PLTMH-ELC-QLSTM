@@ -1,0 +1,75 @@
+{
+  "candidate": {
+    "actual_superscript_star_count": 8,
+    "bab_ii_to_end_xml_unchanged": true,
+    "corrected_text_exact": true,
+    "expected_starred_gain_count": 8,
+    "front_matter_unchanged": true,
+    "healthy_docx": true,
+    "legacy_drawings_remaining": 0,
+    "legacy_tables_remaining": 0,
+    "path": "reports/thesis_integration/cell190_bab_i_candidate/Proposal_Tesis_BAB_I_CANDIDATE.docx",
+    "sha256": "d057c382d3bc3c9539de26bffcef140f5383b9cd2b27abd630012bb7bc28bc19",
+    "starred_gain_structure_valid": true
+  },
+  "execution": {
+    "bab_ii_to_v_modified": false,
+    "cell189_baseline_modified": false,
+    "inference": false,
+    "monte_carlo": false,
+    "notebooks_modified": false,
+    "post_result_tuning": false,
+    "significance_testing": false,
+    "simulation": false,
+    "source_docx_modified": false,
+    "src_modified": false,
+    "training": false
+  },
+  "frozen_bab_i": {
+    "path": "reports/thesis_alignment/cell176_bab_i_full_revised_candidate.md",
+    "sections": [
+      "1.1",
+      "1.2",
+      "1.3",
+      "1.4",
+      "1.5",
+      "1.6"
+    ],
+    "sha256": "f3177316be40a527466f1270d7f0f3acfd2694f14d39d30b1fa824abf0faff98"
+  },
+  "gates": {
+    "bab_i_structural_integration_pass": true,
+    "bab_ii_integration_authorized": false,
+    "human_visual_qa_pending": true,
+    "visual_render_ready": true
+  },
+  "original_cell190_failure": {
+    "all_old_mismatches_star_loss_only": true,
+    "cause": "Markdown italic stripping was applied after math normalization and consumed the '*' in Kp* / Ki* pairs.",
+    "docx_generation_error": false,
+    "old_mismatch_count": 4,
+    "scientific_content_error": false,
+    "type": "EXPECTED_TEXT_NORMALIZATION_FALSE_NEGATIVE"
+  },
+  "parent_checkpoint": "0e434343b297ddb2d003b154802b1c635072f462",
+  "protected_baselines": {
+    "cell189_baseline_unchanged": true,
+    "source_docx_unchanged": true
+  },
+  "render": {
+    "bab_i_end_page": 16,
+    "bab_i_start_page": 9,
+    "bab_ii_start_page": 17,
+    "contact_sheet_runtime_path": "/content/PLTMH-ELC-QLSTM/data/runtime/cell190_bab_i_visual/cell190_bab_i_contact_sheet.png",
+    "human_visual_qa": "PENDING_CELL191",
+    "machine_render_sanity": true,
+    "pdf_pages": 43,
+    "qa_end_page": 17,
+    "qa_start_page": 8
+  },
+  "scientific_restraint": {
+    "prohibited_positive_claims": [],
+    "valid": true
+  },
+  "stage": "BAB_I_DOCX_INTEGRATION_CANDIDATE"
+}
