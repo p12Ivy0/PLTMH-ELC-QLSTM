@@ -1,0 +1,24 @@
+category,check,passed,evidence
+structure,sections_4_1_to_4_10_ordered,True,"[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]"
+structure,section_titles_consistent,True,"[('1', 'Kerangka Evaluasi Hasil'), ('2', 'Kinerja Model dalam Mengestimasi Gain PI'), ('3', 'Hasil Utama Closed-Loop pada Keluarga Uji Independen'), ('4', 'Respons Closed-Loop pada CL01 (D40_L-20)'), ('5', 'Respons Closed-Loop pada CL02 (D20_L+10)'), ('6', 'Pengaruh Penjadwalan Gain terhadap Respons Dinamik'), ('7', 'Beban Komputasi'), ('8', 'Sintesis Hasil dan Posisi QLSTM'), ('9', 'Keterbatasan Hasil'), ('10', 'Ringkasan Bab')]"
+structure,section_headings_unique,True,10
+cross_reference,table_numbering_4_1_to_4_2,True,"[1, 2]"
+cross_reference,table_references_present,True,"(2, 3)"
+cross_reference,figure_numbering_4_1_to_4_8,True,"[1, 2, 3, 4, 5, 6, 7, 8]"
+cross_reference,figure_number_to_file_mapping,True,"{1: 'fig157_primary_rmse_comparison.png', 2: 'fig157_cl01_frequency_response.png', 3: 'fig157_cl01_applied_gain_trajectories.png', 4: 'fig157_cl01_dump_duty_response.png', 5: 'fig157_cl02_frequency_response.png', 6: 'fig157_cl02_applied_gain_trajectories.png', 7: 'fig157_cl02_dump_duty_response.png', 8: 'fig157_computational_runtime_comparison.png'}"
+cross_reference,eight_figure_files_exist,True,"['fig157_primary_rmse_comparison.png', 'fig157_cl01_frequency_response.png', 'fig157_cl01_applied_gain_trajectories.png', 'fig157_cl01_dump_duty_response.png', 'fig157_cl02_frequency_response.png', 'fig157_cl02_applied_gain_trajectories.png', 'fig157_cl02_dump_duty_response.png', 'fig157_computational_runtime_comparison.png']"
+cross_reference,figure_manifest_consistent,True,"{'fig157_cl01_frequency_response.png', 'fig157_computational_runtime_comparison.png', 'fig157_cl02_applied_gain_trajectories.png', 'fig157_cl01_applied_gain_trajectories.png', 'fig157_cl02_dump_duty_response.png', 'fig157_cl02_frequency_response.png', 'fig157_primary_rmse_comparison.png', 'fig157_cl01_dump_duty_response.png'}"
+scientific_evidence,model_level_numbers_match_frozen_evidence,True,LSTM MSE 0.86862868; QLSTM MSE 2.963549411758347
+scientific_evidence,primary_closed_loop_numbers_and_scope,True,"(0.012478396116523651, 0.0138099472524795, 0.01615012869658105)"
+scientific_evidence,cl01_detail_consistency,True,Fixed 0.016638; LSTM 0.020160; QLSTM 0.023913
+scientific_evidence,cl02_detail_consistency,True,Fixed 0.008319; LSTM 0.007460; QLSTM 0.008388
+scientific_scope,cl03_cl04_roles_and_scope,True,CL03=boundary stress; CL04=G3 in-distribution diagnostic
+scientific_scope,peak_rocof_timing_consistency,True,RoCoF 2.50 s; peak 2.60 s; first adaptive update 2.60 s; historical wording occurs only inside an explicitly rejected formulation
+scientific_evidence,computational_burden_consistency,True,Fixed=0.675s; LSTM=0.897s; QLSTM=32.570s; ratio=36.33x
+scientific_evidence,control_effort_consistency,True,QLSTM duty-TV/Fixed=6.404; QLSTM duty-TV/LSTM=5.567
+editorial,terminology_consistency,True,"{'missing': [], 'inconsistent': []}"
+scientific_scope,no_unsupported_scientific_claims,True,[]
+scientific_scope,cell156_claim_freeze_preserved,True,"{'CL156-C01': 'SUPPORTED_DESCRIPTIVE', 'CL156-C02': 'SUPPORTED_DESCRIPTIVE', 'CL156-C03': 'NOT_SUPPORTED', 'CL156-C04': 'NOT_SUPPORTED', 'CL156-C05': 'SUPPORTED_WITH_SCOPE_LIMIT', 'CL156-C06': 'SUPPORTED', 'CL156-C07': 'SUPPORTED', 'CL156-C08': 'SUPPORTED', 'CL156-C09': 'SUPPORTED_DESCRIPTIVE', 'CL156-C10': 'SUPPORTED_WITH_CAVEAT', 'CL156-C11': 'SUPPORTED_WITH_CAVEAT', 'CL156-C12': 'SUPPORTED_WITH_SCOPE_LIMIT', 'CL156-C13': 'NOT_TESTED', 'CL156-C14': 'PROHIBITED', 'CL156-C15': 'PROHIBITED'}"
+review_provenance,all_section_review_records_pass,True,4.1–4.3=PASS; 4.4–4.7=PASS; 4.8–4.10=PASS; plain and bold Markdown PASS accepted
+evidence_package,cell157_thesis_manifest_consistent,True,3 source tables / 8 figures
+editorial,duplicate_long_paragraph_diagnostic,True,0 exact duplicates; informational only

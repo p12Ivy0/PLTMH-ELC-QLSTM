@@ -1,0 +1,72 @@
+{
+  "audit_check_count": 23,
+  "audit_fix": {
+    "bab_iv_modified": false,
+    "original_cell171_status": "FALSE_NEGATIVE_AUDIT_ONLY",
+    "review_status_fix": "PASS and **PASS** accepted below Markdown Status heading.",
+    "scientific_content_modified": false,
+    "timing_fix": "Historical wording accepted only inside explicit rejected/comparative context."
+  },
+  "audit_pass": true,
+  "chapter_structure": {
+    "section_headings_unique": true,
+    "section_titles_consistent": true,
+    "sections_4_1_to_4_10": true
+  },
+  "cross_reference": {
+    "all_figure_files_exist": true,
+    "caption_source_valid": true,
+    "figure_manifest_valid": true,
+    "figure_mapping_valid": true,
+    "figure_numbering_valid": true,
+    "table_numbering_valid": true,
+    "table_references_valid": true
+  },
+  "draft": {
+    "modified_by_cell171_fix": false,
+    "path": "reports/thesis_results/chapter_iv/Bab_IV_Hasil_dan_Pembahasan_draft.md",
+    "sha256": "366c9f0ee5ec73e290876beef6e9dc6f5fd47bb4341f29902123c5efe63238e1"
+  },
+  "editorial": {
+    "exact_duplicate_long_paragraphs": 0,
+    "terminology_consistent": true,
+    "unsupported_claims_absent": true
+  },
+  "execution": {
+    "bab_iv_rewrite": false,
+    "model_inference": false,
+    "model_training": false,
+    "pennylane": false,
+    "scientific_result_recalculation": false,
+    "simulation": false
+  },
+  "failed_check_count": 0,
+  "review_chain": {
+    "complete": true,
+    "sections_4_1_to_4_3": true,
+    "sections_4_4_to_4_7": true,
+    "sections_4_8_to_4_10": true
+  },
+  "scientific_evidence": {
+    "cl01": true,
+    "cl02": true,
+    "computational": true,
+    "control_effort": true,
+    "model_level": true,
+    "primary_closed_loop": true,
+    "secondary_scope": true,
+    "timing": true
+  },
+  "scientific_policy": {
+    "cell156_claim_freeze_preserved": true,
+    "independent_g3_generalization_claim": false,
+    "negative_qlstm_result_retained": true,
+    "post_result_tuning": false,
+    "qlstm_superiority_claim": false,
+    "quantum_advantage_claim": false,
+    "statistical_significance_claim": false
+  },
+  "source_checkpoint": "816ea1177b6d74571f4dc8996441469faf1b8b2a",
+  "stage": "FULL_BAB_IV_4_1_TO_4_10_CONSISTENCY_AUDIT",
+  "thesis_evidence_manifest_valid": true
+}
