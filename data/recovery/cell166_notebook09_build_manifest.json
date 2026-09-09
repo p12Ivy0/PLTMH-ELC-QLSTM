@@ -1,0 +1,112 @@
+{
+  "experiment": {
+    "adaptive_update_records": 592,
+    "all_runs_structurally_valid": true,
+    "controller_count": 3,
+    "primary_independent_family_count": 2,
+    "primary_run_count": 6,
+    "run_count": 12,
+    "scenario_count": 4,
+    "trajectory_rows": 48012
+  },
+  "frozen_artifact_sha256": {
+    "data/closed_loop/cell151_frozen_scheduler_policy.json": "c5071537ab73105f5481c871b921e5f0386699c43c898a54d8837069cea80fd5",
+    "data/closed_loop/cell151_scheduler_smoke_audit.csv": "838d86902b52f917825bd3deeb7352dd9c140fc5639bd9edaa2b619a0e6956ef",
+    "data/closed_loop/cell152_metric_definitions.csv": "e29f4025b5caec2e68779dededb7baa2da3e1015867c45cd5b5f254ae409013c",
+    "data/closed_loop/cell152_pre_simulation_policy.json": "9ab3b1e070e2c7e7ad056f68e85aa0620364a5eb5ed12c285ddd883ec18281d4",
+    "data/closed_loop/cell152_predefined_run_matrix.csv": "b3386a78be61793efe7591d7959472f39167159b50a35d4c0352b986735375b0",
+    "data/closed_loop/cell152_predefined_scenario_matrix.csv": "5f0a31549e81fae9474cfc81221c455c5cd75e73d1aeadd605cb7439980ec527",
+    "data/closed_loop/cell153_fixed_pi_structural_smoke.csv": "f966f60aa9a694813d53511a035dd6e988b0a2f4e7199a16d0d6b76e464e7e88",
+    "data/closed_loop/cell153_physical_scenario_resolution.csv": "fbce994a8c4d3d946af0ea6ac08e111f6ea9920fbaf15f6e99049b8f20dc8f3a",
+    "data/closed_loop/cell153_pi_output_bias_contract.csv": "4ac3a83b1cac7ab3cc546afd724866c52f2bd6328cdee07ad3ef06e07003ff1b",
+    "data/closed_loop/cell153_simulator_readiness.json": "1f75fe58c40d8f371d194ed9bd71cf91cff835ffd332272106ac586a456d5e03",
+    "data/closed_loop/cell154_adaptive_simulator_contract.json": "2a21ccb8a0a03f98c9498e6b9507633a4314e53b893a7bd49744fcb63e8695a1",
+    "data/closed_loop/cell154_constant_gain_equivalence.csv": "008aef289cc95132799b093eaea75354c6bb568878e0f87c96bda9ec42f5f3d1",
+    "data/closed_loop/cell154_scripted_gain_update_smoke.csv": "da5fc146dfd974dd967db33f836daeae2c453c639b27019cc5ffb88fb245b72d",
+    "data/closed_loop/cell155_all_adaptive_gain_updates.csv.gz": "058ac58f1168dd85ae687ee40ace3e30de55863155716d46121fd1a84c042b84",
+    "data/closed_loop/cell155_all_closed_loop_trajectories.csv.gz": "0a5a53a21f486c9020bcfbf7c236f739725e738af0181190f7e47c77336dba6b",
+    "data/closed_loop/cell155_closed_loop_metrics.csv": "a9386b074dd5f5476b08439de2708826053d2c8db475233ea91f00bccd60c526",
+    "data/closed_loop/cell155_comparative_experiment_metadata.json": "d5f155ba799aae3ac87f429d6a74947bda267f00d6dc638363af1d348ed31748",
+    "data/closed_loop/cell155_primary_family_summary.csv": "e167773ea800de79b599196d79b94426121801ae9e68761bd2b3b16334dca1d5",
+    "data/closed_loop/cell155_primary_family_winners.csv": "ad445a99769728349d3911892d423469d7556df5e2f701b8e9ef5a375d31e837",
+    "data/closed_loop/cell155_scheduler_diagnostics.csv": "bb9198612a5750fbd64d2dd9364907b960e407e4ad664336660a7b20f5b0aa99"
+  },
+  "migration_execution": {
+    "lstm_inference_run_by_cell166": false,
+    "model_retraining_by_cell166": false,
+    "pennylane_execution_by_cell166": false,
+    "qlstm_inference_run_by_cell166": false,
+    "scientific_result_modified": false,
+    "simulation_run_by_cell166": false,
+    "src_modified": false
+  },
+  "next_notebook": "10_final_analysis.ipynb",
+  "notebook_sha256": "1a882fd7698990826f571b44bc053e0e86d9125116c6c316a1ae2695824382ff",
+  "primary_descriptive_result": {
+    "cl01_winner": "FIXED_PI",
+    "cl02_winner": "LSTM_PI",
+    "fixed_pi_mean_rmse_hz": 0.0124783961165236,
+    "lstm_pi_mean_rmse_hz": 0.0138099472524795,
+    "mean_rmse_ranking": [
+      "FIXED_PI",
+      "LSTM_PI",
+      "QLSTM_PI"
+    ],
+    "qlstm_pi_mean_rmse_hz": 0.0161501286965811
+  },
+  "runtime_source_snapshot": {
+    "cells": [
+      "151",
+      "152",
+      "153",
+      "154",
+      "155"
+    ],
+    "exact_source_recovered": true,
+    "path": "data/recovery/cell166_closed_loop_runtime_source_snapshot.json",
+    "sha256": "1c4e85e00ef351ee5c52fb930efe805ba35512a5ae3c9c80138ac53aa0e2947f"
+  },
+  "scheduler_contract": {
+    "between_updates": "ZERO_ORDER_HOLD",
+    "first_adaptive_update_s": 2.6,
+    "fixed_pi": [
+      2.16,
+      5.72
+    ],
+    "gain_update_rate_hz": 10.0,
+    "ki_bounds": [
+      3.0368,
+      14.144
+    ],
+    "kp_bounds": [
+      2.16,
+      3.36
+    ],
+    "observation_rate_hz": 20.0,
+    "same_guard_lstm_qlstm": true,
+    "window_points": 11
+  },
+  "scientific_policy": {
+    "experiment_rerun_required_for_migration": false,
+    "g3_independent_generalization_allowed": false,
+    "post_result_tuning_allowed": false,
+    "qlstm_closed_loop_superiority_supported": false,
+    "statistical_significance_claim_allowed": false,
+    "window_level_significance_allowed": false
+  },
+  "simulator_contract": {
+    "bumpless_transfer_correction": false,
+    "constant_gain_equivalence_error": 0.0,
+    "dt_s": 0.0025,
+    "integral_reset_on_gain_change": false,
+    "method": "FIXED_STEP_RK4",
+    "pi_integral_continuous": true
+  },
+  "source_checkpoint": "563d98640c4b33966959bddabd507c702deec9fd",
+  "stage": "BUILD_09_CLOSED_LOOP_NOTEBOOK",
+  "target_notebook": "notebooks/09_closed_loop.ipynb",
+  "upstream_notebook": {
+    "path": "notebooks/08_train_qlstm.ipynb",
+    "sha256": "2ca47ac12e4500683fac989c1fe0d857a0353d6b2de6117573ac15b04b1d0492"
+  }
+}
