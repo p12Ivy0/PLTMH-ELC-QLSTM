@@ -1,0 +1,25 @@
+{
+  "authoritative_bab_v": {
+    "path": "reports/thesis_results/chapter_v/Bab_V_Kesimpulan_dan_Saran_draft.md",
+    "sha256": "f7751c5e8ab4367daa16021df611a4ba62d88c70286679535d8259de85b40929"
+  },
+  "authoritative_chapter_hashes": {
+    "bab_i": "f3177316be40a527466f1270d7f0f3acfd2694f14d39d30b1fa824abf0faff98",
+    "bab_ii_cell178": "fa8a8bea9fc612f7ccdc99a466acfbda0d9764b3b0c9313e26f9b65c45c44f06",
+    "bab_ii_cell180": "5c9474252d802711ebe12b53b64012838f7cdd86768b34e7b9a5754cbcb31296",
+    "bab_iii": "d8e70a621f5b0e1aa047a65945ae035345be49d002082f861f8083dfa3fbe373",
+    "bab_iv": "366c9f0ee5ec73e290876beef6e9dc6f5fd47bb4341f29902123c5efe63238e1",
+    "bab_v": "f7751c5e8ab4367daa16021df611a4ba62d88c70286679535d8259de85b40929"
+  },
+  "chapter_alignment_gates": {
+    "bab_i": true,
+    "bab_ii": true,
+    "bab_iii": true,
+    "bab_v": true
+  },
+  "cross_chapter_alignment": true,
+  "integration_authorized": true,
+  "proposal_docx_modified": false,
+  "scientific_text_bab_i_to_v_aligned": true,
+  "stage": "BAB_V_AUTHORITATIVE_TEXT_FREEZE"
+}
