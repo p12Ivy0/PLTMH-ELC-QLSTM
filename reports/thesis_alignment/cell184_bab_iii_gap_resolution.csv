@@ -1,0 +1,10 @@
+gap_id,resolved,resolution
+B3-183-01,True,"Section 3.1 now defines dynamic family as the primary independent unit, RMSE frequency deviation as primary metric, and descriptive rather than inferential analysis."
+B3-183-02,True,Safe/stable wording replaced by frozen admissible-envelope scope without universal stability guarantee.
+B3-183-03,True,Prospective software alternatives replaced by realized Python/PyTorch/PennyLane CPU workflow.
+B3-183-04,True,Plant scope aligned to averaged ELC and constant mechanical power without governor/waterway dynamics in the primary model.
+B3-183-05,True,Section 3.6 retains only executed deterministic coarse-to-fine label search and removes unsupported tie-break/grid-sensitivity claims.
+B3-183-06,True,Model regression output is separated from downstream scheduler safety processing.
+B3-183-07,True,Obsolete multi-seed wording replaced by frozen single seed 20260909.
+B3-183-08,True,Research success no longer depends on QLSTM superiority or statistical significance.
+B3-183-09,True,"Research flow now uses family-level 7/2/2 split, descriptive deterministic evaluation, and explicit G3 diagnostic limitation."

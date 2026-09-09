@@ -1,0 +1,86 @@
+{
+  "audit_pass": true,
+  "authoritative_section_coverage_complete": true,
+  "cell182_revision_sha256": "9e09024668e5d8a76d6da21c2474628b835362d720544d809d84ae1de6c7aba5",
+  "cell184_revision_sha256": "4fde49073f52c82291c38a81b392724ffb0884a084cba77cf160a485e7314c54",
+  "full_bab_iii_final_audit_required": true,
+  "gap_count_resolved": 9,
+  "proposal_docx_modified": false,
+  "resolved_cell183_gaps": [
+    "B3-183-01",
+    "B3-183-02",
+    "B3-183-03",
+    "B3-183-04",
+    "B3-183-05",
+    "B3-183-06",
+    "B3-183-07",
+    "B3-183-08",
+    "B3-183-09"
+  ],
+  "revision_scope": {
+    "all_bab_iii_sections_covered": true,
+    "cell182_preserved_sections": [
+      "3.10",
+      "3.4",
+      "3.5",
+      "3.7",
+      "3.9"
+    ],
+    "cell184_full_replacement_sections": [
+      "3.1",
+      "3.11",
+      "3.12",
+      "3.2",
+      "3.3",
+      "3.6",
+      "3.8"
+    ]
+  },
+  "scientific_contract": {
+    "dynamic_family_split": {
+      "test": 2,
+      "train": 7,
+      "validation": 2
+    },
+    "features": [
+      "frequency_deviation_hz",
+      "mechanical_power_kw",
+      "electrical_power_kw",
+      "dump_power_kw"
+    ],
+    "gain_update_rate_hz": 10.0,
+    "lstm_seed": 20260909,
+    "observation_rate_hz": 20.0,
+    "plant_scope": "averaged ELC; constant mechanical power; no governor/waterway dynamics in primary result model",
+    "primary_independent_unit": "dynamic_family",
+    "primary_metric": "frequency_deviation_rmse_hz",
+    "qlstm_architecture": {
+      "head": [
+        4,
+        64,
+        60,
+        16,
+        2
+      ],
+      "input_dim": 4,
+      "n_qubits": 4,
+      "vqc_depth": 1
+    },
+    "qlstm_seed": 20260909,
+    "sequence_length": 11
+  },
+  "scientific_policy": {
+    "extra_tie_break_claim": false,
+    "grid_sensitivity_performed": false,
+    "independent_g3_generalization_claim": false,
+    "monte_carlo_performed": false,
+    "multi_seed_uncertainty_claim": false,
+    "post_result_tuning": false,
+    "qlstm_superiority_required": false,
+    "quantum_hardware_used": false,
+    "statistical_significance_claim": false
+  },
+  "source_checkpoint": "2555f1358d6883e124f6e0fb8e6a7d861d2b0061",
+  "source_proposal": "Proposal Tesis_03092026_konsep_baru.docx",
+  "stage": "BAB_III_REMAINING_SECTIONS_FINAL_CONTRACT_REVISION"
+}
