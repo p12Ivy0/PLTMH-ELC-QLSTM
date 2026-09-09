@@ -1,0 +1,17 @@
+{
+  "section_1_4": {
+    "legacy_statements": [
+      "Secara metodologis, penelitian menghasilkan prosedur yang dapat direplikasi untuk mencegah kebocoran data melalui pemisahan berbasis skenario.",
+      "Gain diterapkan melalui pembatasan dan penghalusan gain di dalam simulasi closed-loop."
+    ],
+    "title": "Manfaat Penelitian"
+  },
+  "section_1_6": {
+    "legacy_statements": [
+      "Orisinalitas mencakup mekanisme keluaran gain berbatas, interval pembaruan supervisori, dan penghalusan gain.",
+      "Perbandingan tiga konfigurasi dilakukan pada skenario uji yang terpisah dari skenario pelatihan."
+    ],
+    "title": "Orisinalitas Penelitian"
+  },
+  "source": "Proposal Tesis_03092026_konsep_baru.docx"
+}

@@ -1,0 +1,62 @@
+{
+  "audit_fix": {
+    "actual_text_form": "*Electronic Load Controller* (ELC) menjaga keseimbangan daya",
+    "literal_anchor": "ELC menjaga keseimbangan daya",
+    "original_failure": "LITERAL_LOGICAL_FLOW_ANCHOR_FALSE_NEGATIVE",
+    "scientific_content_modified": false
+  },
+  "cell174_revised_text": {
+    "scientifically_approved": true,
+    "sections": [
+      "1.1",
+      "1.2",
+      "1.3",
+      "1.5"
+    ],
+    "sha256": "a30038ee7345f63f39c925eaaa8c7a59c8c78b0986d87bbab3bbb79ed164eb61"
+  },
+  "full_bab_i_alignment": false,
+  "gates": {
+    "bab_ii_revision_authorized": false,
+    "bab_v_drafting_authorized": false,
+    "cell175_review_audit_pass": true,
+    "sections_1_4_1_6_revision_authorized": true
+  },
+  "logical_flow": {
+    "anchors": {
+      "closed_loop_evaluation": true,
+      "elc_power_balance": true,
+      "frequency_stability": true,
+      "grid_label_generation": true,
+      "pi_gain": true,
+      "supervised_target": true,
+      "temporal_learning": true
+    },
+    "pass": true,
+    "questions_objectives_parallel": true
+  },
+  "next_action": "REVISE_SECTIONS_1_4_AND_1_6",
+  "remaining_alignment_gaps": {
+    "count": 4,
+    "gap_ids": [
+      "B1-175-01",
+      "B1-175-02",
+      "B1-175-03",
+      "B1-175-04"
+    ],
+    "sections": [
+      "1.4",
+      "1.6"
+    ]
+  },
+  "scientific_files_modified": false,
+  "scientific_policy": {
+    "exponential_smoothing_used": false,
+    "independent_g3_generalization_claim": false,
+    "monte_carlo_performed": false,
+    "qlstm_superiority_claim": false,
+    "statistical_significance_claim": false
+  },
+  "source_checkpoint": "9f3f518ce976e300934bc12f4065920336a2f29e",
+  "stage": "FULL_BAB_I_REVIEW_BEFORE_BAB_II"
+}

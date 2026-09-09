@@ -1,0 +1,5 @@
+gap_id,section,topic,legacy_wording,final_contract,status,required_revision
+B1-175-01,1.4,Data-leakage prevention terminology,pemisahan berbasis skenario,dynamic-family group split,REVISION_REQUIRED,Replace scenario-based split wording with family-level separation that prevents family and scenario leakage.
+B1-175-02,1.4,Gain transition mechanism,pembatasan dan penghalusan gain,finite check -> admissible clipping -> gain-rate limiting,REVISION_REQUIRED,Remove smoothing language and describe gain clipping plus rate limiting.
+B1-175-03,1.6,Novelty of gain-application mechanism,penghalusan gain,gain clipping + gain-rate limiting,REVISION_REQUIRED,Revise novelty statement to the actual frozen scheduler mechanism.
+B1-175-04,1.6,Held-out evaluation unit,skenario uji yang terpisah dari skenario pelatihan,held-out dynamic families; G3 has no independent test family,REVISION_REQUIRED,Replace generic scenario separation with dynamic-family separation and explicitly limit independent generalization to G1/G2.
