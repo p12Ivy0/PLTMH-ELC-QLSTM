@@ -1,0 +1,71 @@
+{
+  "audit_fixes": {
+    "bab_i_to_bab_v": {
+      "cause": "MORPHOLOGICAL_LITERAL_FALSE_NEGATIVE",
+      "literal_anchor": "membandingkan",
+      "scientific_text_changed": false,
+      "semantic_forms": [
+        "dapat dibandingkan",
+        "dibandingkan PI gain tetap"
+      ]
+    },
+    "objective_3": {
+      "cause": "LITERAL_ANCHOR_FALSE_NEGATIVE",
+      "literal_anchor": "inverse",
+      "scientific_text_changed": false,
+      "semantic_text": "dikembalikan ke skala fisik"
+    }
+  },
+  "audit_pass": true,
+  "authoritative_sources": {
+    "bab_i_sha256": "f3177316be40a527466f1270d7f0f3acfd2694f14d39d30b1fa824abf0faff98",
+    "bab_iii_sha256": "d8e70a621f5b0e1aa047a65945ae035345be49d002082f861f8083dfa3fbe373",
+    "bab_iv_sha256": "366c9f0ee5ec73e290876beef6e9dc6f5fd47bb4341f29902123c5efe63238e1"
+  },
+  "bab_v_draft": {
+    "path": "reports/thesis_results/chapter_v/Bab_V_Kesimpulan_dan_Saran_draft.md",
+    "sha256": "f7751c5e8ab4367daa16021df611a4ba62d88c70286679535d8259de85b40929"
+  },
+  "bab_v_draft_completed": true,
+  "bab_v_final_review_authorized": true,
+  "bab_v_fully_aligned": false,
+  "computational_evidence": {
+    "lstm_current_10hz_budget_demonstrated": true,
+    "lstm_mean_full_run_runtime_s": 0.8965396529999907,
+    "qlstm_current_10hz_budget_demonstrated": false,
+    "qlstm_mean_full_run_runtime_s": 32.5704783409999,
+    "qlstm_to_lstm_runtime_ratio": 36.32909959086911,
+    "runtime_caveat": "Paired overhead is not isolated pure model inference latency. It includes implementation-level simulation overhead."
+  },
+  "draft_structure": {
+    "5.1": "Kesimpulan",
+    "5.2": "Saran",
+    "conclusion_points": 4,
+    "suggestion_points": 6
+  },
+  "model_evidence": {
+    "lstm_gain_test_mse": 0.86862868,
+    "qlstm_gain_mse_increase_vs_lstm_pct": 241.17563465189141,
+    "qlstm_gain_test_mse": 2.963549411758347
+  },
+  "primary_evidence": {
+    "fixed_pi_mean_rmse_hz": 0.012478396116523651,
+    "independent_family_count": 2,
+    "lstm_pi_mean_rmse_hz": 0.0138099472524795,
+    "lstm_rmse_increase_vs_fixed_pct": 10.670851634471155,
+    "qlstm_pi_mean_rmse_hz": 0.01615012869658105,
+    "qlstm_rmse_increase_vs_fixed_pct": 29.424715690787867,
+    "qlstm_rmse_increase_vs_lstm_pct": 16.945621886292017
+  },
+  "scientific_restrictions": {
+    "independent_g3_generalization_claim": false,
+    "monte_carlo_performed": false,
+    "post_result_tuning": false,
+    "qlstm_superiority_claim": false,
+    "quantum_advantage_claim": false,
+    "statistical_significance_claim": false
+  },
+  "source_checkpoint": "791823280870636b33e6f3390d3cc83f7a053e4b",
+  "source_proposal_modified": false,
+  "stage": "BAB_V_DRAFT_FROM_FROZEN_SCIENTIFIC_EVIDENCE"
+}
