@@ -1,0 +1,74 @@
+{
+  "cause": "WORD_AUTOMATIC_MULTILEVEL_NUMBERING_NOT_VISIBLE_IN_PARAGRAPH_TEXT",
+  "chapters": [
+    {
+      "body_index": 135,
+      "chapter": 1,
+      "ilvl": "0",
+      "lvl_text": "BAB %1",
+      "num_fmt": "upperRoman",
+      "num_id": "8",
+      "num_source": "DIRECT",
+      "paragraph_index": 134,
+      "start": "1",
+      "style": "Heading 1",
+      "text": "PENDAHULUAN"
+    },
+    {
+      "body_index": 184,
+      "chapter": 2,
+      "ilvl": null,
+      "lvl_text": "BAB %1",
+      "num_fmt": "upperRoman",
+      "num_id": "12",
+      "num_source": "STYLE",
+      "paragraph_index": 182,
+      "start": "2",
+      "style": "Heading 1",
+      "text": "TINJAUAN PUSTAKA"
+    },
+    {
+      "body_index": 295,
+      "chapter": 3,
+      "ilvl": null,
+      "lvl_text": "BAB %1",
+      "num_fmt": "upperRoman",
+      "num_id": "12",
+      "num_source": "STYLE",
+      "paragraph_index": 272,
+      "start": "2",
+      "style": "Heading 1",
+      "text": "METODOLOGI PENELITIAN"
+    }
+  ],
+  "corrected_detector": "EXACT_CHAPTER_TITLE_PLUS_WORD_NUMBERING",
+  "false_positive_excluded": {
+    "paragraph_index": 168,
+    "reason": "substring PENDAHULUAN occurred inside 'uji pendahuluan'"
+  },
+  "original_detector": "RAW_PARAGRAPH_TEXT_EXPECTED_BAB_ROMAN",
+  "section_detection": [
+    {
+      "chapter": 1,
+      "expected_count": 6,
+      "explicit_complete": false,
+      "selected_mode": "WORD_NUMBERING_SEQUENCE",
+      "word_numbering_candidate_count": 6
+    },
+    {
+      "chapter": 2,
+      "expected_count": 11,
+      "explicit_complete": false,
+      "selected_mode": "WORD_NUMBERING_SEQUENCE",
+      "word_numbering_candidate_count": 11
+    },
+    {
+      "chapter": 3,
+      "expected_count": 12,
+      "explicit_complete": false,
+      "selected_mode": "WORD_NUMBERING_SEQUENCE",
+      "word_numbering_candidate_count": 12
+    }
+  ],
+  "source_modified": false
+}

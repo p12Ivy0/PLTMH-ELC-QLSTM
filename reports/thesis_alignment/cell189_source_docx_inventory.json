@@ -1,0 +1,95 @@
+{
+  "bab_ii_anchors": {
+    "eq_2_17_present": true,
+    "eq_2_18_present": true,
+    "research_row_count": 1,
+    "research_row_locations": [
+      {
+        "body_index": 282,
+        "row_index": 14,
+        "row_text": "Penelitian ini (2026) | QLSTM untuk penentuan gain PI adaptif | ELC PLTMH 100 kW pada sistem terisolasi | QLSTM mempelajari pemetaan jendela temporal kondisi operasi terhadap target gain dan . Target gain dibentuk melalui optimasi luring berbasis pencarian grid bertahap pada model simulasi. Keluaran QLSTM dibatasi, dihaluskan, dan diterapkan pada interval supervisori. Validasi dilakukan melalui simulasi numerik. | Mengintegrasikan pemodelan PLTMH–ELC, pembentukan target gain berbasis fungsi objektif, pembelajaran temporal QLSTM, dan penerapan gain PI adaptif dalam simulasi closed-loop. Kinerja dibandingkan dengan PI gain tetap dan PI adaptif berbasis LSTM.",
+        "section": "2.10",
+        "table_index": 20
+      }
+    ],
+    "section_2_11_is_hipotesis": true,
+    "tables_in_2_10": 1,
+    "valid": true
+  },
+  "chapter_detection": {
+    "chapter_level_text": "BAB %1",
+    "chapter_numbering_format": "upperRoman",
+    "chapter_titles": {
+      "1": "PENDAHULUAN",
+      "2": "TINJAUAN PUSTAKA",
+      "3": "METODOLOGI PENELITIAN"
+    },
+    "mode": "EXACT_TITLE_PLUS_WORD_MULTILEVEL_NUMBERING",
+    "p168_false_positive_excluded": true
+  },
+  "document_counts": {
+    "body_elements": 370,
+    "drawing_objects": 6,
+    "fields": 58,
+    "inline_shapes": 4,
+    "media_files": 5,
+    "omml_math_objects": 178,
+    "paragraphs": 340,
+    "sections": 5,
+    "tables": 30
+  },
+  "review_features": {
+    "comments_present": false,
+    "document_protected": false,
+    "endnotes_present": true,
+    "footnotes_present": true,
+    "numbering_present": true,
+    "tracked_deletions": 0,
+    "tracked_insertions": 0
+  },
+  "section_detection": {
+    "chapter_1_sections": [
+      "1.1",
+      "1.2",
+      "1.3",
+      "1.4",
+      "1.5",
+      "1.6"
+    ],
+    "chapter_2_sections": [
+      "2.1",
+      "2.2",
+      "2.3",
+      "2.4",
+      "2.5",
+      "2.6",
+      "2.7",
+      "2.8",
+      "2.9",
+      "2.10",
+      "2.11"
+    ],
+    "chapter_3_sections": [
+      "3.1",
+      "3.2",
+      "3.3",
+      "3.4",
+      "3.5",
+      "3.6",
+      "3.7",
+      "3.8",
+      "3.9",
+      "3.10",
+      "3.11",
+      "3.12"
+    ],
+    "mode": "WORD_TWO_LEVEL_NUMBERING_%1.%2_MAPPED_BY_STRICT_SEQUENCE"
+  },
+  "source": {
+    "path": "/content/Proposal Tesis_03092026_konsep_baru.docx",
+    "sha256": "3ffe05720df5aa18f33600a4308ce91e43083d1ca0d3fb290eb7eac7b40f2305",
+    "size_bytes": 7184996
+  },
+  "stage": "SOURCE_PROPOSAL_DOCX_STRUCTURE_INVENTORY",
+  "structure_verified": true
+}

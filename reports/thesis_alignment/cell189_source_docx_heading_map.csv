@@ -1,0 +1,30 @@
+chapter,section,body_index,paragraph_index,style,heading_text,title,detection_mode,end_body_index,paragraph_count_in_span,table_count_in_span
+1,1.1,136,135,Heading 4,Latar Belakang,Latar Belakang,WORD_NUMBERING_SEQUENCE,149,12,1
+1,1.2,149,147,Heading 4,Perumusan Masalah,Perumusan Masalah,WORD_NUMBERING_SEQUENCE,155,6,0
+1,1.3,155,153,Heading 4,Tujuan Penelitian,Tujuan Penelitian,WORD_NUMBERING_SEQUENCE,161,6,0
+1,1.4,161,159,Heading 4,Manfaat Penelitian,Manfaat Penelitian,WORD_NUMBERING_SEQUENCE,165,4,0
+1,1.5,165,163,Heading 4,Ruang Lingkup Penelitian,Ruang Lingkup Penelitian,WORD_NUMBERING_SEQUENCE,176,11,0
+1,1.6,176,174,Heading 4,Orisinalitas Penelitian,Orisinalitas Penelitian,WORD_NUMBERING_SEQUENCE,184,8,0
+2,2.1,189,187,Heading 4,Dinamika Frekuensi PLTMH Terisolasi,Dinamika Frekuensi PLTMH Terisolasi,WORD_NUMBERING_SEQUENCE,203,12,2
+2,2.2,203,199,Heading 4,Electronic Load Controller,Electronic Load Controller,WORD_NUMBERING_SEQUENCE,216,12,1
+2,2.3,216,211,Heading 4,Pengendali PI dan Penjadwalan Gain,Pengendali PI dan Penjadwalan Gain,WORD_NUMBERING_SEQUENCE,224,6,2
+2,2.4,224,217,Heading 4,Pembentukan Target Gain Berbasis Simulasi,Pembentukan Target Gain Berbasis Simulasi,WORD_NUMBERING_SEQUENCE,234,7,3
+2,2.5,234,224,Heading 4,Long Short-Term Memory,Long Short-Term Memory,WORD_NUMBERING_SEQUENCE,239,4,1
+2,2.6,239,228,Heading 4,Variational Quantum Circuit,Variational Quantum Circuit,WORD_NUMBERING_SEQUENCE,248,6,3
+2,2.7,248,234,Heading 4,Arsitektur QLSTM untuk Estimasi Gain,Arsitektur QLSTM untuk Estimasi Gain,WORD_NUMBERING_SEQUENCE,263,12,3
+2,2.8,263,246,Heading 4,Penerapan Gain dalam Loop Kendali,Penerapan Gain dalam Loop Kendali,WORD_NUMBERING_SEQUENCE,268,4,1
+2,2.9,268,250,Heading 4,Indikator Kinerja dan Pengujian,Indikator Kinerja dan Pengujian,WORD_NUMBERING_SEQUENCE,277,6,3
+2,2.10,277,256,Heading 4,Kajian Penelitian Terdahulu dan Posisi Penelitian,Kajian Penelitian Terdahulu dan Posisi Penelitian,WORD_NUMBERING_SEQUENCE,289,11,1
+2,2.11,289,267,Heading 4,Hipotesis Penelitian,Hipotesis Penelitian,WORD_NUMBERING_SEQUENCE,295,5,1
+3,3.1,302,279,Heading 4,Desain Penelitian,Desain Penelitian,WORD_NUMBERING_SEQUENCE,305,3,0
+3,3.2,305,282,Heading 4,"Tempat, Perangkat, dan Waktu Penelitian","Tempat, Perangkat, dan Waktu Penelitian",WORD_NUMBERING_SEQUENCE,310,4,1
+3,3.3,310,286,Heading 4,Pemodelan Sistem PLTMH–ELC,Pemodelan Sistem PLTMH–ELC,WORD_NUMBERING_SEQUENCE,314,4,0
+3,3.4,314,290,Heading 4,Perancangan PI Baseline dan Rentang Gain,Perancangan PI Baseline dan Rentang Gain,WORD_NUMBERING_SEQUENCE,317,3,0
+3,3.5,317,293,Heading 4,Penyusunan Skenario Operasi,Penyusunan Skenario Operasi,WORD_NUMBERING_SEQUENCE,324,7,0
+3,3.6,324,300,Heading 4,Pembentukan Target Gain,Pembentukan Target Gain,WORD_NUMBERING_SEQUENCE,327,3,0
+3,3.7,327,303,Heading 4,Variabel dan Pembentukan Dataset,Variabel dan Pembentukan Dataset,WORD_NUMBERING_SEQUENCE,346,14,5
+3,3.8,346,317,Heading 4,Pengembangan Model LSTM dan QLSTM,Pengembangan Model LSTM dan QLSTM,WORD_NUMBERING_SEQUENCE,349,3,0
+3,3.9,349,320,Heading 4,Integrasi Gain Adaptif dalam Simulasi Closed-Loop,Integrasi Gain Adaptif dalam Simulasi Closed-Loop,WORD_NUMBERING_SEQUENCE,352,3,0
+3,3.10,352,323,Heading 4,Metode Analisis Data,Metode Analisis Data,WORD_NUMBERING_SEQUENCE,359,6,1
+3,3.11,359,329,Heading 4,Kriteria Keberhasilan Penelitian,Kriteria Keberhasilan Penelitian,WORD_NUMBERING_SEQUENCE,362,3,0
+3,3.12,362,332,Heading 4,Alur Penelitian,Alur Penelitian,WORD_NUMBERING_SEQUENCE,368,5,1

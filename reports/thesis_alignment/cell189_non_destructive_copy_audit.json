@@ -1,0 +1,23 @@
+{
+  "safety": {
+    "integration_performed": false,
+    "source_overwrite_allowed": false,
+    "source_unchanged": true
+  },
+  "source": {
+    "modified": false,
+    "path": "/content/Proposal Tesis_03092026_konsep_baru.docx",
+    "sha256_after_copy": "3ffe05720df5aa18f33600a4308ce91e43083d1ca0d3fb290eb7eac7b40f2305",
+    "sha256_before": "3ffe05720df5aa18f33600a4308ce91e43083d1ca0d3fb290eb7eac7b40f2305"
+  },
+  "source_checkpoint": "00a26a168ea7d166cdbfe9269bd1a75251244233",
+  "stage": "NON_DESTRUCTIVE_SOURCE_DOCX_COPY",
+  "structure_verified": true,
+  "working_copy": {
+    "content_modified": false,
+    "identical_to_source": true,
+    "path": "reports/thesis_integration/cell189_working_copy/Proposal_Tesis_03092026_konsep_baru_WORKING_COPY.docx",
+    "sha256": "3ffe05720df5aa18f33600a4308ce91e43083d1ca0d3fb290eb7eac7b40f2305",
+    "size_bytes": 7184996
+  }
+}
