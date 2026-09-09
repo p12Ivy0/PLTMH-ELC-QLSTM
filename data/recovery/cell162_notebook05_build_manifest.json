@@ -1,0 +1,57 @@
+{
+  "dataset_contract": {
+    "boundary_family": "D20_L+20",
+    "boundary_scenarios": 10,
+    "catalog_scenarios": 120,
+    "common_source_pi": {
+      "ki": 5.72,
+      "kp": 2.16
+    },
+    "gain_regimes": [
+      "G1",
+      "G2",
+      "G3"
+    ],
+    "raw_rk4_dt_s": 0.0025,
+    "raw_simulation_end_s": 10.0,
+    "supervised_families": 11,
+    "supervised_scenarios": 110,
+    "target_conditioned_input_leakage": false
+  },
+  "frozen_evidence": {
+    "data/final/qlstm_lstm_dataset_metadata.json": "0e11a631937bbe349fe90bf326ba97fd5e14d209859ad10ca159b6fdf74efcf5",
+    "data/splits/cell137_family_split_assignment.csv": "63cea54cdcb1a9922640ab2cbd387642ff79b00ae731540bf119680858ac595f"
+  },
+  "handoff": {
+    "next_notebook": "06_preprocessing.ipynb",
+    "output_stage": "RAW_LABELED_TEMPORAL_TRAJECTORIES",
+    "preprocessing_belongs_to_notebook05": false
+  },
+  "migration_policy": {
+    "model_inference_by_cell162": false,
+    "model_training_by_cell162": false,
+    "obsolete_default_gain_grid_used": false,
+    "old_cell_1_to_138_history_reconstructed": false,
+    "old_cell_number_boundary_guessed": false,
+    "raw_reproduction_default": false,
+    "scientific_experiment_rerun_by_cell162": false,
+    "target_labels_recovered_from_frozen_evidence": true
+  },
+  "notebook_cells": {
+    "code": 9,
+    "markdown": 4,
+    "total": 13
+  },
+  "notebook_sha256": "786ce9f7692b8d71bf3fe73629742f6475ae779e70f2a86df4b6420bfd811594",
+  "source_checkpoint": "56f8abfd5a67c6670bd4104181cd91021692515e",
+  "source_sha256": {
+    "src/control/pi_controller.py": "7722548bb98edf994252ace0eb969b425647a01ce05d09038ec29fd5ed82cfb1",
+    "src/data/logger.py": "35fae416b60bccdb2cee5597d8f811ba8ccb95aaa9ae84145cd7787b26e391c0",
+    "src/plant/dump_load.py": "4c49962c3c79e6efda9424e7e83aea1b241344968741c607e4de77208128d5b0",
+    "src/plant/elc.py": "98506fddd6e760a2d5075fd7f521876784c41f37959406b72e23df76095784d5",
+    "src/plant/synchronous_generator.py": "1ec3f5e26bab726afddfc38e7fab2931b74068bc02cb19be280cb6a03d76157b",
+    "src/simulation/scenario.py": "973bc400a8e0b542c1837f940c5989e0203805bb2ff74b706d058675e6a23cb8"
+  },
+  "stage": "BUILD_05_GENERATE_DATASET_NOTEBOOK",
+  "target_notebook": "notebooks/05_generate_dataset.ipynb"
+}
