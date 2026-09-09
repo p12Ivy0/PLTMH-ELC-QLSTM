@@ -1,0 +1,152 @@
+{
+  "array_schema": {
+    "X_test": {
+      "dtype": "float32",
+      "shape": [
+        3200,
+        11,
+        4
+      ]
+    },
+    "X_train": {
+      "dtype": "float32",
+      "shape": [
+        11200,
+        11,
+        4
+      ]
+    },
+    "X_validation": {
+      "dtype": "float32",
+      "shape": [
+        3200,
+        11,
+        4
+      ]
+    },
+    "feature_names": {
+      "dtype": "<U22",
+      "shape": [
+        4
+      ]
+    },
+    "target_names": {
+      "dtype": "<U9",
+      "shape": [
+        2
+      ]
+    },
+    "test_index": {
+      "dtype": "int64",
+      "shape": [
+        3200
+      ]
+    },
+    "train_index": {
+      "dtype": "int64",
+      "shape": [
+        11200
+      ]
+    },
+    "validation_index": {
+      "dtype": "int64",
+      "shape": [
+        3200
+      ]
+    },
+    "y_test": {
+      "dtype": "float32",
+      "shape": [
+        3200,
+        2
+      ]
+    },
+    "y_train": {
+      "dtype": "float32",
+      "shape": [
+        11200,
+        2
+      ]
+    },
+    "y_validation": {
+      "dtype": "float32",
+      "shape": [
+        3200,
+        2
+      ]
+    }
+  },
+  "canonical_array_keys": {
+    "X_test": "X_test",
+    "X_train": "X_train",
+    "X_val": "X_validation",
+    "y_test": "y_test",
+    "y_train": "y_train",
+    "y_val": "y_validation"
+  },
+  "frozen_artifact_sha256": {
+    "dataset": "7287018d944b7e3740aa778c78459df1142d53d77493a6193493af2009b46f60",
+    "feature_scaler": "e302402cb371a1e0223051cd752e8d9de398651373bc229309c675a36bb96096",
+    "metadata": "0e11a631937bbe349fe90bf326ba97fd5e14d209859ad10ca159b6fdf74efcf5",
+    "sample_metadata": "9d3f5297dc788231abefebb0dbbd4e98880ef3a6e33a3af6033fe68963d9aa5c",
+    "scalers": "7061abdbe1e8cfeec0886a2030bc9a661f75d74204953929c278bc49b4f73d17",
+    "split_assignment": "63cea54cdcb1a9922640ab2cbd387642ff79b00ae731540bf119680858ac595f",
+    "split_indices": "08b59436f2c108467d8db0258cf519ed2edc3a69faf25feacf4459b662cc38de",
+    "split_metadata": "08dfda462f996fb9654338e6f7468808c2d7d834a9d821c705fa02de2c5e7b69",
+    "split_structural_audit": "f22d30e1fbf3f004323408e53d35620c0174ffa1d5996495a67f89b85837bb50",
+    "target_scaler": "9dbd52fe5f99a2aa47275f85edc802b775db5879e00dcb54a24124a9d2ef0ab6",
+    "window_split_metadata": "e4c5a3db5fc14676e5cfc251f563d914700cb5bd25e37fda86be666f796bbf71"
+  },
+  "frozen_preprocessing_contract": {
+    "boundary_family": "D20_L+20",
+    "boundary_in_supervised_tensor": false,
+    "causal_rule": "window_end_time_s > disturbance_time_s",
+    "dataset_status": "FINAL_LSTM_QLSTM_READY",
+    "family_leakage": false,
+    "feature_scaling": "TRAIN_ONLY_UNIQUE_OBSERVATION_Z_SCORE",
+    "features": [
+      "frequency_deviation_hz",
+      "mechanical_power_kw",
+      "electrical_power_kw",
+      "dump_power_kw"
+    ],
+    "observation_dt_s": 0.05,
+    "observation_frequency_hz": 20.0,
+    "row_random_split": false,
+    "scenario_leakage": false,
+    "sequence_length": 11,
+    "split_candidate_id": 204,
+    "split_strategy": "LEAKAGE_FREE_DYNAMIC_FAMILY_GROUP_SPLIT",
+    "supervised_scenarios": 110,
+    "supervised_windows": 17600,
+    "target_scaling": "TRAIN_ONLY_WINDOW_TARGET_Z_SCORE",
+    "test_windows": 3200,
+    "train_windows": 11200,
+    "unique_training_observation_count": 11900,
+    "validation_windows": 3200,
+    "window_span_s": 0.5
+  },
+  "migration_policy": {
+    "frozen_final_artifacts_overwritten": false,
+    "model_inference_run_by_cell163": false,
+    "old_runtime_globals_used": false,
+    "preprocessing_rebuild_default": false,
+    "scientific_preprocessing_run_by_cell163": false,
+    "simulation_run_by_cell163": false,
+    "training_run_by_cell163": false
+  },
+  "next_notebook": "07_train_lstm.ipynb",
+  "notebook_cells": {
+    "code": 9,
+    "markdown": 5,
+    "total": 14
+  },
+  "notebook_sha256": "bbac80ff5eeaf6ba843720c7e58fc22f5fc85db19253b8d0cd6db16425c28881",
+  "source_checkpoint": "9f6a764e80dfed06b577584e80caa577d4162ca3",
+  "stage": "BUILD_06_PREPROCESSING_NOTEBOOK",
+  "target_notebook": "notebooks/06_preprocessing.ipynb",
+  "upstream_notebook": {
+    "path": "notebooks/05_generate_dataset.ipynb",
+    "sha256": "786ce9f7692b8d71bf3fe73629742f6475ae779e70f2a86df4b6420bfd811594"
+  }
+}
