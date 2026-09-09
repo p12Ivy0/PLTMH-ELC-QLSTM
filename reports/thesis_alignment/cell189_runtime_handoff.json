@@ -1,0 +1,72 @@
+{
+  "authoritative_package": {
+    "cell188_package_sha256": "99dc9a16627ac39da576c6a012443680a0c4e2f5a87a13080d652cf54e006ece",
+    "ready": true
+  },
+  "critical_gates": {
+    "cell189_fix_pass": true,
+    "docx_content_integration_authorized": true,
+    "docx_working_copy_ready": true,
+    "frozen_texts_unchanged": true,
+    "notebooks_unchanged": true,
+    "project_source_unchanged": true,
+    "source_docx_unchanged": true,
+    "source_structure_verified": true,
+    "working_copy_identical_to_source": true
+  },
+  "fresh_runtime_resume_requirements": {
+    "checkout_or_verify_handoff_checkpoint": true,
+    "clone_or_pull_repository": true,
+    "next_cell": "CELL 189-RESUME",
+    "reconstruct_minimum_runtime_state": true,
+    "reload_frozen_manifests": true,
+    "rerun_experiments": false,
+    "reupload_original_source_docx": true,
+    "verify_source_sha256": "3ffe05720df5aa18f33600a4308ce91e43083d1ca0d3fb290eb7eac7b40f2305",
+    "verify_working_copy_sha256": "3ffe05720df5aa18f33600a4308ce91e43083d1ca0d3fb290eb7eac7b40f2305"
+  },
+  "frozen_scientific_hashes": {
+    "bab_i": "f3177316be40a527466f1270d7f0f3acfd2694f14d39d30b1fa824abf0faff98",
+    "bab_ii_cell178": "fa8a8bea9fc612f7ccdc99a466acfbda0d9764b3b0c9313e26f9b65c45c44f06",
+    "bab_ii_cell180": "5c9474252d802711ebe12b53b64012838f7cdd86768b34e7b9a5754cbcb31296",
+    "bab_iii": "d8e70a621f5b0e1aa047a65945ae035345be49d002082f861f8083dfa3fbe373",
+    "bab_iv": "366c9f0ee5ec73e290876beef6e9dc6f5fd47bb4341f29902123c5efe63238e1",
+    "bab_v": "f7751c5e8ab4367daa16021df611a4ba62d88c70286679535d8259de85b40929"
+  },
+  "handoff_ready": true,
+  "next_scientific_document_step": "CELL 190 — integrate ONLY frozen Bab I after successful fresh-runtime resume.",
+  "purpose": "Resume DOCX integration safely on a fresh Colab runtime / different laptop.",
+  "repository": {
+    "branch": "main",
+    "cell189_fix_checkpoint": "77fd3f4ddf73081abdbc54b315dd14c834360098"
+  },
+  "scientific_freeze": {
+    "monte_carlo": false,
+    "post_result_tuning": false,
+    "qlstm_superiority_claim": false,
+    "quantum_advantage_claim": false,
+    "rerun_closed_loop": false,
+    "rerun_final_analysis": false,
+    "rerun_simulation": false,
+    "retrain_lstm": false,
+    "retrain_qlstm": false,
+    "significance_testing": false
+  },
+  "source_docx": {
+    "filename": "Proposal Tesis_03092026_konsep_baru.docx",
+    "must_be_reuploaded_on_fresh_runtime": true,
+    "must_not_be_overwritten": true,
+    "runtime_path_old": "/content/Proposal Tesis_03092026_konsep_baru.docx",
+    "sha256": "3ffe05720df5aa18f33600a4308ce91e43083d1ca0d3fb290eb7eac7b40f2305",
+    "size_bytes": 7184996
+  },
+  "stage": "RUNTIME_HANDOFF_AFTER_CELL189_FIX",
+  "working_copy": {
+    "already_stored_in_git": true,
+    "byte_identical_to_source_at_handoff": true,
+    "manual_reupload_required": false,
+    "repository_path": "reports/thesis_integration/cell189_working_copy/Proposal_Tesis_03092026_konsep_baru_WORKING_COPY.docx",
+    "scientific_content_integrated": false,
+    "sha256": "3ffe05720df5aa18f33600a4308ce91e43083d1ca0d3fb290eb7eac7b40f2305"
+  }
+}
