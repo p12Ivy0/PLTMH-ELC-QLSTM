@@ -1,0 +1,7 @@
+notebook,exists,size_bytes,hash_ok,valid_ipynb,code_cells,markdown_cells,syntax_valid,outputs_empty,stage_metadata_ok,upstream_metadata_ok,safe_default_ok,old_runtime_free,unsupported_positive_claim_free
+05_generate_dataset.ipynb,True,46822,True,True,9,4,True,True,True,True,True,True,True
+06_preprocessing.ipynb,True,65654,True,True,9,5,True,True,True,True,True,True,True
+07_train_lstm.ipynb,True,57777,True,True,10,5,True,True,True,True,True,True,True
+08_train_qlstm.ipynb,True,43740,True,True,8,4,True,True,True,True,True,True,True
+09_closed_loop.ipynb,True,47235,True,True,10,5,True,True,True,True,True,True,True
+10_final_analysis.ipynb,True,41122,True,True,9,4,True,True,True,True,True,True,True

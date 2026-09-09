@@ -1,0 +1,67 @@
+{
+  "audit_execution": {
+    "model_inference_executed": false,
+    "model_training_executed": false,
+    "notebook_modified": false,
+    "notebooks_executed": false,
+    "pennylane_executed": false,
+    "scientific_results_modified": false,
+    "simulation_executed": false,
+    "source_modified": false
+  },
+  "audit_pass": true,
+  "frozen_handoffs": {
+    "classical_and_qlstm_models": true,
+    "closed_loop": true,
+    "dataset_preprocessing": true,
+    "final_scientific_interpretation": true
+  },
+  "historical_provenance": {
+    "cell_146_150_source_archived": true,
+    "cell_151_155_source_archived": true,
+    "cell_156_159_fix_source_archived": true,
+    "cell_159_authoritative": false,
+    "cell_159_fix_authoritative": true,
+    "cell_1_138_numbers_reconstructed_by_guess": false,
+    "exact_cell_1_138_history_recovered": false,
+    "notebook_05_06_boundary_basis": "FROZEN_SCIENTIFIC_ARTIFACT_SEMANTICS"
+  },
+  "notebook_suite": {
+    "all_build_manifests_valid": true,
+    "all_exact_sha": true,
+    "all_old_runtime_free": true,
+    "all_python_syntax_valid": true,
+    "all_safe_defaults": true,
+    "all_valid_ipynb": true,
+    "count": 6,
+    "git_checkpoint_chain_valid": true,
+    "notebooks": [
+      "05_generate_dataset.ipynb",
+      "06_preprocessing.ipynb",
+      "07_train_lstm.ipynb",
+      "08_train_qlstm.ipynb",
+      "09_closed_loop.ipynb",
+      "10_final_analysis.ipynb"
+    ]
+  },
+  "reproducibility_scope": {
+    "automatic_post_test_tuning": false,
+    "expensive_reproduction_off_by_default": true,
+    "frozen_artifact_workflow_reproducible": true,
+    "historical_exact_cell_1_138_reconstruction": false
+  },
+  "scientific_result": {
+    "fixed_pi_primary_rmse_hz": 0.0124783961165236,
+    "independent_g3_generalization_claim": false,
+    "lstm_pi_primary_rmse_hz": 0.0138099472524795,
+    "lstm_test_mse": 0.8686286807060242,
+    "negative_result_retained": true,
+    "post_result_retuning_allowed": false,
+    "qlstm_pi_primary_rmse_hz": 0.0161501286965811,
+    "qlstm_superiority_supported": false,
+    "qlstm_test_mse": 2.963549411758347,
+    "statistical_significance_claim": false
+  },
+  "source_checkpoint": "5ea9c093748656baedfa00b036e5532c7f66b0b6",
+  "stage": "FINAL_NOTEBOOK_05_10_INTEGRITY_AND_REPRODUCIBILITY_AUDIT"
+}
