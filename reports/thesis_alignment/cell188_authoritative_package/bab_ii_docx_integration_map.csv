@@ -1,0 +1,12 @@
+section,operation,authoritative_source,detail
+2.1,RETAIN_SOURCE,Proposal Tesis_03092026_konsep_baru.docx,Retain reviewed source section 2.1. Preserve final audited scope.
+2.2,RETAIN_SOURCE,Proposal Tesis_03092026_konsep_baru.docx,Retain source section 2.2 unchanged.
+2.3,RETAIN_SOURCE,Proposal Tesis_03092026_konsep_baru.docx,Retain source section 2.3 unchanged.
+2.4,RETAIN_SOURCE,Proposal Tesis_03092026_konsep_baru.docx,Retain reviewed source section 2.4. Do not introduce unexecuted grid-sensitivity claims.
+2.5,RETAIN_SOURCE,Proposal Tesis_03092026_konsep_baru.docx,Retain source section 2.5 unchanged.
+2.6,RETAIN_SOURCE,Proposal Tesis_03092026_konsep_baru.docx,Retain source section 2.6 unchanged.
+2.7,PARTIAL_REPLACE,source proposal + cell180_bab_ii_section_2_7_and_table_revision.md,Retain source literature discussion and Eq. (2.17)–(2.18). Integrate corrected Cell180 implementation text through Eq. (2.21) and scheduler handoff.
+2.8,FULL_REPLACE,cell178_bab_ii_targeted_revisions.md,"Replace complete Section 2.8 with frozen Cell178 text, including Eq. (2.22)–(2.23), clipping, rate limiting, 20-Hz observation, 10-Hz update and zero-order hold."
+2.9,FULL_REPLACE,cell178_bab_ii_targeted_revisions.md,"Replace complete Section 2.9 with frozen Cell178 text, including Eq. (2.24)–(2.27), primary RMSE and descriptive family-level evaluation."
+2.10,COMPOSITE_REPLACE,source proposal + Cell180 research row + Cell178 research-position tail,Retain source literature synthesis and literature-table rows except 'Penelitian ini (2026)'. Replace that row with Cell180 and replace only the final research-position paragraphs with Cell178.
+2.11,FULL_REPLACE_AND_RETITLE,cell178_bab_ii_targeted_revisions.md,Replace former 'Hipotesis Penelitian' completely with 'Kerangka Evaluasi Penelitian'. Remove obsolete Eq. (2.28) and Eq. (2.29).
