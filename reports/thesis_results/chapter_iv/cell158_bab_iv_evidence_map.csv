@@ -1,0 +1,9 @@
+bab_iv_section,evidence,purpose
+4.1,Cell 137–157 frozen experimental workflow,Menjelaskan struktur evaluasi dan pembekuan protokol.
+4.2,cell149_frozen_model_test_comparison.csv,Membandingkan kinerja estimasi gain LSTM dan QLSTM.
+4.3,table157_primary_heldout_controller_comparison.csv,Menyajikan hasil closed-loop pada dua keluarga uji independen.
+4.4,fig157_cl01_frequency_response.png,Pembahasan skenario CL01.
+4.5,fig157_cl02_frequency_response.png,Pembahasan skenario CL02.
+4.6,fig157_cl01_applied_gain_trajectories.png; fig157_cl02_applied_gain_trajectories.png; Cell 156 gain-guard audit,Menganalisis perilaku gain adaptif dan beban pengendalian.
+4.7,table157_computational_burden.csv,Membahas kebutuhan komputasi LSTM dan QLSTM.
+4.8,cell156_scientific_claim_freeze.csv,"Menyusun sintesis, keterbatasan, dan implikasi ilmiah."
