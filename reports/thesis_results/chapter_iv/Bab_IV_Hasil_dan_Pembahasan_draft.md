@@ -116,125 +116,170 @@ ulang pengendali.
 
 ## 4.4 Respons Closed-Loop pada CL01 (D40_L-20)
 
-CL01 merepresentasikan kondisi daya mekanik 90 kW, daya dump awal 40 kW,
-dan penurunan beban konsumen sebesar 20 kW. Pada kondisi awal, beban
-konsumen sebesar 50 kW dan dump load sebesar 40 kW. Setelah gangguan, beban
-konsumen turun menjadi 30 kW sehingga titik keseimbangan baru membutuhkan
-daya dump sekitar 60 kW.
+CL01 merepresentasikan kondisi daya mekanik 90 kW, daya *dump* awal 40 kW,
+dan penurunan beban konsumen sebesar 20 kW. Sebelum gangguan, beban konsumen
+sebesar 50 kW dan *dump load* sebesar 40 kW. Setelah beban konsumen turun
+menjadi 30 kW, titik keseimbangan daya yang baru memerlukan peningkatan daya
+*dump* menuju sekitar 60 kW.
 
-RMSE PI gain tetap pada CL01 adalah 0.016638 Hz. LSTM–PI
-menghasilkan 0.020160 Hz, sedangkan QLSTM–PI menghasilkan
-0.023913 Hz. Dibandingkan PI gain tetap, perubahan RMSE
-LSTM–PI adalah -21.17% dan perubahan QLSTM–PI adalah
--43.72%. Nilai negatif menunjukkan bahwa RMSE meningkat.
+Pada skenario ini, PI gain tetap menghasilkan RMSE deviasi frekuensi sebesar
+0,016638 Hz. LSTM–PI menghasilkan RMSE 0,020160 Hz, sedangkan QLSTM–PI
+menghasilkan 0,023913 Hz. Dibandingkan PI gain tetap, RMSE LSTM–PI meningkat
+21,17% dan RMSE QLSTM–PI meningkat 43,72%. Penyajian dalam bentuk kenaikan RMSE
+digunakan agar arah perubahan kinerja tidak bergantung pada tanda negatif dari
+definisi persentase *improvement* pada artefak evaluasi.
 
 **[Masukkan Gambar 4.2 — fig157_cl01_frequency_response.png]**
 
-**Gambar 4.2.** Respons deviasi frekuensi pada CL01 (D40_L-20).
+**Gambar 4.2.** Respons deviasi frekuensi pada CL01 (D40_L-20). Garis
+putus-putus menunjukkan waktu pembaruan gain adaptif pertama pada t = 2,60 s.
 
-Pada skenario ini, pengaturan gain adaptif tidak memperbaiki RMSE terhadap
-gain tetap. Salah satu karakteristik LSTM–PI pada CL01 adalah keluaran Ki
-yang sering mencapai batas bawah rentang gain, sedangkan QLSTM–PI menghasilkan
-variasi gain yang lebih besar. Kebijakan pembatas gain mencegah keluaran
-model diterapkan di luar rentang yang telah ditetapkan.
+Hasil tersebut menunjukkan bahwa penjadwalan gain adaptif pada CL01 belum
+memperbaiki RMSE dibandingkan PI gain tetap. Diagnostik scheduler memperlihatkan
+bahwa LSTM–PI memiliki *clip fraction* 1,00 pada skenario ini, dengan rerata Ki
+yang diaplikasikan sekitar 3,10, yaitu dekat batas bawah Ki sebesar 3,0368.
+QLSTM–PI memiliki rerata Ki yang diaplikasikan sekitar 4,82 dan *rate-limit
+fraction* yang lebih tinggi daripada LSTM–PI pada CL01. Informasi tersebut
+menunjukkan bahwa mekanisme pembatas gain aktif selama operasi, tetapi tidak
+digunakan untuk menyimpulkan hubungan sebab-akibat tunggal antara nilai gain
+tertentu dan peningkatan RMSE.
 
-**[Masukkan Gambar 4.4 — fig157_cl01_applied_gain_trajectories.png]**
+**[Masukkan Gambar 4.3 — fig157_cl01_applied_gain_trajectories.png]**
 
-**Gambar 4.4.** Trajektori Kp dan Ki yang diaplikasikan pada CL01.
+**Gambar 4.3.** Trajektori Kp dan Ki yang diaplikasikan pada CL01 setelah
+melalui batas gain dan pembatasan laju perubahan yang sama.
 
-**[Masukkan Gambar 4.6 — fig157_cl01_dump_duty_response.png]**
+**[Masukkan Gambar 4.4 — fig157_cl01_dump_duty_response.png]**
 
-**Gambar 4.6.** Respons duty dump load pada CL01.
+**Gambar 4.4.** Respons *duty* *dump load* pada CL01 untuk ketiga konfigurasi
+pengendali.
+
+Respons CL01 karena itu memperlihatkan bahwa fleksibilitas penjadwalan gain
+tidak dengan sendirinya menghasilkan respons frekuensi yang lebih baik. Pada
+kondisi D40_L-20 yang diuji, PI gain tetap tetap menghasilkan RMSE terendah
+meskipun LSTM–PI dan QLSTM–PI dapat mengubah gain selama fase pemulihan.
+
 
 ## 4.5 Respons Closed-Loop pada CL02 (D20_L+10)
 
-CL02 merepresentasikan kondisi daya mekanik 90 kW, daya dump awal 20 kW,
-dan kenaikan beban konsumen sebesar 10 kW. Beban konsumen berubah dari
-70 kW menjadi 80 kW sehingga daya dump yang diperlukan pada keseimbangan
-baru turun dari 20 kW menjadi sekitar 10 kW.
+CL02 merepresentasikan kondisi daya mekanik 90 kW, daya *dump* awal 20 kW,
+dan kenaikan beban konsumen sebesar 10 kW. Beban konsumen meningkat dari
+70 kW menjadi 80 kW sehingga daya *dump* yang diperlukan pada keseimbangan
+baru berkurang dari 20 kW menuju sekitar 10 kW.
 
-Pada CL02, RMSE PI gain tetap sebesar 0.008319 Hz. LSTM–PI
-menghasilkan 0.007460 Hz dan QLSTM–PI menghasilkan
-0.008388 Hz. LSTM–PI memperbaiki RMSE sebesar
-10.33% dibandingkan PI gain tetap. Sebaliknya,
-perubahan QLSTM–PI terhadap PI gain tetap sebesar
--0.83%.
+PI gain tetap menghasilkan RMSE deviasi frekuensi sebesar 0,008319 Hz.
+LSTM–PI menghasilkan 0,007460 Hz sehingga RMSE menurun 10,33% dibandingkan
+PI gain tetap. QLSTM–PI menghasilkan RMSE 0,008388 Hz atau sekitar 0,83% lebih
+tinggi daripada PI gain tetap. Dengan demikian, hanya LSTM–PI yang menghasilkan
+RMSE lebih rendah daripada PI gain tetap pada CL02.
 
-**[Masukkan Gambar 4.3 — fig157_cl02_frequency_response.png]**
+**[Masukkan Gambar 4.5 — fig157_cl02_frequency_response.png]**
 
-**Gambar 4.3.** Respons deviasi frekuensi pada CL02 (D20_L+10).
+**Gambar 4.5.** Respons deviasi frekuensi pada CL02 (D20_L+10). LSTM–PI
+menghasilkan RMSE terendah pada skenario ini.
 
-Hasil CL02 menunjukkan bahwa gain adaptif dapat memberikan manfaat pada
-kondisi operasi tertentu. Meskipun demikian, manfaat tersebut pada eksperimen
-primer hanya muncul pada LSTM–PI dan tidak konsisten dengan hasil CL01.
-Temuan ini memperlihatkan bahwa hubungan antara kondisi operasi dan gain PI
-optimal bersifat spesifik terhadap dinamika gangguan.
+Hasil CL02 menunjukkan bahwa penjadwalan gain dapat memberikan manfaat pada
+kondisi operasi tertentu, tetapi temuan tersebut tidak dapat diperluas sebagai
+keunggulan LSTM–PI yang konsisten karena hasil CL01 menunjukkan arah yang
+berbeda. Dengan kata lain, manfaat LSTM–PI pada evaluasi primer bersifat
+bergantung pada keluarga dinamik yang diuji.
 
-Pada QLSTM–PI, nilai Ki yang diaplikasikan pada CL02 cenderung jauh lebih
-tinggi dan pada sebagian interval mendekati batas atas yang telah dibekukan.
-Kondisi ini berhubungan dengan aktivitas pembatas gain yang lebih tinggi serta
-variasi duty ELC yang lebih besar.
+Pada CL02, rerata gain QLSTM–PI yang diaplikasikan adalah sekitar Kp = 3,26 dan
+Ki = 13,21. Nilai tersebut berada dekat sisi atas rentang gain yang dibekukan,
+yaitu Kp maksimum 3,36 dan Ki maksimum 14,144. *Clip fraction* QLSTM–PI pada
+CL02 sebesar sekitar 0,689, sedangkan LSTM–PI tidak mengalami clipping pada
+skenario yang sama. Kondisi ini menunjukkan bahwa gain guard bekerja secara
+material pada keluaran QLSTM. Hubungan antara kondisi tersebut dan respons
+*closed-loop* diperlakukan sebagai bukti deskriptif, bukan sebagai hubungan
+kausal yang berdiri sendiri.
 
-**[Masukkan Gambar 4.5 — fig157_cl02_applied_gain_trajectories.png]**
+**[Masukkan Gambar 4.6 — fig157_cl02_applied_gain_trajectories.png]**
 
-**Gambar 4.5.** Trajektori Kp dan Ki yang diaplikasikan pada CL02.
+**Gambar 4.6.** Trajektori Kp dan Ki yang diaplikasikan pada CL02 setelah
+melalui kebijakan pembatasan gain yang sama.
 
 **[Masukkan Gambar 4.7 — fig157_cl02_dump_duty_response.png]**
 
-**Gambar 4.7.** Respons duty dump load pada CL02.
+**Gambar 4.7.** Respons *duty* *dump load* pada CL02 untuk ketiga konfigurasi
+pengendali.
+
+Perbedaan hasil CL01 dan CL02 menegaskan bahwa evaluasi model penjadwal gain
+tidak cukup dilakukan dari satu kondisi operasi. Namun, karena evaluasi primer
+penelitian ini hanya terdiri atas dua keluarga dinamik independen, perbedaan
+tersebut tetap diperlakukan sebagai hasil deskriptif dan tidak digunakan untuk
+membuat klaim generalisasi yang lebih luas.
+
 
 ## 4.6 Pengaruh Penjadwalan Gain terhadap Respons Dinamik
 
-Seluruh konfigurasi mempertahankan frekuensi dalam rentang diagnostik
-45–55 Hz pada dua belas simulasi yang dilakukan. Namun, kemampuan menjaga
-kestabilan tidak secara otomatis menunjukkan peningkatan kualitas respons.
+Seluruh dua belas simulasi mempertahankan frekuensi dalam rentang diagnostik
+45–55 Hz. Kondisi tersebut menunjukkan bahwa ketiga konfigurasi dapat
+menyelesaikan skenario yang diuji tanpa keluar dari domain kestabilan
+diagnostik yang telah ditetapkan. Akan tetapi, pemenuhan kriteria tersebut
+tidak identik dengan peningkatan kualitas respons dinamik.
 
-Simpangan frekuensi puncak pada kedua skenario primer terjadi pada sekitar
-t = 2,60 s, sedangkan RoCoF maksimum terjadi pada t = 2,50 s. Pembaruan gain
-adaptif pertama baru diterapkan pada t = 2,60 s. Dengan demikian, respons
-awal yang membentuk simpangan puncak dan RoCoF maksimum pada kedua skenario
-primer pada dasarnya terbentuk sebelum pengendali adaptif memiliki kesempatan
-untuk mengubah dinamika plant.
+Pada kedua skenario primer, simpangan frekuensi absolut maksimum terjadi pada
+t = 2,60 s, sedangkan RoCoF absolut maksimum terjadi pada t = 2,50 s.
+Pembaruan gain adaptif pertama juga dijadwalkan pada t = 2,60 s. Oleh karena
+itu, simpangan puncak terjadi **tidak lebih lambat daripada** pembaruan adaptif
+pertama, sedangkan RoCoF maksimum terbentuk sebelum pembaruan tersebut.
+Pernyataan ini lebih tepat daripada menganggap seluruh simpangan puncak terjadi
+sebelum pengendali adaptif mulai bekerja.
 
-Konsekuensi ini menjelaskan mengapa ketiga konfigurasi mempunyai simpangan
-puncak dan RoCoF maksimum yang sama pada masing-masing skenario primer,
-meskipun RMSE dan respons setelah puncak berbeda. Manfaat atau kerugian
-penjadwalan gain pada konfigurasi penelitian ini terutama tercermin pada
-pemulihan setelah transien awal, bukan pada ekstrem awal gangguan.
+Pada masing-masing skenario primer, nilai simpangan puncak dan RoCoF maksimum
+identik untuk PI gain tetap, LSTM–PI, dan QLSTM–PI. Dengan cadence observasi
+20 Hz dan pembaruan gain 10 Hz yang dibekukan, bukti tersebut menunjukkan
+bahwa perbedaan antarpengendali terutama muncul pada fase respons setelah
+ekstrem awal, yang kemudian tercermin pada RMSE selama horizon evaluasi.
+Temuan ini tidak digunakan untuk menyimpulkan bahwa penjadwalan gain secara
+umum tidak dapat memengaruhi puncak transien pada konfigurasi waktu pembaruan
+yang berbeda.
 
-Pada dua keluarga uji primer, total variation duty QLSTM–PI sekitar
-6.40 kali PI gain tetap dan
-5.57 kali LSTM–PI. Besarnya variasi tersebut menunjukkan
-bahwa perubahan gain yang dihasilkan QLSTM menyebabkan aktivitas pengendalian
-dump load yang lebih tinggi, tanpa diikuti penurunan RMSE pada dua skenario
-uji independen.
+Perbedaan antarpengendali juga terlihat pada aktivitas *dump load*. Pada dua
+keluarga uji primer, rerata *total variation duty* QLSTM–PI sekitar 6,40 kali
+PI gain tetap dan 5,57 kali LSTM–PI. Gain guard tercatat aktif secara material
+dan tidak terjadi *fallback* model. Aktivitas kendali QLSTM–PI yang lebih besar
+tersebut tidak disertai RMSE yang lebih rendah pada kedua keluarga uji primer.
+Hubungan ini diperlakukan sebagai karakteristik implementasi yang diamati,
+bukan sebagai bukti bahwa variasi *duty* yang tinggi secara tunggal menyebabkan
+penurunan kinerja frekuensi.
+
 
 ## 4.7 Beban Komputasi
 
-Perbedaan lain yang terlihat jelas terdapat pada kebutuhan komputasi.
-Rerata waktu simulasi 10 s untuk PI gain tetap adalah
-0.675 s. LSTM–PI membutuhkan
-0.897 s, sedangkan QLSTM–PI membutuhkan
-32.570 s.
-
-Dengan konfigurasi CPU dan PennyLane yang digunakan, waktu simulasi QLSTM–PI
-sekitar 36.33 kali waktu simulasi LSTM–PI.
+Beban komputasi dievaluasi dari waktu eksekusi simulasi *closed-loop* 10 s
+pada implementasi CPU yang digunakan. Rerata waktu satu simulasi adalah
+0,675 s untuk PI gain tetap, 0,897 s untuk LSTM–PI, dan 32,570 s untuk
+QLSTM–PI. Dengan konfigurasi perangkat lunak dan perangkat keras yang sama pada
+pengujian ini, rerata waktu simulasi QLSTM–PI sekitar 36,33 kali waktu simulasi
+LSTM–PI.
 
 **[Masukkan Gambar 4.8 — fig157_computational_runtime_comparison.png]**
 
-**Gambar 4.8.** Perbandingan rerata waktu komputasi simulasi *closed-loop*.
+**Gambar 4.8.** Perbandingan rerata waktu komputasi simulasi *closed-loop*
+pada implementasi CPU yang digunakan.
 
-Estimasi overhead implementasi LSTM adalah sekitar
-0.0030 s per pembaruan gain, sedangkan QLSTM sekitar
-0.4310 s. Periode pembaruan gain yang dibekukan
-adalah 0,10 s. Implementasi LSTM pada CPU masih berada di bawah anggaran
-tersebut, sedangkan implementasi QLSTM belum menunjukkan kemampuan memenuhi
-pembaruan 10 Hz.
+Estimasi *paired overhead* terhadap PI gain tetap adalah sekitar 0,0030 s per
+pembaruan gain untuk LSTM–PI dan 0,4310 s per pembaruan untuk QLSTM–PI.
+Periode pembaruan gain yang dibekukan adalah 0,10 s. Berdasarkan pengukuran
+implementasi tersebut, overhead LSTM–PI masih berada di bawah anggaran waktu
+nominal pembaruan 10 Hz, sedangkan implementasi QLSTM–PI yang digunakan belum
+menunjukkan kemampuan memenuhi anggaran yang sama.
 
-Nilai tersebut tidak boleh ditafsirkan sebagai latensi intrinsik komputasi
-kuantum karena pengukuran mencakup overhead implementasi PennyLane dan proses
-simulasi pada CPU. Namun, hasil tersebut tetap relevan sebagai indikator
-beban komputasi implementasi yang digunakan dalam penelitian ini.
+Nilai *paired overhead* tersebut **bukan pengukuran latensi inferensi model
+secara terisolasi**. Pengukuran mencakup overhead implementasi yang muncul
+selama simulasi *closed-loop*, termasuk komponen simulasi PennyLane pada CPU.
+Oleh karena itu, rasio waktu komputasi yang diperoleh tidak digunakan untuk
+menyatakan latensi intrinsik komputasi kuantum, keunggulan atau kelemahan
+perangkat keras kuantum, maupun *quantum speedup*. Hasil ini hanya menunjukkan
+beban komputasi dari implementasi *hybrid quantum–classical* yang digunakan
+dalam lingkungan simulasi penelitian ini.
+
+Dari sudut pandang implementasi pengendali, hasil tersebut tetap relevan karena
+scheduler harus menghasilkan gain dalam periode pembaruan yang tersedia.
+Dengan demikian, selain kualitas pengendalian frekuensi, kebutuhan komputasi
+menjadi salah satu keterbatasan praktis QLSTM–PI pada konfigurasi simulasi yang
+diuji.
 
 ## 4.8 Sintesis Hasil dan Posisi QLSTM
 
