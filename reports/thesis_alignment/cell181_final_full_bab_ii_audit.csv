@@ -1,0 +1,17 @@
+category,check,passed
+integrity,cell180_fix_checkpoint,True
+integrity,frozen_artifacts,True
+retained_theory,sections_2_1_to_2_6,True
+revision,all_cell179_gaps_resolved,True
+revision,authoritative_composition_2_1_to_2_11,True
+equations,final_equation_contract,True
+equations,exact_eq_2_21_mean_mse,True
+model,final_model_data_contract,True
+model,section_2_7_text_contract,True
+scheduler,section_2_7_to_2_8_consistency,True
+evaluation,section_2_9_2_11_contract,True
+literature,section_2_10_composite,True
+science,qlstm_g3_restraint,True
+science,quantum_scope,True
+science,corrected_no_post_result_tuning,True
+cross_chapter,bab_i_bab_ii_bab_iv_alignment,True

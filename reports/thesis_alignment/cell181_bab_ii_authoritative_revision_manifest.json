@@ -1,0 +1,95 @@
+{
+  "audit_pass": true,
+  "bab_ii_fully_aligned": true,
+  "bab_iii_revision_authorized": true,
+  "bab_v_drafting_authorized": false,
+  "cell181_original_failure": {
+    "correct_top_level_keys": [
+      "analysis_policy",
+      "scientific_freeze"
+    ],
+    "obsolete_key": "freeze_policy",
+    "scientific_content_changed": false,
+    "type": "SCHEMA_KEY_FALSE_NEGATIVE"
+  },
+  "equation_contract": {
+    "equation_2_21": "1/(N*d_y) * sum_j ||z_j-zhat_j||_2^2, d_y=2",
+    "removed": [
+      "2.28",
+      "2.29"
+    ],
+    "retained_boundary": [
+      "2.17",
+      "2.18"
+    ],
+    "revised_sequence": [
+      "2.19",
+      "2.20",
+      "2.21",
+      "2.22",
+      "2.23",
+      "2.24",
+      "2.25",
+      "2.26",
+      "2.27"
+    ]
+  },
+  "meaning_of_fully_aligned": "The authoritative revision set is scientifically complete and internally consistent; the source DOCX has not yet been rewritten.",
+  "revision_artifacts": {
+    "cell178": {
+      "path": "reports/thesis_alignment/cell178_bab_ii_targeted_revisions.md",
+      "sha256": "fa8a8bea9fc612f7ccdc99a466acfbda0d9764b3b0c9313e26f9b65c45c44f06"
+    },
+    "cell180_fixed": {
+      "path": "reports/thesis_alignment/cell180_bab_ii_section_2_7_and_table_revision.md",
+      "sha256": "5c9474252d802711ebe12b53b64012838f7cdd86768b34e7b9a5754cbcb31296"
+    }
+  },
+  "scientific_contract": {
+    "closed_loop_run_count": 12,
+    "features": [
+      "frequency_deviation_hz",
+      "mechanical_power_kw",
+      "electrical_power_kw",
+      "dump_power_kw"
+    ],
+    "gain_update_rate_hz": 10.0,
+    "observation_rate_hz": 20.0,
+    "primary_independent_family_count": 2,
+    "primary_metric": "frequency_deviation_rmse_hz",
+    "sequence_length": 11
+  },
+  "scientific_freeze": {
+    "no_post_test_model_retraining": true,
+    "no_posthoc_scenario_selection": true,
+    "no_posthoc_scheduler_tuning": true,
+    "post_result_model_retraining_allowed": false,
+    "post_result_scenario_selection_allowed": false,
+    "post_result_scheduler_policy_change_allowed": false
+  },
+  "scientific_restrictions": {
+    "exponential_smoothing_used": false,
+    "independent_g3_generalization_claim": false,
+    "monte_carlo_performed": false,
+    "post_result_tuning": false,
+    "qlstm_superiority_claim": false,
+    "quantum_advantage_claim": false,
+    "statistical_significance_claim": false
+  },
+  "sections": {
+    "2.1": "RETAINED_SOURCE_REVIEWED_CELL179",
+    "2.10": "RETAIN_SOURCE_LITERATURE_SYNTHESIS_AND_TABLE_EXCEPT_RESEARCH_ROW;CELL180_RESEARCH_ROW;CELL178_RESEARCH_POSITION_TAIL",
+    "2.11": "CELL178_FULL_REPLACEMENT",
+    "2.2": "RETAINED_SOURCE_REVIEWED_CELL179",
+    "2.3": "RETAINED_SOURCE_REVIEWED_CELL179",
+    "2.4": "RETAINED_SOURCE_REVIEWED_CELL179",
+    "2.5": "RETAINED_SOURCE_REVIEWED_CELL179",
+    "2.6": "RETAINED_SOURCE_REVIEWED_CELL179",
+    "2.7": "CELL180_CORRECTED_SECTION_2_7_REVISION_SHA_5c9474252d802711ebe12b53b64012838f7cdd86768b34e7b9a5754cbcb31296",
+    "2.8": "CELL178_FULL_REPLACEMENT",
+    "2.9": "CELL178_FULL_REPLACEMENT"
+  },
+  "source_docx_modified": false,
+  "source_proposal": "Proposal Tesis_03092026_konsep_baru.docx",
+  "stage": "FINAL_BAB_II_AUTHORITATIVE_REVISION_MANIFEST"
+}

@@ -1,0 +1,45 @@
+{
+  "all_cell179_gaps_resolved": true,
+  "audit_check_count": 16,
+  "audit_pass": true,
+  "authoritative_composition_valid": true,
+  "bab_ii_final_revision_frozen": true,
+  "bab_ii_fully_aligned": true,
+  "bab_iii_revision_authorized": true,
+  "bab_v_drafting_authorized": false,
+  "cross_chapter_alignment": true,
+  "equation_contract": true,
+  "evaluation_contract": true,
+  "execution": {
+    "bab_i_modified": false,
+    "bab_iv_modified": false,
+    "inference": false,
+    "monte_carlo": false,
+    "proposal_docx_modified": false,
+    "significance_test": false,
+    "simulation": false,
+    "training": false
+  },
+  "failed_check_count": 0,
+  "model_data_contract": true,
+  "original_cell181_failure": {
+    "cause": "nonexistent pre_sim.freeze_policy key",
+    "correct_schema": [
+      "analysis_policy",
+      "scientific_freeze"
+    ],
+    "scientific_content_changed": false
+  },
+  "post_result_tuning_prohibited": true,
+  "retained_sections_2_1_to_2_6": true,
+  "revision_shas": {
+    "cell178": "fa8a8bea9fc612f7ccdc99a466acfbda0d9764b3b0c9313e26f9b65c45c44f06",
+    "cell180_fixed": "5c9474252d802711ebe12b53b64012838f7cdd86768b34e7b9a5754cbcb31296"
+  },
+  "scheduler_contract": true,
+  "scientific_restraint": true,
+  "section_2_10_composite": true,
+  "source_checkpoint": "ac2a509d8fd41bb9e8c28a2b23979e939de21fc6",
+  "source_docx_modified": false,
+  "stage": "FINAL_FULL_BAB_II_2_1_TO_2_11_CONSISTENCY_AUDIT"
+}
