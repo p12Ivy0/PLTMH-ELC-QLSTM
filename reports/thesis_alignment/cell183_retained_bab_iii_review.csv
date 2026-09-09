@@ -1,0 +1,8 @@
+section,title,status,reason
+3.1,Desain Penelitian,REVISION_REQUIRED,"Primary independent evaluation unit, primary metric, gain-envelope wording and inferential-statistics framing are obsolete."
+3.2,"Tempat, Perangkat, dan Waktu Penelitian",REVISION_REQUIRED,Prospective software alternatives should be replaced by the realized Python/PyTorch/PennyLane CPU environment; statistical schedule wording is obsolete.
+3.3,Pemodelan Sistem PLTMH–ELC,REVISION_REQUIRED,"The retained turbine-governor description conflicts with the final primary closed-loop scope: averaged ELC and constant mechanical power, without governor/waterway dynamics."
+3.6,Pembentukan Target Gain,REVISION_REQUIRED,"Core grid labeling remains usable, but unfrozen tie-break and performed grid-size sensitivity claims must be removed unless supported by executed evidence."
+3.8,Pengembangan Model LSTM dan QLSTM,REVISION_REQUIRED,Final scheduler-boundary location and single fixed-seed training protocol differ from the retained source wording.
+3.11,Kriteria Keberhasilan Penelitian,REVISION_REQUIRED,Research success cannot depend on QLSTM superiority or inferential statistical support; negative results are scientifically valid.
+3.12,Alur Penelitian,REVISION_REQUIRED,"Flow must use dynamic-family splitting, descriptive evaluation, actual scheduler chain and explicit G3 diagnostic limitation."

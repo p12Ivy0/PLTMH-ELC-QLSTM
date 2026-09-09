@@ -1,0 +1,56 @@
+{
+  "section_3_1": {
+    "source_findings": [
+      "Unit analysis is stated as one closed-loop disturbance scenario.",
+      "Dependent variables emphasize IAE/ITAE and the overview ends with comparative and statistical evaluation.",
+      "The methodological sequence still refers to a safe gain range."
+    ],
+    "title": "Desain Penelitian"
+  },
+  "section_3_11": {
+    "source_findings": [
+      "Success criteria still use scenario separation terminology.",
+      "QLSTM superiority is conditioned on majority-scenario improvement and statistical support."
+    ],
+    "title": "Kriteria Keberhasilan Penelitian"
+  },
+  "section_3_12": {
+    "source_findings": [
+      "Dataset separation is still described as scenario-based.",
+      "Final interpretation is described using technical, statistical and computational performance.",
+      "The flow does not explicitly distinguish held-out G1/G2 primary families from the G3 in-distribution diagnostic."
+    ],
+    "title": "Alur Penelitian"
+  },
+  "section_3_2": {
+    "source_findings": [
+      "Software environment remains prospective: MATLAB/Simulink or Python and PennyLane or Qiskit.",
+      "The schedule still labels the analysis stage as comparative and statistical."
+    ],
+    "title": "Tempat, Perangkat, dan Waktu Penelitian"
+  },
+  "section_3_3": {
+    "source_findings": [
+      "The source states that a turbine-governor model is used.",
+      "Final primary closed-loop interpretation is explicitly limited to averaged ELC with constant mechanical power."
+    ],
+    "title": "Pemodelan Sistem PLTMH–ELC"
+  },
+  "section_3_6": {
+    "source_findings": [
+      "Core deterministic coarse-to-fine grid labeling remains consistent.",
+      "The source additionally claims a near-tie rule using neighboring-gain variation or stability margin.",
+      "The source states that grid-size sensitivity analysis was performed on a subset of scenarios; this is not part of the frozen final evidence."
+    ],
+    "title": "Pembentukan Target Gain"
+  },
+  "section_3_8": {
+    "source_findings": [
+      "The source says regression heads and output bounds are made equivalent, although final safety bounds belong to the shared scheduler after inverse target scaling.",
+      "The source states that each configuration is trained with multiple seeds.",
+      "Frozen final LSTM and QLSTM protocols use one fixed seed: 20260909."
+    ],
+    "title": "Pengembangan Model LSTM dan QLSTM"
+  },
+  "source": "Proposal Tesis_03092026_konsep_baru.docx"
+}
