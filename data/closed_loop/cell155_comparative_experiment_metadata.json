@@ -1,0 +1,49 @@
+{
+  "adaptive_simulator_contract_sha256": "2a21ccb8a0a03f98c9498e6b9507633a4314e53b893a7bd49744fcb63e8695a1",
+  "artifact_sha256": {
+    "adaptive_updates": "058ac58f1168dd85ae687ee40ace3e30de55863155716d46121fd1a84c042b84",
+    "metrics": "a9386b074dd5f5476b08439de2708826053d2c8db475233ea91f00bccd60c526",
+    "primary_summary": "e167773ea800de79b599196d79b94426121801ae9e68761bd2b3b16334dca1d5",
+    "trajectories": "0a5a53a21f486c9020bcfbf7c236f739725e738af0181190f7e47c77336dba6b"
+  },
+  "experiment": {
+    "boundary_stress": "D20_L+20",
+    "controller_count": 3,
+    "g3_diagnostic": "D30_L+20",
+    "primary_family_keys": [
+      "D40_L-20",
+      "D20_L+10"
+    ],
+    "primary_independent_families": 2,
+    "run_count": 12,
+    "scenario_count": 4
+  },
+  "experiment_complete": true,
+  "frozen_models": {
+    "lstm_sha256": "33fe34d8c06f2fdae316a302e75f5f398a9049e572093358dc77c3d8ee2d9a27",
+    "qlstm_sha256": "bf1a049a8bae552f5be7a3460507fe9d3912af7540ba617ea79623676862cfd7"
+  },
+  "next_cell": "CELL_156_CLOSED_LOOP_RESULT_AUDIT_AND_SCIENTIFIC_INTERPRETATION",
+  "precomparison_checkpoint": "611ad6fa5b1a29ebd39433859d3e148291e35a1b",
+  "primary_metric": "frequency_deviation_rmse_hz",
+  "results": {
+    "adaptive_update_records": 592,
+    "all_runs_structurally_valid": true,
+    "lowest_descriptive_mean_primary_rmse_controller": "FIXED_PI",
+    "lowest_descriptive_mean_primary_rmse_hz": 0.012478396116523686,
+    "total_experiment_runtime_s": 136.792607589
+  },
+  "scientific_policy": {
+    "independent_g3_generalization_claim_allowed": false,
+    "model_retrained": false,
+    "performance_used_to_change_protocol": false,
+    "post_result_tuning_allowed": false,
+    "primary_aggregate_is_descriptive_only": true,
+    "scenario_changed": false,
+    "scheduler_changed": false,
+    "significance_test_performed": false,
+    "simulator_changed": false,
+    "window_or_rk4_samples_treated_as_independent": false
+  },
+  "stage": "FROZEN_CLOSED_LOOP_COMPARATIVE_EXPERIMENT"
+}

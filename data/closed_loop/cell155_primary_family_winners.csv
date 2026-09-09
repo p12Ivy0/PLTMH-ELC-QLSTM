@@ -1,0 +1,3 @@
+scenario_id,family_key,lowest_rmse_controller,lowest_rmse_hz
+CL01,D40_L-20,FIXED_PI,0.016637861488698245
+CL02,D20_L+10,LSTM_PI,0.007459542453304937
