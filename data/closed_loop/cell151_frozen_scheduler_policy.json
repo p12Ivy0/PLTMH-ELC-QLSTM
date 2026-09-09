@@ -1,0 +1,87 @@
+{
+  "admissible_gain_envelope": {
+    "interpretation": "Finalized supervised-label envelope; not a universal physical stability guarantee.",
+    "ki_max": 14.144,
+    "ki_min": 3.0368,
+    "kp_max": 3.36,
+    "kp_min": 2.16
+  },
+  "cell151_data_access": {
+    "test": false,
+    "train": true,
+    "validation": false
+  },
+  "fairness": {
+    "same_bounds_lstm_qlstm": true,
+    "same_fallback_lstm_qlstm": true,
+    "same_rate_limit_lstm_qlstm": true,
+    "same_scaler_lstm_qlstm": true,
+    "same_update_cadence_lstm_qlstm": true
+  },
+  "fallback": {
+    "ki": 5.72,
+    "kp": 2.16,
+    "transition": "same_gain_rate_limiter",
+    "trigger": "nonfinite_or_failed_model_inference"
+  },
+  "fixed_pi": {
+    "ki": 5.72,
+    "kp": 2.16
+  },
+  "gain_update": {
+    "between_updates": "ZERO_ORDER_HOLD",
+    "observations_per_update": 2,
+    "selected_using_closed_loop_results": false,
+    "update_dt_s": 0.1,
+    "update_rate_hz": 10.0
+  },
+  "input": {
+    "feature_standardization": "CELL_138_TRAIN_ONLY_SCALER",
+    "features": [
+      "frequency_deviation_hz",
+      "mechanical_power_kw",
+      "electrical_power_kw",
+      "dump_power_kw"
+    ],
+    "observation_dt_s": 0.05,
+    "observation_rate_hz": 20.0,
+    "window_points": 11,
+    "window_span_s": 0.5
+  },
+  "model_artifacts": {
+    "lstm": {
+      "parameters": 5426,
+      "path": "models/lstm_baseline/cell139_classical_lstm.pt",
+      "sha256": "33fe34d8c06f2fdae316a302e75f5f398a9049e572093358dc77c3d8ee2d9a27"
+    },
+    "qlstm": {
+      "parameters": 5422,
+      "path": "models/qlstm/cell148_qlstm_best.pt",
+      "quantum_parameters": 48,
+      "sha256": "bf1a049a8bae552f5be7a3460507fe9d3912af7540ba617ea79623676862cfd7"
+    }
+  },
+  "model_stage_checkpoint": "3787800b408e06f0855dda756c0cb4e0247c4982",
+  "model_training_closed": true,
+  "next_cell": "CELL_152_PREDEFINED_CLOSED_LOOP_SCENARIO_MATRIX",
+  "post_test_retraining_allowed": false,
+  "processing_order": [
+    "raw_window",
+    "feature_standardization",
+    "frozen_model_inference",
+    "inverse_target_scaling",
+    "finite_check",
+    "admissible_gain_clipping",
+    "gain_rate_limiting",
+    "applied_gain"
+  ],
+  "rate_limit": {
+    "ki_max_rate_per_s": 11.1072,
+    "ki_max_step_per_update": 1.1107200000000002,
+    "kp_max_rate_per_s": 1.1999999999999997,
+    "kp_max_step_per_update": 0.11999999999999998,
+    "minimum_full_range_traverse_time_s": 1.0,
+    "selected_using_closed_loop_results": false
+  },
+  "stage": "FROZEN_SCHEDULER_INTERFACE_AND_GAIN_POLICY"
+}

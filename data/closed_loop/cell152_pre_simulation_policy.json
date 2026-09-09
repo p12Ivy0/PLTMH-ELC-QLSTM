@@ -1,0 +1,103 @@
+{
+  "analysis_policy": {
+    "boundary_stress_reported_separately": true,
+    "descriptive_unweighted_family_mean_allowed": true,
+    "family_level_significance_test_planned": false,
+    "g3_independent_generalization_claim_allowed": false,
+    "g3_train_family_reported_separately": true,
+    "interpretation_rule": "Closed-loop results quantify consequences of the already-frozen schedulers. They do not reopen model selection.",
+    "monte_carlo_claim": "NOT_PART_OF_THIS_DETERMINISTIC_PRIMARY_STAGE",
+    "oracle_gain_used_for_control": false,
+    "post_result_model_retraining_allowed": false,
+    "post_result_scenario_selection_allowed": false,
+    "post_result_scheduler_policy_change_allowed": false,
+    "primary_aggregation_unit": "DYNAMIC_FAMILY",
+    "primary_comparison": "FIXED_PI vs LSTM_PI vs QLSTM_PI",
+    "primary_independent_families": [
+      "D40_L-20",
+      "D20_L+10"
+    ],
+    "primary_independent_family_count": 2,
+    "primary_metric": "frequency_deviation_rmse_hz",
+    "reason_no_significance_test": "Only two independent primary held-out dynamic families are available.",
+    "report_family_results_individually": true,
+    "window_level_significance_tests_allowed": false
+  },
+  "cell151_scheduler_policy": {
+    "path": "data/closed_loop/cell151_frozen_scheduler_policy.json",
+    "sha256": "c5071537ab73105f5481c871b921e5f0386699c43c898a54d8837069cea80fd5"
+  },
+  "data_access": {
+    "closed_loop_result": false,
+    "split_structure_metadata": true,
+    "test_prediction": false,
+    "train_prediction": false,
+    "validation_prediction": false
+  },
+  "metric_definitions": {
+    "avoidable_saturation_fraction": "use the existing boundary-aware definition already frozen in the project logger",
+    "dump_duty_total_variation": "use the existing logger/control definition without modification",
+    "final_abs_frequency_error_hz": "abs(delta_f) at the final evaluation time",
+    "frequency_deviation_rmse_hz": "sqrt(mean(delta_f^2)) over the full 7.5-s post-disturbance interval",
+    "max_abs_rocof_hz_per_s": "maximum absolute physics-RHS RoCoF over the post-disturbance interval",
+    "peak_abs_frequency_deviation_hz": "max(abs(delta_f)) over the full 7.5-s post-disturbance interval",
+    "settling_time_s": "earliest time after disturbance for which |delta_f| <= 0.05 Hz continuously through the end of the 7.5-s horizon; if never settled, report 7.5 s"
+  },
+  "next_cell": "CELL_153_CLOSED_LOOP_SIMULATOR_READINESS_AND_SCENARIO_RESOLUTION",
+  "numerical_design": {
+    "canonical_mechanical_power_kw": 90.0,
+    "disturbance_step_index": 1000,
+    "disturbance_time_s": 2.5,
+    "first_adaptive_update_s": 2.6,
+    "first_adaptive_update_step": 1040,
+    "post_disturbance_horizon_s": 7.5,
+    "rk4_steps_per_gain_update": 40,
+    "rk4_steps_per_observation": 20,
+    "simulation_end_s": 10.0,
+    "simulation_start_s": 0.0,
+    "solver": "FIXED_STEP_RK4",
+    "solver_dt_s": 0.0025
+  },
+  "scenario_design": {
+    "boundary_stress_scenarios": [
+      "CL03"
+    ],
+    "controller_count": 3,
+    "controllers": [
+      "FIXED_PI",
+      "LSTM_PI",
+      "QLSTM_PI"
+    ],
+    "diagnostic_scenarios": [
+      "CL04"
+    ],
+    "family_count": 4,
+    "primary_families": [
+      "D40_L-20",
+      "D20_L+10"
+    ],
+    "primary_runs": 6,
+    "primary_scenarios": [
+      "CL01",
+      "CL02"
+    ],
+    "total_deterministic_runs": 12
+  },
+  "scheduler_arming": {
+    "adaptive_arm_condition": "FIRST_10HZ_GAIN_UPDATE_STRICTLY_AFTER_DISTURBANCE",
+    "first_adaptive_update_s": 2.6,
+    "observation_buffer": "COLLECT_CONTINUOUSLY_FROM_SIMULATION_START",
+    "pre_disturbance_gain": "FIXED_PI"
+  },
+  "scientific_freeze": {
+    "adaptive_arming_selected_before_results": true,
+    "metrics_selected_before_results": true,
+    "no_post_test_model_retraining": true,
+    "no_posthoc_scenario_selection": true,
+    "no_posthoc_scheduler_tuning": true,
+    "numerical_settings_selected_before_results": true,
+    "scenarios_selected_before_results": true
+  },
+  "settling_band_hz": 0.05,
+  "stage": "CLOSED_LOOP_EXPERIMENT_PREREGISTRATION"
+}
