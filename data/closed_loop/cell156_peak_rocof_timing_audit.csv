@@ -1,0 +1,13 @@
+run_id,scenario_id,family_key,controller,peak_abs_frequency_time_s,peak_before_or_at_first_adaptive_update,max_abs_rocof_time_s,rocof_before_or_at_first_adaptive_update
+CLR01,CL01,D40_L-20,FIXED_PI,2.6,True,2.5,True
+CLR02,CL01,D40_L-20,LSTM_PI,2.6,True,2.5,True
+CLR03,CL01,D40_L-20,QLSTM_PI,2.6,True,2.5,True
+CLR04,CL02,D20_L+10,FIXED_PI,2.6,True,2.5,True
+CLR05,CL02,D20_L+10,LSTM_PI,2.6,True,2.5,True
+CLR06,CL02,D20_L+10,QLSTM_PI,2.6,True,2.5,True
+CLR07,CL03,D20_L+20,FIXED_PI,2.705,False,2.5,True
+CLR08,CL03,D20_L+20,LSTM_PI,2.705,False,2.5,True
+CLR09,CL03,D20_L+20,QLSTM_PI,2.705,False,2.5,True
+CLR10,CL04,D30_L+20,FIXED_PI,2.6,True,2.5,True
+CLR11,CL04,D30_L+20,LSTM_PI,2.6,True,2.5,True
+CLR12,CL04,D30_L+20,QLSTM_PI,2.6,True,2.5,True

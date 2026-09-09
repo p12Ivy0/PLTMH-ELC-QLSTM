@@ -1,0 +1,16 @@
+claim_id,status,claim,evidence
+CL156-C01,SUPPORTED_DESCRIPTIVE,Fixed PI had the lowest unweighted mean frequency-deviation RMSE across the two predefined independent held-out families.,Fixed=0.012478396 Hz; LSTM=0.013809947 Hz; QLSTM=0.016150129 Hz.
+CL156-C02,SUPPORTED_DESCRIPTIVE,LSTM-PI performance relative to Fixed PI was scenario-dependent rather than consistently better.,"Primary wins: Fixed=1/2, LSTM=1/2."
+CL156-C03,NOT_SUPPORTED,QLSTM-PI improves primary held-out closed-loop frequency RMSE over Fixed PI.,QLSTM primary wins=0/2; mean RMSE increase vs Fixed=29.425%.
+CL156-C04,NOT_SUPPORTED,QLSTM-PI outperforms classical LSTM-PI on the primary held-out families.,QLSTM mean RMSE is 16.946% higher than LSTM.
+CL156-C05,SUPPORTED_WITH_SCOPE_LIMIT,"Across the four predefined deterministic scenarios, classical LSTM-PI had lower RMSE than QLSTM-PI in every scenario.",LSTM lower RMSE in 4/4 predefined scenarios; only two are primary independent held-out families.
+CL156-C06,SUPPORTED,All three controllers remained within the project's 45–55 Hz stability diagnostic in all twelve deterministic runs.,Stable runs=12/12.
+CL156-C07,SUPPORTED,The frozen 2.60-s adaptive arming policy did not alter primary peak deviation or maximum RoCoF because these extrema were established no later than the first adaptive gain update.,Peak timing pre-adaptive=True; RoCoF timing pre-adaptive=True; identical peak=True; identical RoCoF=True.
+CL156-C08,SUPPORTED,The common gain-safety layer materially modified adaptive scheduler outputs in at least some primary runs.,Gain guard active=True.
+CL156-C09,SUPPORTED_DESCRIPTIVE,QLSTM-PI produced substantially greater dump-duty variation than Fixed PI and LSTM-PI across the primary families.,QLSTM/Fixed duty-TV ratio=6.404; QLSTM/LSTM=5.567.
+CL156-C10,SUPPORTED_WITH_CAVEAT,The current CPU/PennyLane implementation does not demonstrate 10-Hz QLSTM scheduler execution within the nominal 0.10-s gain-update budget.,"Approximate paired QLSTM overhead/update=0.4310 s; budget=0.1000 s. This is implementation-level simulation overhead, not isolated hardware inference latency."
+CL156-C11,SUPPORTED_WITH_CAVEAT,Gain-regression error and closed-loop frequency-control degradation are not proportional quantities.,"QLSTM gain-test MSE is 241.2% higher than LSTM, whereas QLSTM primary mean closed-loop RMSE is 16.9% higher."
+CL156-C12,SUPPORTED_WITH_SCOPE_LIMIT,Both adaptive schedulers improved RMSE relative to Fixed PI in the G3 CL04 diagnostic case.,CL04 is a TRAIN-family in-distribution diagnostic and cannot establish independent G3 generalization.
+CL156-C13,NOT_TESTED,QLSTM generalizes to an independently held-out G3 family.,No independent G3 family exists in the finalized validation/test split.
+CL156-C14,PROHIBITED,Statistical significance may be inferred from the thousands of RK4 trajectory samples.,The primary evaluation contains only two independent held-out dynamic families.
+CL156-C15,PROHIBITED,"Models, scheduler rules, scenarios, or simulator settings may be changed to improve the observed Cell-155 result.",All were frozen and checkpointed before the comparative experiment.

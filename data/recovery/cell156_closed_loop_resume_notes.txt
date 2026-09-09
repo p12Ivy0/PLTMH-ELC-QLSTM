@@ -1,0 +1,84 @@
+PLTMH-ELC-QLSTM — CLOSED-LOOP PRIMARY RESULT FROZEN
+
+RAW RESULT CHECKPOINT
+---------------------
+bb5afb3a09041c292d914eb10bde0b495db1e7a7
+
+PRIMARY INDEPENDENT FAMILIES
+----------------------------
+CL01 D40_L-20
+CL02 D20_L+10
+
+PRIMARY MEAN RMSE
+-----------------
+Fixed PI : 0.012478396117 Hz
+LSTM-PI  : 0.013809947252 Hz
+QLSTM-PI : 0.016150128697 Hz
+
+PRIMARY RMSE WINS
+-----------------
+Fixed PI : 1/2
+LSTM-PI  : 1/2
+QLSTM-PI : 0/2
+
+MEAN-RMSE CHANGE
+----------------
+LSTM vs Fixed:
+10.670852% higher
+
+QLSTM vs Fixed:
+29.424716% higher
+
+QLSTM vs LSTM:
+16.945622% higher
+
+CONTROL EFFORT
+--------------
+QLSTM duty-TV / Fixed:
+6.404012x
+
+QLSTM duty-TV / LSTM:
+5.567497x
+
+COMPUTATIONAL BURDEN
+--------------------
+Mean Fixed run runtime:
+0.674723 s
+
+Mean LSTM run runtime:
+0.896540 s
+
+Mean QLSTM run runtime:
+32.570478 s
+
+QLSTM/LSTM runtime ratio:
+36.329100x
+
+Approx. LSTM paired overhead/update:
+0.002998 s
+
+Approx. QLSTM paired overhead/update:
+0.431024 s
+
+Nominal 10-Hz gain-update budget:
+0.100000 s
+
+SCIENTIFIC CONCLUSION
+---------------------
+Pada dua keluarga dinamik uji independen yang telah dipraregistrasikan, QLSTM–PI tidak menunjukkan keunggulan kinerja closed-loop terhadap PI gain tetap maupun LSTM–PI berdasarkan RMSE deviasi frekuensi. PI gain tetap menghasilkan rerata RMSE terendah, sedangkan manfaat LSTM–PI bersifat bergantung pada skenario: meningkat pada D20_L+10 tetapi menurun pada D40_L-20.
+
+QLSTM tetap mempertahankan kestabilan pada seluruh skenario yang diuji, tetapi tidak memenangkan RMSE pada kedua keluarga uji utama. Hasil tersebut disertai variasi duty dump-load dan beban komputasi yang lebih besar pada implementasi simulator kuantum saat ini.
+
+SCOPE
+-----
+Kesimpulan dibatasi pada dua keluarga uji independen, model ELC averaged, daya mekanik konstan, simulasi deterministik, serta kebijakan observasi 20 Hz dan pembaruan gain 10 Hz yang telah dibekukan. Hasil tidak mendukung klaim generalisasi independen untuk G3 dan tidak digunakan untuk membuat klaim signifikansi statistik.
+
+LOCKED POLICY
+-------------
+- no model retraining
+- no scheduler retuning
+- no simulator changes to rescue results
+- no scenario replacement
+- no p-value from RK4 samples/windows
+- no independent G3 claim
+- primary negative QLSTM result must be retained

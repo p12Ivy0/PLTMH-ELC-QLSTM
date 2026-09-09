@@ -1,0 +1,70 @@
+{
+  "cell155_raw_result_checkpoint": "bb5afb3a09041c292d914eb10bde0b495db1e7a7",
+  "computational_burden": {
+    "caveat": "Paired overhead is not isolated pure model inference latency. It includes implementation-level simulation overhead.",
+    "fixed_mean_full_run_runtime_s": 0.6747233790003975,
+    "gain_update_budget_s": 0.1,
+    "lstm_approx_overhead_per_update_s": 0.0029975172162107194,
+    "lstm_current_10hz_budget_demonstrated": true,
+    "lstm_mean_full_run_runtime_s": 0.8965396529999907,
+    "qlstm_approx_overhead_per_update_s": 0.43102371570269593,
+    "qlstm_current_10hz_budget_demonstrated": false,
+    "qlstm_mean_full_run_runtime_s": 32.5704783409999,
+    "qlstm_to_lstm_runtime_ratio": 36.32909959086911
+  },
+  "control_effort": {
+    "fallback_used": false,
+    "gain_guard_materially_active": true,
+    "qlstm_duty_tv_ratio_vs_fixed": 6.404012444456979,
+    "qlstm_duty_tv_ratio_vs_lstm": 5.5674973577030435
+  },
+  "model_control_link": {
+    "lstm_gain_test_mse": 0.86862868,
+    "proportional_mapping_claim": false,
+    "qlstm_closed_loop_mean_rmse_increase_vs_lstm_pct": 16.945621886292017,
+    "qlstm_gain_mse_increase_vs_lstm_pct": 241.17563465189141,
+    "qlstm_gain_test_mse": 2.963549411758347
+  },
+  "next_stage": "OPTIONAL_PREDECLARED_ROBUSTNESS_OR_FINAL_THESIS_SYNTHESIS",
+  "post_result_policy": {
+    "model_retraining_allowed": false,
+    "primary_result_replacement_allowed": false,
+    "scenario_selection_change_allowed": false,
+    "scheduler_retuning_allowed": false,
+    "simulator_modification_to_improve_result_allowed": false
+  },
+  "primary_evidence": {
+    "fixed_pi_mean_rmse_hz": 0.012478396116523651,
+    "fixed_primary_wins": 1,
+    "independent_family_count": 2,
+    "lstm_mean_rmse_increase_vs_fixed_pct": 10.670851634471155,
+    "lstm_pi_mean_rmse_hz": 0.0138099472524795,
+    "lstm_primary_wins": 1,
+    "qlstm_mean_rmse_increase_vs_fixed_pct": 29.424715690787867,
+    "qlstm_mean_rmse_increase_vs_lstm_pct": 16.945621886292017,
+    "qlstm_pi_mean_rmse_hz": 0.01615012869658105,
+    "qlstm_primary_wins": 0
+  },
+  "scientific_conclusion": {
+    "lstm_consistent_superiority_over_fixed_supported": false,
+    "negative_result_retained": true,
+    "primary": "Pada dua keluarga dinamik uji independen yang telah dipraregistrasikan, QLSTM\u2013PI tidak menunjukkan keunggulan kinerja closed-loop terhadap PI gain tetap maupun LSTM\u2013PI berdasarkan RMSE deviasi frekuensi. PI gain tetap menghasilkan rerata RMSE terendah, sedangkan manfaat LSTM\u2013PI bersifat bergantung pada skenario: meningkat pada D20_L+10 tetapi menurun pada D40_L-20.",
+    "qlstm": "QLSTM tetap mempertahankan kestabilan pada seluruh skenario yang diuji, tetapi tidak memenangkan RMSE pada kedua keluarga uji utama. Hasil tersebut disertai variasi duty dump-load dan beban komputasi yang lebih besar pada implementasi simulator kuantum saat ini.",
+    "qlstm_superiority_supported": false,
+    "scope": "Kesimpulan dibatasi pada dua keluarga uji independen, model ELC averaged, daya mekanik konstan, simulasi deterministik, serta kebijakan observasi 20 Hz dan pembaruan gain 10 Hz yang telah dibekukan. Hasil tidak mendukung klaim generalisasi independen untuk G3 dan tidak digunakan untuk membuat klaim signifikansi statistik.",
+    "statistical_significance_claim_allowed": false
+  },
+  "secondary_evidence": {
+    "cl03_role": "BOUNDARY_STRESS_ONLY",
+    "cl04_role": "G3_IN_DISTRIBUTION_DIAGNOSTIC_ONLY",
+    "independent_g3_generalization": false
+  },
+  "stage": "CLOSED_LOOP_SCIENTIFIC_INTERPRETATION_FREEZE",
+  "timing": {
+    "first_adaptive_update_s": 2.6,
+    "peak_identical_across_primary_controllers": true,
+    "primary_peak_before_or_at_first_update": true,
+    "primary_rocof_before_or_at_first_update": true,
+    "rocof_identical_across_primary_controllers": true
+  }
+}
