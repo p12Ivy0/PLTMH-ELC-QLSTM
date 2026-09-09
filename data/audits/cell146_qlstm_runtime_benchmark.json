@@ -1,0 +1,46 @@
+{
+  "stage": "MINIMAL_QLSTM_RUNTIME_BENCHMARK",
+  "recovery_commit": "711ba83ee5ae74cc942b98fd3b1a7fefa5ff9df0",
+  "seed": 20260909,
+  "torch_version": "2.11.0+cpu",
+  "pennylane_version": "0.45.1",
+  "device": "cpu",
+  "dtype": "torch.float64",
+  "train_windows": 11200,
+  "validation_accessed": false,
+  "test_accessed": false,
+  "architecture": {
+    "input_dim": 4,
+    "sequence_length": 11,
+    "hidden_dim": 4,
+    "n_qubits": 4,
+    "vqc_depth": 1,
+    "quantum_gates": 4,
+    "total_parameters": 306,
+    "quantum_parameters": 48
+  },
+  "benchmark": {
+    "batch_sizes": [
+      1,
+      8,
+      32,
+      128,
+      256
+    ],
+    "timed_repeats": 2,
+    "qnodes_per_batch_forward": 44,
+    "naive_samplewise_qnodes_epoch_forward": 492800,
+    "overall_runtime_s": 25.97435266299999
+  },
+  "batch_256": {
+    "feasible": true,
+    "estimated_epoch_s": 35.431094643999586,
+    "estimated_epoch_min": 0.5905182440666598,
+    "qnode_invocations_epoch_forward": 1936,
+    "estimated_15_epoch_min": 8.857773660999896,
+    "estimated_100_epoch_hours": 0.984197073444433
+  },
+  "full_qlstm_training_started": false,
+  "hyperparameter_search_performed": false,
+  "dataset_modified": false
+}

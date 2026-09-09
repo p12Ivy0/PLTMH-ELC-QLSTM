@@ -1,0 +1,73 @@
+PLTMH-ELC-QLSTM — MODEL STAGE CLOSED AFTER CELL 150
+
+FROZEN MODEL RESULTS
+--------------------
+Classical LSTM parameters : 5426
+QLSTM parameters          : 5422
+QLSTM quantum parameters  : 48
+
+QLSTM validation MSE:
+0.5446447592331723
+
+Classical LSTM validation MSE:
+0.517013073
+
+QLSTM test MSE:
+2.963549411758347
+
+Classical LSTM test MSE:
+0.86862868
+
+Constant train-mean test MSE:
+0.65235871
+
+QLSTM test regime accuracy:
+0.016875
+
+QLSTM test/validation MSE ratio:
+5.441252048272436
+
+Most severe QLSTM held-out-family result:
+family          = D20_L+10
+true regime     = G2
+Ki true         = 3.036800034512308
+Ki pred mean    = 13.844780559090117
+Ki mean bias    = 10.807980524577808
+
+SCIENTIFIC INTERPRETATION
+-------------------------
+1. QLSTM superiority over LSTM is NOT supported by the
+   current gain-regression results.
+
+2. QLSTM superiority over the constant train-mean predictor
+   is NOT supported.
+
+3. The QLSTM must NOT be retrained, retuned, or redesigned
+   in response to the test result.
+
+4. G3 independent generalization has NOT been tested.
+
+5. The 3200 test windows are NOT 3200 independent
+   statistical observations; there are only two independent
+   held-out dynamic families.
+
+6. Closed-loop control evaluation is still required because
+   Kp/Ki regression error and frequency-control performance
+   are not equivalent metrics.
+
+NEXT SCIENTIFIC STAGE
+---------------------
+CELL 151 — FROZEN SCHEDULER INTERFACE + GAIN SAFETY POLICY
+
+Before running comparative closed-loop simulations, freeze:
+
+- LSTM scheduler inference
+- QLSTM scheduler inference
+- inverse target scaling
+- Kp/Ki safety bounds
+- scheduler update cadence
+- gain transition/rate limit
+- fallback behavior
+- closed-loop scenario design
+
+NO POST-TEST MODEL RETUNING IS ALLOWED.

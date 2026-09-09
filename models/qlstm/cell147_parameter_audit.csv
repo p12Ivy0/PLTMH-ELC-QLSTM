@@ -1,0 +1,3 @@
+model,total_parameters,quantum_parameters,difference_vs_lstm
+CLASSICAL_LSTM_CELL139,5426,0,0
+FINAL_QLSTM_CELL147,5422,48,-4

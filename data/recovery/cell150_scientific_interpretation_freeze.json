@@ -1,0 +1,56 @@
+{
+  "stage": "MODEL_STAGE_FINAL_SCIENTIFIC_FREEZE",
+  "frozen_qlstm_sha256": "bf1a049a8bae552f5be7a3460507fe9d3912af7540ba617ea79623676862cfd7",
+  "model_training_stage_closed": true,
+  "no_post_test_retraining": true,
+  "model_stage_result": {
+    "best_test_mse_model": "CONSTANT_TRAIN_MEAN",
+    "classical_lstm_test_rank": 2,
+    "qlstm_test_rank": 5,
+    "qlstm_validation_mse": 0.5446447592331723,
+    "qlstm_test_mse": 2.963549411758347,
+    "qlstm_test_regime_accuracy": 0.016875,
+    "qlstm_test_mse_increase_vs_lstm_pct": 241.17563465189141,
+    "qlstm_test_mse_increase_vs_constant_pct": 354.282186522557,
+    "test_independent_families": 2,
+    "independent_g3_test": false
+  },
+  "most_severe_heldout_family": {
+    "family": "D20_L+10",
+    "true_regime": "G2",
+    "ki_true": 3.036800034512308,
+    "ki_pred_mean": 13.844780559090117,
+    "ki_bias_mean": 10.807980524577808
+  },
+  "interpretation": "On the finalized leakage-free held-out-family split, the frozen QLSTM does not demonstrate a gain-prediction advantage over the classical LSTM or constant train-mean predictor. The result must be retained without post-test retuning. Closed-loop evaluation remains scientifically necessary because regression error in Kp/Ki does not by itself establish frequency-control performance.",
+  "closed_loop_policy": {
+    "model_training_stage_closed": true,
+    "qlstm_retraining_allowed": false,
+    "lstm_retraining_allowed": false,
+    "post_test_hyperparameter_tuning_allowed": false,
+    "post_test_architecture_tuning_allowed": false,
+    "closed_loop_purpose": "Evaluate control-level consequences of already frozen gain schedulers; not to rescue or tune the QLSTM after its test result.",
+    "models_to_carry_forward": [
+      "FIXED_PI_BASELINE",
+      "FROZEN_CLASSICAL_LSTM_SCHEDULER",
+      "FROZEN_QLSTM_SCHEDULER"
+    ],
+    "before_closed_loop_simulation": [
+      "Freeze scheduler inference interface.",
+      "Freeze inverse target scaling.",
+      "Freeze allowable Kp/Ki bounds.",
+      "Freeze gain-update cadence separately from the 20-Hz ML observation cadence.",
+      "Freeze gain transition/rate-limit policy.",
+      "Freeze fallback behavior for invalid or unsafe model outputs.",
+      "Predefine closed-loop scenarios before examining comparative control results."
+    ],
+    "test_family_window_statistics": "DESCRIPTIVE_ONLY",
+    "independent_g3_claim_allowed": false,
+    "next_cell": "CELL_151_FROZEN_SCHEDULER_INTERFACE_AND_GAIN_SAFETY_POLICY"
+  },
+  "statistical_policy": {
+    "window_metrics": "descriptive_only",
+    "significance_test_performed": false,
+    "independent_test_units": 2
+  }
+}

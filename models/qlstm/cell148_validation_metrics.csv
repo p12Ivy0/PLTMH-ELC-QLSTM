@@ -1,0 +1,2 @@
+model,best_epoch,epochs_run,validation_mse_standardized,kp_rmse,kp_mae,ki_rmse,ki_mae,regime_accuracy,training_runtime_s,training_runtime_min
+QLSTM_CELL148,6,18,0.5446447592331723,0.3866790529323389,0.36821312355030744,1.53948706958036,1.467056118155746,0.5,762.4303830900001,12.707173051500002

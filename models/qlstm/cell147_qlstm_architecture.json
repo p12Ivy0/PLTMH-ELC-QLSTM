@@ -1,0 +1,53 @@
+{
+  "stage": "FINAL_QLSTM_ARCHITECTURE_FREEZE",
+  "architecture_selection_basis": "parameter_matching_and_cell146_compute_feasibility",
+  "validation_used_for_architecture_selection": false,
+  "test_used_for_architecture_selection": false,
+  "architecture": {
+    "input_dim": 4,
+    "sequence_length": 11,
+    "hidden_dim": 4,
+    "n_qubits": 4,
+    "vqc_depth": 1,
+    "quantum_recurrent_gates": 4,
+    "quantum_encoding": "RY",
+    "variational_gate": "Rot",
+    "entanglement": "ring_CNOT",
+    "head": [
+      4,
+      64,
+      60,
+      16,
+      2
+    ]
+  },
+  "parameter_audit": {
+    "classical_lstm_parameters": 5426,
+    "qlstm_parameters": 5422,
+    "difference": -4,
+    "absolute_difference_pct": 0.07371913011426465,
+    "quantum_parameters": 48,
+    "classical_gate_projection_parameters": 144,
+    "regression_head_parameters": 5230
+  },
+  "training_protocol": {
+    "seed": 20260909,
+    "optimizer": "Adam",
+    "learning_rate": 0.001,
+    "batch_size": 256,
+    "loss": "MSE",
+    "max_epochs": 100,
+    "patience": 12,
+    "min_delta": 1e-06,
+    "dtype": "torch.float64"
+  },
+  "cell146_context": {
+    "batch_256_feasible": true,
+    "estimated_epoch_min": 0.5905182440666598,
+    "qnode_invocations_epoch_forward": 1936
+  },
+  "initial_state_path": "models/qlstm/cell147_qlstm_initial_state.pt",
+  "initial_state_sha256": "1935f7048222a52ff2a6a9cb36ea41dfabfae3e7f8c8d5e31fec7dabe0dcf1b2",
+  "full_training_started": false,
+  "hyperparameter_search": false
+}

@@ -1,0 +1,2 @@
+model,parameters,quantum_parameters,best_training_epoch,validation_mse_standardized,test_mse_standardized,kp_rmse,kp_mae,ki_rmse,ki_mae,regime_accuracy,test_inference_runtime_s,qlstm_vs_lstm_test_improvement_pct,qlstm_vs_constant_test_improvement_pct,test_to_validation_mse_ratio,test_mse_rank
+QLSTM_CELL149,5422,48,6,0.5446447592331723,2.963549411758347,0.5153392859328884,0.5098204123719993,7.789277742495817,5.858570737991382,0.016875,9.400934742000118,-241.17563465189141,-354.282186522557,5.441252048272436,5

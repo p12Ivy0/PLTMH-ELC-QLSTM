@@ -1,0 +1,13 @@
+claim_id,status,claim,evidence
+C01,SUPPORTED,The batched 4-qubit QLSTM implementation is computationally feasible on the CPU runtime used in this study.,Cell 146
+C02,SUPPORTED,QLSTM and classical LSTM were compared with near-matched trainable parameter counts (5422 versus 5426).,Cell 147
+C03,SUPPORTED,The classical LSTM validation advantage over the parameter-matched endpoint MLP was reproducible across all five paired random seeds.,Cell 143: LSTM wins 5/5; mean advantage 5.049%.
+C04,NOT_SUPPORTED,QLSTM provides lower validation gain-prediction error than the classical LSTM.,QLSTM=0.544645; LSTM=0.517013.
+C05,NOT_SUPPORTED,QLSTM outperforms the classical LSTM on the independently held-out test families.,QLSTM test MSE=2.963549; LSTM=0.868629.
+C06,NOT_SUPPORTED,QLSTM outperforms the constant train-mean gain predictor on the held-out test set.,QLSTM=2.963549; constant=0.652359.
+C07,NOT_SUPPORTED,The present QLSTM demonstrates robust gain-estimation generalization across unseen G1/G2 dynamic families.,Test regime accuracy=0.016875; test/validation MSE ratio=5.441.
+C08,NOT_TESTED,QLSTM generalizes to an independently held-out G3 dynamic family.,G3 has no independent validation/test family in the finalized primary split.
+C09,NOT_SUPPORTED,Strong dependence on temporal history/order has been demonstrated for the recurrent baseline.,Cell 141 showed only weak aggregate sensitivity to sequence-history ablations.
+C10,PROHIBITED,Window-level p-values or statistical significance may be inferred from the 3200 test windows.,The 3200 overlapping windows represent only two independent held-out dynamic families.
+C11,PROHIBITED,QLSTM may be retrained or retuned after observing the Cell-149 test result.,"Architecture, hyperparameters, and weights were frozen before test evaluation."
+C12,SUPPORTED_WITH_CAVEAT,Closed-loop evaluation remains necessary because gain-regression error alone does not establish the resulting frequency-control performance.,"Model-stage metrics quantify gain estimation, not closed-loop frequency response."
