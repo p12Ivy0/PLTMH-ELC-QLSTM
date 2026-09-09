@@ -1,0 +1,57 @@
+{
+  "audit_pass": true,
+  "final_method_contract": {
+    "closed_loop_run_count": 12,
+    "features": [
+      "frequency_deviation_hz",
+      "mechanical_power_kw",
+      "electrical_power_kw",
+      "dump_power_kw"
+    ],
+    "independent_g3_generalization": false,
+    "monte_carlo_performed": false,
+    "observation_rate_hz": 20.0,
+    "primary_independent_family_count": 2,
+    "primary_metric": "frequency_deviation_rmse_hz",
+    "qlstm_superiority_assumed": false,
+    "scheduler_processing_order": [
+      "raw_window",
+      "feature_standardization",
+      "frozen_model_inference",
+      "inverse_target_scaling",
+      "finite_check",
+      "admissible_gain_clipping",
+      "gain_rate_limiting",
+      "applied_gain"
+    ],
+    "sequence_length": 11,
+    "split_strategy": "LEAKAGE_FREE_DYNAMIC_FAMILY_GROUP_SPLIT",
+    "statistical_significance_test": false,
+    "test_family_count": 2,
+    "train_family_count": 7,
+    "validation_family_count": 2,
+    "window_count": 17600
+  },
+  "not_rewritten": [
+    "1.4",
+    "1.6"
+  ],
+  "revised_sections": [
+    "1.1",
+    "1.2",
+    "1.3",
+    "1.5"
+  ],
+  "revised_text_sha256": "a30038ee7345f63f39c925eaaa8c7a59c8c78b0986d87bbab3bbb79ed164eb61",
+  "revision_policy": {
+    "bab_iv_modified": false,
+    "model_inference_executed": false,
+    "model_training_executed": false,
+    "monte_carlo_executed": false,
+    "proposal_docx_modified": false,
+    "simulation_executed": false
+  },
+  "source_checkpoint": "6fc9905330e5bd478b2f3d0b1680ed420878cc45",
+  "source_proposal": "Proposal Tesis_03092026_konsep_baru.docx",
+  "stage": "BAB_I_FINAL_CONTRACT_REVISION"
+}

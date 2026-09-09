@@ -1,0 +1,15 @@
+check,passed
+section_structure,True
+final_four_features,True
+neutral_research_question,True
+descriptive_objective,True
+dynamic_family_split,True
+g3_scope_limitation,True
+gain_clip_rate_limit,True
+deterministic_12_run_scope,True
+monte_carlo_not_performed,True
+rmse_primary_metric,True
+no_significance_testing,True
+admissible_gain_envelope,True
+quantum_simulator_scope,True
+obsolete_method_claims_absent,True
