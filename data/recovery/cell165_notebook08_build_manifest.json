@@ -1,0 +1,112 @@
+{
+  "architecture": {
+    "architecture_selected_with_test": false,
+    "architecture_selected_with_validation": false,
+    "classical_lstm_parameters": 5426,
+    "head": [
+      4,
+      64,
+      60,
+      16,
+      2
+    ],
+    "hidden_dim": 4,
+    "input_dim": 4,
+    "n_qubits": 4,
+    "qlstm_parameters": 5422,
+    "quantum_parameter_fraction_pct": 0.885282183696053,
+    "quantum_parameters": 48,
+    "quantum_recurrent_gates": 4,
+    "sequence_length": 11,
+    "vqc_depth": 1
+  },
+  "frozen_artifact_sha256": {
+    "data/audits/cell144_qlstm_environment_readiness.json": "73a19c317d038db545ca98c38ac67511af14c649555e32cbb97221513f8a7384",
+    "data/audits/cell146_qlstm_runtime_benchmark.csv": "97c70e44d464e3cfc871f247e80f1dcae8c521f9fe97b338d79326e280df26af",
+    "data/audits/cell146_qlstm_runtime_benchmark.json": "363e01bfb303c28a5db005d0d70018178e59e9881a12342b162cc882c0d7e5f3",
+    "data/audits/cell149_test_family_audit.csv": "ef58c956070a2387b4ed654ced13384534c8cdbe5b77729b4ac4e14f96bd177e",
+    "data/audits/cell150_final_model_stage_audit.csv": "fe3849c7b44083eff145ea094312c59a56d51f52e87b3c77efaae011cf630daf",
+    "data/audits/cell150_qlstm_test_regime_confusion.csv": "e8256f3c207f8a50c774046fe95cd88375ba1ed81892341635afe4be1b8aafb0",
+    "data/audits/cell150_scientific_claim_freeze.csv": "67d7a59e4e63e014307b6f374fb73371283ac982154485783af2544171d43601",
+    "data/recovery/cell150_pre_closed_loop_resume_notes.txt": "566a03546439c5cc7f0712df3ad4f7d58af7987279f5232ab07245ab3be4dcf8",
+    "data/recovery/cell150_scientific_interpretation_freeze.json": "ec1db4cf08a247451fad8199078a74386865c9f1a7b3883b97575a092c743a9e",
+    "models/qlstm/cell147_parameter_audit.csv": "29ce108678cb69cb2f8ff9e67327324a87ca375813573e6a4bc8f13a728d6f4d",
+    "models/qlstm/cell147_qlstm_architecture.json": "a72ced2b5f0490fa2d392900bf31766ed6456f25a615b7499add65ee41c0b8cd",
+    "models/qlstm/cell147_qlstm_initial_state.pt": "1935f7048222a52ff2a6a9cb36ea41dfabfae3e7f8c8d5e31fec7dabe0dcf1b2",
+    "models/qlstm/cell147_smoke_test.json": "7b45a6d13dbbe957332df008adee1211643f6c5e3b0b7d29e6f9142f0ce9df8f",
+    "models/qlstm/cell148_qlstm_best.pt": "bf1a049a8bae552f5be7a3460507fe9d3912af7540ba617ea79623676862cfd7",
+    "models/qlstm/cell148_training_history.csv": "b57b56d98b139abcac3e54f7f8b3b05601c3d30866400faa68d2916eaec344d0",
+    "models/qlstm/cell148_training_metadata.json": "9cc2f8bee31cf274ec00501c0f9eb2f3471704273e8fca30cff7adc1c2ec359d",
+    "models/qlstm/cell148_validation_metrics.csv": "aebd20a3d1e27f5ab08059201ccc79dec3c0bbab432c6610b20e9f8fc3f56e59",
+    "models/qlstm/cell148_validation_predictions.csv.gz": "8a269b8ed284b97c90bc24569b4871ee00865ceca817a3b9bf9ba5adbf71b63b",
+    "models/qlstm/cell149_frozen_model_test_comparison.csv": "a0e2ae1f662e00821d795d4180bcd8312d8e8f568f1855a550fbae4edb16a45f",
+    "models/qlstm/cell149_qlstm_test_metrics.csv": "fd7d2a189609fb4d2c801c924884683f40053de135f9ecf5e660f758a9a3fe16",
+    "models/qlstm/cell149_qlstm_test_predictions.csv.gz": "949c93b3cdc310950e2e0672164c99c77df0397a51ca6651495d7a707419f826",
+    "models/qlstm/cell149_test_evaluation_metadata.json": "723d24bbaac00473571201b71087c580bd0ead257c11d5ba4c17a85f880bf342"
+  },
+  "frozen_test": {
+    "mse_increase_vs_constant_pct": 354.282186522557,
+    "mse_increase_vs_lstm_pct": 241.17563465189141,
+    "qlstm_ki_rmse": 7.789277742495817,
+    "qlstm_kp_rmse": 0.5153392859328884,
+    "qlstm_regime_accuracy": 0.016875,
+    "qlstm_test_mse_standardized": 2.963549411758347,
+    "rank_by_test_mse": 5
+  },
+  "migration_execution": {
+    "pennylane_execution_by_cell165": false,
+    "qlstm_inference_run_by_cell165": false,
+    "qlstm_training_run_by_cell165": false,
+    "scientific_result_modified": false,
+    "simulation_run_by_cell165": false,
+    "src_modified": false
+  },
+  "next_notebook": "09_closed_loop.ipynb",
+  "notebook_sha256": "2ca47ac12e4500683fac989c1fe0d857a0353d6b2de6117573ac15b04b1d0492",
+  "repository_source_status": {
+    "implementation_invented_during_migration": false,
+    "src/models/qlstm.py_placeholder": true,
+    "src/models/vqc.py_placeholder": true
+  },
+  "runtime_source_snapshot": {
+    "cells": [
+      "146",
+      "147",
+      "148",
+      "149",
+      "150",
+      "150-FIX"
+    ],
+    "exact_source_recovered": true,
+    "path": "data/recovery/cell165_qlstm_runtime_source_snapshot.json",
+    "sha256": "2957710dc17b08e96b519f8fa9fadb7f798e012648ad1b9e310ad6d0a0f35742"
+  },
+  "scientific_claims": {
+    "closed_loop_evaluation_required": true,
+    "independent_g3_generalization_allowed": false,
+    "post_test_qlstm_tuning_allowed": false,
+    "qlstm_superiority_supported": false,
+    "quantum_advantage_allowed": false,
+    "quantum_speedup_allowed": false,
+    "window_level_significance_allowed": false
+  },
+  "source_checkpoint": "8c002708ad90b5536aab6cbc5a3b3cd9cff89f50",
+  "stage": "BUILD_08_TRAIN_QLSTM_NOTEBOOK",
+  "target_notebook": "notebooks/08_train_qlstm.ipynb",
+  "training": {
+    "best_epoch": 6,
+    "best_train_mse": 0.3934475580172407,
+    "best_validation_mse": 0.5446447592331723,
+    "device": "cpu",
+    "dtype": "torch.float64",
+    "epochs_run": 18,
+    "post_test_retraining": false,
+    "runtime_s": 762.4303830900001,
+    "seed": 20260909,
+    "test_accessed_during_training": false
+  },
+  "upstream_notebook": {
+    "path": "notebooks/07_train_lstm.ipynb",
+    "sha256": "2b7efaebbfed7eb00062eabf0f1cba4a75b87134e9d5662e9778ca09ecda684b"
+  }
+}
