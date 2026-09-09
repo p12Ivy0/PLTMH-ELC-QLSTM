@@ -1,0 +1,71 @@
+{
+  "audit_pass": true,
+  "cell174_approved_sections": [
+    "1.1",
+    "1.2",
+    "1.3",
+    "1.5"
+  ],
+  "complete_bab_i_candidate": {
+    "final_review_required": true,
+    "sections": [
+      "1.1",
+      "1.2",
+      "1.3",
+      "1.4",
+      "1.5",
+      "1.6"
+    ],
+    "sha256": "f3177316be40a527466f1270d7f0f3acfd2694f14d39d30b1fa824abf0faff98"
+  },
+  "execution": {
+    "bab_iv_modified": false,
+    "inference": false,
+    "monte_carlo": false,
+    "proposal_docx_modified": false,
+    "simulation": false,
+    "training": false
+  },
+  "method_contract": {
+    "closed_loop_run_count": 12,
+    "family_leakage": false,
+    "gain_update_rate_hz": 10.0,
+    "independent_g3_generalization": false,
+    "independent_primary_family_count": 2,
+    "observation_rate_hz": 20.0,
+    "qlstm_superiority_supported": false,
+    "scenario_leakage": false,
+    "scheduler_processing_order": [
+      "raw_window",
+      "feature_standardization",
+      "frozen_model_inference",
+      "inverse_target_scaling",
+      "finite_check",
+      "admissible_gain_clipping",
+      "gain_rate_limiting",
+      "applied_gain"
+    ],
+    "split_strategy": "LEAKAGE_FREE_DYNAMIC_FAMILY_GROUP_SPLIT"
+  },
+  "resolved_gap_ids": [
+    "B1-175-01",
+    "B1-175-02",
+    "B1-175-03",
+    "B1-175-04"
+  ],
+  "revised_sections": [
+    "1.4",
+    "1.6"
+  ],
+  "scientific_policy": {
+    "exponential_smoothing_used": false,
+    "monte_carlo_performed": false,
+    "post_result_tuning": false,
+    "quantum_advantage_claim": false,
+    "statistical_significance_claim": false
+  },
+  "sections_1_4_1_6_sha256": "8f095a80d30174f8efbaf9a3fe6b0ca04f87497722b4c520813744f2b131f319",
+  "source_checkpoint": "b356259865b882db90858fa9e8ca2a33f8fdd588",
+  "source_proposal": "Proposal Tesis_03092026_konsep_baru.docx",
+  "stage": "BAB_I_SECTIONS_1_4_1_6_FINAL_CONTRACT_REVISION"
+}
