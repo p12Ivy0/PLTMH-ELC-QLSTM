@@ -1,0 +1,11 @@
+check,passed
+frozen_pytorch_mean_mse,True
+target_dimension_two,True
+train_only_target_standardization,True
+old_scale_mismatch_detected,True
+exact_1_over_Ndy_formula,True
+old_formula_removed,True
+equation_numbers_preserved,True
+four_cell179_resolutions_preserved,True
+table_research_row_preserved,True
+no_scientific_result_change,True

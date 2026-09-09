@@ -79,19 +79,20 @@ Fungsi rugi pelatihan menggunakan *mean squared error* (MSE) pada dua target
 yang telah distandardisasi,
 
 \[
-\mathcal{L}
+\mathcal{L}_{\mathrm{MSE}}
 =
-\frac{1}{N}
+\frac{1}{N d_y}
 \sum_{j=1}^{N}
 \left\|
 \mathbf z_j
 -
 \hat{\mathbf z}_j
 \right\|_2^2,
+\qquad d_y=2,
 \tag{2.21}
 \]
 
-dengan \(N\) sebagai jumlah sampel pelatihan. Tidak digunakan pembobot
+dengan \(N\) sebagai jumlah sampel pelatihan dan \(d_y=2\) sebagai jumlah komponen target. Faktor \(1/(N d_y)\) membuat Persamaan (2.21) identik dengan *mean squared error* yang dirata-ratakan terhadap seluruh elemen target, sesuai implementasi `nn.MSELoss(reduction="mean")`. Tidak digunakan pembobot
 \(w_p\) atau \(w_i\) pada fungsi rugi final karena standardisasi target telah
 menempatkan kedua komponen gain pada skala pembelajaran yang sebanding.
 Parameter klasik dan parameter rangkaian kuantum QLSTM dilatih bersama melalui

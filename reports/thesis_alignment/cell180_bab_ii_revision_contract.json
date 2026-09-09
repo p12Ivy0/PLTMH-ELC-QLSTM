@@ -1,8 +1,11 @@
 {
   "additional_consistency_correction": {
-    "final_contract": "unweighted MSE on train-standardized Kp/Ki",
+    "eq221_scaling_fix_applied": true,
+    "exact_pytorch_reduction_verified": true,
+    "final_contract": "elementwise mean MSE on train-standardized Kp/Ki with d_y=2",
     "old_source": "weighted squared error",
     "resolved": true,
+    "scientific_results_modified": false,
     "topic": "Equation 2.21 loss formulation",
     "within_authorized_section_2_7": true
   },
@@ -15,6 +18,15 @@
     "B2-179-04"
   ],
   "cell179_gap_count": 4,
+  "cell180_fix": {
+    "audit_pass": true,
+    "new_revision_sha256": "5c9474252d802711ebe12b53b64012838f7cdd86768b34e7b9a5754cbcb31296",
+    "old_revision_sha256": "2ea72bfe59b2671840580d74d07fcdc8cbf3d9bd34e482ba82a96a43f96e2a7a",
+    "reason": "Original Eq.2.21 used 1/N vector SSE while frozen PyTorch implementation uses nn.MSELoss(reduction='mean') across N*d_y elements.",
+    "scientific_results_modified": false,
+    "target_dimension": 2,
+    "training_rerun": false
+  },
   "final_bab_ii_review_required": true,
   "proposal_docx_modified": false,
   "revised_scope": {
@@ -26,7 +38,7 @@
     "section_2_9_modified": false,
     "table_ii_1_research_row": "Penelitian ini (2026)"
   },
-  "revision_sha256": "2ea72bfe59b2671840580d74d07fcdc8cbf3d9bd34e482ba82a96a43f96e2a7a",
+  "revision_sha256": "5c9474252d802711ebe12b53b64012838f7cdd86768b34e7b9a5754cbcb31296",
   "scheduler_processing_order": [
     "raw_window",
     "feature_standardization",
@@ -49,7 +61,8 @@
   "section_2_7_contract": {
     "equation_2_19": "STANDARDIZED_REGRESSION_OUTPUT",
     "equation_2_20": "INVERSE_TARGET_STANDARDIZATION",
-    "equation_2_21": "UNWEIGHTED_MSE_ON_STANDARDIZED_TARGETS",
+    "equation_2_21": "ELEMENTWISE_MEAN_MSE_ON_STANDARDIZED_TARGETS",
+    "equation_2_21_formula": "1/(N*d_y) * sum_j ||z_j - zhat_j||_2^2, d_y=2",
     "equations_2_17_2_18": "RETAIN_SOURCE_THEORY",
     "features": [
       "frequency_deviation_hz",
@@ -58,6 +71,7 @@
       "dump_power_kw"
     ],
     "gain_safety_location": "SECTION_2_8_SCHEDULER",
+    "mse_reduction": "mean",
     "observation_rate_hz": 20.0,
     "output_head_sigmoid": false,
     "qlstm_head": [
@@ -69,6 +83,7 @@
     ],
     "qlstm_input_dim": 4,
     "sequence_length": 11,
+    "target_dimension": 2,
     "target_standardization": "TRAIN_ONLY_WINDOW_TARGET_Z_SCORE"
   },
   "source_checkpoint": "f1b46fabe7ce62a6a26b5979acbd2de254a20d32",
