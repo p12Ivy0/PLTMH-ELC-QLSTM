@@ -1,0 +1,94 @@
+{
+  "audit_fixes": {
+    "cell180_scheduler_handoff_line_wrap": {
+      "false_negative_confirmed": true,
+      "full_normalized_phrase_present": true,
+      "normalized_phrase_present": true,
+      "raw_literal_present": false,
+      "scientific_content_error": false
+    },
+    "equation_reference_double_count": {
+      "false_negative_confirmed": true,
+      "resolved": true
+    }
+  },
+  "authoritative_input_docx": {
+    "bab_i_final_frozen": true,
+    "path": "reports/thesis_integration/cell191_bab_i_visual_fix/Proposal_Tesis_BAB_I_VISUAL_FIXED.docx",
+    "sha256": "aed165decb5257c2cd60a278939ac27ca0ba8c64e5840331f0bd061d6abaa91f"
+  },
+  "equation_anchor_audit": {
+    "all_2_17_to_2_29_true_anchors_valid": true,
+    "eq_2_17_2_18_preserve_anchors": true,
+    "eq_2_28_2_29_removal_anchors": true
+  },
+  "execution": {
+    "docx_modified": false,
+    "inference": false,
+    "monte_carlo": false,
+    "notebooks_modified": false,
+    "post_result_tuning": false,
+    "scientific_text_modified": false,
+    "significance_testing": false,
+    "simulation": false,
+    "src_modified": false,
+    "training": false
+  },
+  "frozen_sources": {
+    "cell178": {
+      "contract_valid": true,
+      "sha256": "fa8a8bea9fc612f7ccdc99a466acfbda0d9764b3b0c9313e26f9b65c45c44f06"
+    },
+    "cell180": {
+      "contract_valid": true,
+      "scheduler_handoff_audit_uses_normalized_whitespace": true,
+      "sha256": "5c9474252d802711ebe12b53b64012838f7cdd86768b34e7b9a5754cbcb31296"
+    }
+  },
+  "gates": {
+    "cell194_bab_ii_integration_authorized": true,
+    "surgical_anchors_ready": true
+  },
+  "integration_operations": {
+    "2.1": "RETAIN_SOURCE",
+    "2.10": "COMPOSITE_REPLACE",
+    "2.11": "FULL_REPLACE_AND_RETITLE",
+    "2.2": "RETAIN_SOURCE",
+    "2.3": "RETAIN_SOURCE",
+    "2.4": "RETAIN_SOURCE",
+    "2.5": "RETAIN_SOURCE",
+    "2.6": "RETAIN_SOURCE",
+    "2.7": "PARTIAL_REPLACE",
+    "2.8": "FULL_REPLACE",
+    "2.9": "FULL_REPLACE"
+  },
+  "parent_checkpoint": "2195a56c7c1fca0ee019bc7bc6b9d8dcb1580061",
+  "section_2_10": {
+    "research_row_unique": true,
+    "table_ii_1_count": 1
+  },
+  "section_2_11": {
+    "old_equation_removal_anchors_valid": true,
+    "old_hypothesis_present": true,
+    "source_heading": "Hipotesis Penelitian",
+    "source_heading_valid": true
+  },
+  "source_baseline": {
+    "all_bab_ii_sections_identical": true,
+    "retained_sections_2_1_to_2_6_identical": true
+  },
+  "stage": "BAB_II_SURGICAL_INTEGRATION_PREFLIGHT",
+  "surgical_plan": {
+    "2.1": "RETAIN EXACT SOURCE XML",
+    "2.10": "PRESERVE source literature synthesis and all literature rows; replace only 'Penelitian ini (2026)' using Cell180 and final research-position paragraphs using Cell178.",
+    "2.11": "FULL REPLACE and retitle to 'Kerangka Evaluasi Penelitian'; remove old Eq. (2.28)–(2.29) equation table.",
+    "2.2": "RETAIN EXACT SOURCE XML",
+    "2.3": "RETAIN EXACT SOURCE XML",
+    "2.4": "RETAIN EXACT SOURCE XML",
+    "2.5": "RETAIN EXACT SOURCE XML",
+    "2.6": "RETAIN EXACT SOURCE XML",
+    "2.7": "PRESERVE source literature discussion and actual Eq. (2.17)–(2.18) equation table; replace obsolete implementation content using frozen Cell180 through Eq. (2.21) and scheduler handoff.",
+    "2.8": "FULL REPLACE from frozen Cell178; Eq. (2.22)–(2.23).",
+    "2.9": "FULL REPLACE from frozen Cell178; Eq. (2.24)–(2.27)."
+  }
+}
