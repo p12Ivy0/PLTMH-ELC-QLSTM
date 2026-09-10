@@ -1,0 +1,54 @@
+{
+  "cell": "204",
+  "purpose": "Final freeze of Bab V after human visual QA",
+  "timestamp_utc": "2026-09-10T08:39:37.795835Z",
+  "parent_checkpoint": "7e16d385f62b42daaef8ef885b750a76e30d7601",
+  "authoritative_docx": "reports/thesis_integration/cell203_bab_v_candidate/Proposal_Tesis_BAB_I_II_III_IV_V_CANDIDATE.docx",
+  "authoritative_sha256": "39a21c1b0f035937d6bb4173c5abd703cc2536ab1a357e0b855b7b86e3b4bffc",
+  "machine_verified": true,
+  "human_visual_qa": {
+    "bab_v_clean_chapter_start": true,
+    "bab_v_chapter_number_visible": true,
+    "bab_v_title_two_lines": true,
+    "kesimpulan_heading_visible": true,
+    "saran_heading_visible": true,
+    "kesimpulan_items_1_to_4_visible": true,
+    "saran_items_1_to_6_visible": true,
+    "list_alignment_readable": true,
+    "paragraph_alignment_and_margins": true,
+    "italic_terms_visible": true,
+    "page_60_to_61_continuation_readable": true,
+    "no_visible_clipping": true,
+    "no_visible_overlap": true,
+    "no_unexpected_blank_page": true,
+    "libreoffice_multilevel_numbering_exception_accepted": true
+  },
+  "human_visual_qa_pass": true,
+  "libreoffice_numbering_exception": {
+    "renderer": "LibreOffice",
+    "observed_heading_labels": [
+      "1.23 Kesimpulan",
+      "1.24 Saran"
+    ],
+    "semantic_expected_labels": [
+      "5.1 Kesimpulan",
+      "5.2 Saran"
+    ],
+    "classification": "renderer-specific multilevel-numbering display exception",
+    "docx_numbering_repair_required": false,
+    "docx_numbering_repair_authorized": false,
+    "reason": "The same LibreOffice multilevel-numbering behavior was previously demonstrated in earlier frozen chapters. Cell203 preserved numbering.xml and styles.xml exactly."
+  },
+  "bab_v_final_text_frozen": true,
+  "bab_v_final_docx_frozen": true,
+  "bab_i_iv_protected": true,
+  "front_matter": {
+    "abstract_bahasa_indonesia": "PENDING PRE-AUDIT — must align with frozen final Bab I–V results.",
+    "abstract_english": "PENDING PRE-AUDIT — must align with frozen final Bab I–V results.",
+    "table_of_contents": "PENDING — update after final body pagination is fixed.",
+    "list_of_figures": "PENDING — update from final integrated figures.",
+    "list_of_tables": "PENDING — update from final integrated tables."
+  },
+  "cell205_front_matter_preaudit_authorized": true,
+  "front_matter_edit_execution_authorized": false
+}
