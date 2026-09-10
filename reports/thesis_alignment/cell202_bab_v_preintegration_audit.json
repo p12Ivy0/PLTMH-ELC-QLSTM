@@ -1,0 +1,72 @@
+{
+  "authoritative_bab_i_iv_docx": {
+    "path": "reports/thesis_integration/cell200_bab_iv_visual_fix2/Proposal_Tesis_BAB_I_II_III_IV_VISUAL_FIXED2.docx",
+    "sha256": "199798e5db1305b17eb375e893492127ff97ac41d4fdf2acc91c0f60d65fc1de",
+    "unchanged_during_audit": true
+  },
+  "cell201_contract": {
+    "bab_i_frozen": true,
+    "bab_ii_frozen": true,
+    "bab_iii_frozen": true,
+    "bab_iv_frozen": true,
+    "bab_v_integration_authorized": true,
+    "valid": true
+  },
+  "current_docx_structure": {
+    "append_anchor": "before final w:sectPr",
+    "append_anchor_body_index": 466,
+    "bab_iv_heading_body_index": 387,
+    "bab_iv_is_final_chapter": true,
+    "body_element_count": 467,
+    "final_content_body_index": 465,
+    "final_sectpr_sha256": "7a714eb58f04993474d017bc122bc630c10f38866c04803fdda7c4a1d2ffa3c2",
+    "heading1_after_bab_iv": [],
+    "protected_bab_i_iv_prefix_sha256": "d831348e72a1d73e4588ef9a38635f8d2257842bf068d27eee2b8f9c68334a0a"
+  },
+  "frozen_bab_v": {
+    "cell187_checkpoint": "bfa6396e884dc303a28f8af87cb2a9ada1e9a743",
+    "chapter_heading_metadata": [
+      "BAB V",
+      "KESIMPULAN DAN SARAN"
+    ],
+    "expected_sha256": "f7751c5e8ab4367daa16021df611a4ba62d88c70286679535d8259de85b40929",
+    "prohibited_positive_quantum_claims": [],
+    "repository_path": "reports/thesis_results/chapter_v/Bab_V_Kesimpulan_dan_Saran_draft.md",
+    "sections": [
+      {
+        "body_end_char": 4308,
+        "body_start_char": 50,
+        "body_word_count": 563,
+        "heading_start_char": 31,
+        "section": "5.1",
+        "title": "Kesimpulan"
+      },
+      {
+        "body_end_char": 6818,
+        "body_start_char": 4322,
+        "body_word_count": 289,
+        "heading_start_char": 4308,
+        "section": "5.2",
+        "title": "Saran"
+      }
+    ],
+    "sha256": "f7751c5e8ab4367daa16021df611a4ba62d88c70286679535d8259de85b40929",
+    "sha_exact": true
+  },
+  "gate": {
+    "cell203_bab_v_integration_authorized": true,
+    "front_matter_finalization_authorized": false,
+    "machine_pass": true
+  },
+  "parent_checkpoint": "652244e62d176b4f6df99f4e1754558def0b6685",
+  "restrictions": [
+    "Cell203 must append Bab V before the final sectPr.",
+    "Cell203 must preserve the protected Bab-I–IV prefix exactly.",
+    "Cell203 must preserve the final section properties.",
+    "Only the exact frozen Cell187 Bab-V content may be integrated.",
+    "No completed experiment may be rerun or retuned.",
+    "No quantum-advantage or quantum-speedup claim may be introduced.",
+    "Front matter remains deferred until Bab V is final-frozen."
+  ],
+  "stage": "CELL202_BAB_V_PREINTEGRATION_AUDIT"
+}
