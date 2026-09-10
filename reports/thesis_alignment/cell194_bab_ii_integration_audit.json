@@ -1,0 +1,79 @@
+{
+  "equations": {
+    "eq_2_17_to_2_27_valid": true,
+    "old_eq_2_28_absent": true,
+    "old_eq_2_29_absent": true
+  },
+  "execution": {
+    "cell178_modified": false,
+    "cell180_modified": false,
+    "frozen_bab_i_input_modified": false,
+    "inference": false,
+    "monte_carlo": false,
+    "notebooks_modified": false,
+    "post_result_tuning": false,
+    "significance_testing": false,
+    "simulation": false,
+    "source_docx_modified": false,
+    "src_modified": false,
+    "training": false
+  },
+  "execution_model": "runtime_working_copy_validated_before_atomic_publication",
+  "frozen_insertions": {
+    "section_2_10_research_row_cell180": true,
+    "section_2_10_tail_cell178": true,
+    "section_2_11_cell178": true,
+    "section_2_7_cell180": true,
+    "section_2_8_cell178": true,
+    "section_2_9_cell178": true
+  },
+  "gates": {
+    "bab_ii_visual_qa_pending": true,
+    "bab_iii_integration_authorized": false,
+    "machine_integration_pass": true
+  },
+  "input": {
+    "path": "reports/thesis_integration/cell191_bab_i_visual_fix/Proposal_Tesis_BAB_I_VISUAL_FIXED.docx",
+    "sha256": "aed165decb5257c2cd60a278939ac27ca0ba8c64e5840331f0bd061d6abaa91f",
+    "unchanged": true
+  },
+  "output": {
+    "docx_healthy": true,
+    "path": "reports/thesis_integration/cell194_bab_ii_candidate/Proposal_Tesis_BAB_I_II_CANDIDATE.docx",
+    "publication_hash_valid": true,
+    "sha256": "23cf4217f2f73b09d7fd880f36f1519bc1410b27c1b2e202db501ab2d1bf408e"
+  },
+  "parent_checkpoint": "ebb59fda68ecd84543f084fd4258e97627f9b640",
+  "render": {
+    "bab_ii_end_page": 33,
+    "bab_ii_start_page": 5,
+    "bab_iii_boundary_page": 34,
+    "contact_sheet": "/content/PLTMH-ELC-QLSTM/data/runtime/cell194_bab_ii/render_continue/cell194_bab_ii_contact_sheet.png",
+    "human_visual_qa": "PENDING",
+    "machine_page_sanity": true,
+    "pdf_page_count": 43
+  },
+  "retained_content": {
+    "bab_i_and_prefix_exact": true,
+    "eq_2_17_2_18_source_table_exact": true,
+    "section_2_7_source_prefix_exact": true,
+    "sections_2_1_to_2_6_exact": true
+  },
+  "scientific_restraint": {
+    "checks": {
+      "g3_not_independent": true,
+      "no_exponential_smoothing": true,
+      "no_inferential_hypothesis": true,
+      "no_post_result_tuning": true,
+      "no_significance": true,
+      "quantum_advantage_restraint_present": true,
+      "two_independent_families": true
+    },
+    "valid": true
+  },
+  "section_2_11": {
+    "final_title": "Kerangka Evaluasi Penelitian",
+    "old_hypothesis_heading_absent": true
+  },
+  "stage": "BAB_II_SURGICAL_INTEGRATION_CANDIDATE"
+}
