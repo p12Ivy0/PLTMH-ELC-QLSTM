@@ -1,0 +1,63 @@
+{
+  "append_anchor": {
+    "bab_iii_heading_body_index": 305,
+    "bab_iii_tail_table_count": 0,
+    "existing_heading1_after_bab_iii": [],
+    "final_sectpr_body_index": 387,
+    "final_sectpr_sha256": "7a714eb58f04993474d017bc122bc630c10f38866c04803fdda7c4a1d2ffa3c2",
+    "protected_bab_i_iii_prefix_sha256": "9c87d09416d1ca575f4ee368ccb124db7814941a4ba3f5ade6c108dd0f8d32b4",
+    "protected_existing_element_count": 387
+  },
+  "authoritative_input": {
+    "path": "reports/thesis_integration/cell197_bab_iii_candidate/Proposal_Tesis_BAB_I_II_III_CANDIDATE.docx",
+    "sha256": "a9a82475125c0db3fee6ac12d554759e69acc1debe9142ab8596a0e790fbc7d1"
+  },
+  "cell199_fix1": {
+    "current_and_cell171_byte_identical": true,
+    "current_tracked_path": "reports/thesis_results/chapter_iv/Bab_IV_Hasil_dan_Pembahasan_draft.md",
+    "historical_cell171_path": "reports/thesis_results/chapter_iv/Bab_IV_Hasil_dan_Pembahasan_draft.md",
+    "root_cause": "ORIGINAL CELL199 SEARCH SCOPE WAS TOO NARROW"
+  },
+  "frozen_bab_iv": {
+    "figure_count": 8,
+    "figure_labels": [
+      "4.1",
+      "4.2",
+      "4.3",
+      "4.4",
+      "4.5",
+      "4.6",
+      "4.7",
+      "4.8"
+    ],
+    "monte_carlo_occurrences": 0,
+    "path": "reports/thesis_results/chapter_iv/Bab_IV_Hasil_dan_Pembahasan_draft.md",
+    "sections": [
+      "4.1",
+      "4.2",
+      "4.3",
+      "4.4",
+      "4.5",
+      "4.6",
+      "4.7",
+      "4.8",
+      "4.9",
+      "4.10"
+    ],
+    "sha256": "366c9f0ee5ec73e290876beef6e9dc6f5fd47bb4341f29902123c5efe63238e1"
+  },
+  "gate": {
+    "bab_v_docx_integration_authorized": false,
+    "cell200_bab_iv_integration_authorized": true,
+    "machine_pass": true
+  },
+  "integration_plan": {
+    "append_before_final_sectpr": true,
+    "bab_iv_figures_expected": 8,
+    "preserve_bab_i_iii_exact": true,
+    "replace_existing_bab_iv": false,
+    "strategy": "APPEND_NEW_BAB_IV_BEFORE_FINAL_SECTPR"
+  },
+  "parent_checkpoint": "0f8ab4a66fd0bf261a860e0cb9a878df8e97d6f5",
+  "stage": "CELL199_BAB_IV_PREINTEGRATION_AUDIT"
+}

@@ -1,0 +1,11 @@
+section,title,heading_line,end_line,body_word_count
+4.1,Kerangka Evaluasi Hasil,4,30,219
+4.2,Kinerja Model dalam Mengestimasi Gain PI,31,67,258
+4.3,Hasil Utama Closed-Loop pada Keluarga Uji Independen,68,116,339
+4.4,Respons Closed-Loop pada CL01 (D40_L-20),117,162,331
+4.5,Respons Closed-Loop pada CL02 (D20_L+10),163,212,356
+4.6,Pengaruh Penjadwalan Gain terhadap Respons Dinamik,213,247,274
+4.7,Beban Komputasi,248,283,259
+4.8,Sintesis Hasil dan Posisi QLSTM,284,341,479
+4.9,Keterbatasan Hasil,342,395,423
+4.10,Ringkasan Bab,396,434,317
