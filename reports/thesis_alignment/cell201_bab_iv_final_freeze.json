@@ -1,0 +1,64 @@
+{
+  "authoritative_docx": {
+    "path": "reports/thesis_integration/cell200_bab_iv_visual_fix2/Proposal_Tesis_BAB_I_II_III_IV_VISUAL_FIXED2.docx",
+    "sha256": "199798e5db1305b17eb375e893492127ff97ac41d4fdf2acc91c0f60d65fc1de"
+  },
+  "deferred_front_matter": {
+    "abstract_bahasa_indonesia": "DEFERRED — align with final frozen Bab I–V scientific results.",
+    "abstract_english": "DEFERRED — align with final frozen Bab I–V scientific results.",
+    "list_of_figures": "DEFERRED — update only after final figure integration.",
+    "list_of_tables": "DEFERRED — update only after final table integration.",
+    "table_of_contents": "DEFERRED — update only after final Bab I–V pagination."
+  },
+  "freeze": {
+    "bab_i_final_frozen": true,
+    "bab_ii_final_frozen": true,
+    "bab_iii_final_frozen": true,
+    "bab_iv_final_docx_frozen": true,
+    "bab_iv_final_text_frozen": true,
+    "bab_iv_final_visual_qa_pass": true,
+    "bab_v_docx_integration_authorized": true
+  },
+  "human_visual_qa": {
+    "bab_iv_chapter_number_visible": true,
+    "bab_iv_clean_chapter_start": true,
+    "bab_iv_title_two_lines": true,
+    "figure_4_1_visible": true,
+    "italic_terms_visible": true,
+    "libreoffice_multilevel_numbering_exception_accepted": true,
+    "no_unexpected_blank_page": true,
+    "no_visible_clipping": true,
+    "no_visible_overlap": true,
+    "paragraph_alignment_and_margins": true,
+    "section_heading_layout": true,
+    "table_4_1_caption_with_table": true,
+    "table_4_1_complete": true,
+    "table_4_2_caption_with_table": true,
+    "table_4_2_complete": true,
+    "table_4_2_mean_row_visible": true
+  },
+  "libreoffice_numbering_exception": {
+    "description": "LibreOffice renders the existing Word multilevel chapter-linked section numbering as 1.x. Prior same-runtime comparisons showed the effect is not introduced by Bab-II/III/IV integration.",
+    "docx_numbering_repair_performed": false,
+    "scientific_content_impacted": false,
+    "status": "ACCEPTED_RENDERER_SPECIFIC"
+  },
+  "machine_verification": {
+    "bab_i_to_iii_exact_xml": true,
+    "bab_iv_title_two_lines": true,
+    "cell200_visual_fix2_contract": true,
+    "numbering_xml_modified": false,
+    "scientific_text_unchanged": true,
+    "table_4_1_caption_with_table": true,
+    "table_4_2_caption_with_table": true
+  },
+  "parent_checkpoint": "a4d237cab8b038bb526ada7d9184e2c0b39fd747",
+  "restrictions": [
+    "Subsequent integration must not modify final-frozen Bab I–IV scientific text.",
+    "Subsequent integration must not modify the approved Bab-IV visual corrections.",
+    "Do not repair the LibreOffice-only 1.x numbering rendering by rewriting the Word numbering structure.",
+    "Do not rerun or tune completed experiments.",
+    "Do not reinterpret negative QLSTM results as quantum advantage."
+  ],
+  "stage": "CELL201_BAB_IV_FINAL_FREEZE"
+}
