@@ -1,0 +1,96 @@
+{
+  "candidate": {
+    "healthy": true,
+    "path": "reports/thesis_integration/cell200_bab_iv_candidate/Proposal_Tesis_BAB_I_II_III_IV_CANDIDATE.docx",
+    "sha256": "db29fc564f4b19150320f34135b7c1d7a8e455123c7b6ec162427457144add62"
+  },
+  "frozen_bab_iv": {
+    "figures": [
+      "4.1",
+      "4.2",
+      "4.3",
+      "4.4",
+      "4.5",
+      "4.6",
+      "4.7",
+      "4.8"
+    ],
+    "monte_carlo_occurrences": 0,
+    "path": "reports/thesis_results/chapter_iv/Bab_IV_Hasil_dan_Pembahasan_draft.md",
+    "sections": [
+      "4.1",
+      "4.2",
+      "4.3",
+      "4.4",
+      "4.5",
+      "4.6",
+      "4.7",
+      "4.8",
+      "4.9",
+      "4.10"
+    ],
+    "sha256": "366c9f0ee5ec73e290876beef6e9dc6f5fd47bb4341f29902123c5efe63238e1",
+    "tables": 2
+  },
+  "gate": {
+    "bab_iv_final_visual_qa_pending": true,
+    "bab_v_docx_integration_authorized": false,
+    "cell201_bab_iv_freeze_authorized": false,
+    "machine_pass": true
+  },
+  "input": {
+    "docx": "reports/thesis_integration/cell197_bab_iii_candidate/Proposal_Tesis_BAB_I_II_III_CANDIDATE.docx",
+    "sha256": "a9a82475125c0db3fee6ac12d554759e69acc1debe9142ab8596a0e790fbc7d1"
+  },
+  "integration": {
+    "chapter_heading": "HASIL DAN PEMBAHASAN",
+    "chapter_number": "automatic Word multilevel Heading-1",
+    "drawings": 8,
+    "figure_placeholders_retained": false,
+    "sections": [
+      "4.1",
+      "4.2",
+      "4.3",
+      "4.4",
+      "4.5",
+      "4.6",
+      "4.7",
+      "4.8",
+      "4.9",
+      "4.10"
+    ],
+    "strategy": "APPEND_NEW_BAB_IV_BEFORE_FINAL_SECTPR",
+    "tables": 2,
+    "visible_text_exact": true,
+    "word_numbering_template_preserved": true
+  },
+  "known_renderer_exception": {
+    "renderer": "LibreOffice 24.2.7.2",
+    "word_multilevel_subheading_numbering": "May display chapter-relative section numbering incorrectly; existing Word numbering XML is preserved and must not be repaired solely from LibreOffice output."
+  },
+  "parent_checkpoint": "e24d5131b4b1d4087d3e0c6b75522b5a12471e8d",
+  "protection": {
+    "bab_i_iii_elements_exact": true,
+    "bab_i_iii_prefix_sha_exact": true,
+    "existing_bab_i_iii_element_count": 387,
+    "existing_media_unchanged": true,
+    "existing_relationships_preserved": true,
+    "final_sectpr_exact": true,
+    "frozen_bab_iv_unchanged": true,
+    "source_docx_unchanged": true
+  },
+  "render": {
+    "bab_iv_end_page": 57,
+    "bab_iv_start_page": 44,
+    "clean_chapter_start": true,
+    "contact_sheets": [
+      "/content/PLTMH-ELC-QLSTM/data/runtime/cell200_bab_iv_integration/contact_sheets/cell200_bab_iv_contact_sheet_01.png",
+      "/content/PLTMH-ELC-QLSTM/data/runtime/cell200_bab_iv_integration/contact_sheets/cell200_bab_iv_contact_sheet_02.png",
+      "/content/PLTMH-ELC-QLSTM/data/runtime/cell200_bab_iv_integration/contact_sheets/cell200_bab_iv_contact_sheet_03.png",
+      "/content/PLTMH-ELC-QLSTM/data/runtime/cell200_bab_iv_integration/contact_sheets/cell200_bab_iv_contact_sheet_04.png"
+    ],
+    "page_count": 57,
+    "pdf": "/content/PLTMH-ELC-QLSTM/data/runtime/cell200_bab_iv_integration/pdf/Proposal_Tesis_BAB_I_II_III_IV_CANDIDATE.pdf"
+  },
+  "stage": "CELL200_BAB_IV_SURGICAL_APPEND"
+}
