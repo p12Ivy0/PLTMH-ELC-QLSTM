@@ -1,0 +1,79 @@
+{
+  "authoritative_docx": {
+    "healthy": true,
+    "path": "/content/PLTMH-ELC-QLSTM/reports/thesis_integration/cell197_bab_iii_candidate/Proposal_Tesis_BAB_I_II_III_CANDIDATE.docx",
+    "sha256": "a9a82475125c0db3fee6ac12d554759e69acc1debe9142ab8596a0e790fbc7d1"
+  },
+  "bab_iii_machine_contract": {
+    "all_12_donor_subtrees_exact": true,
+    "all_math_counts_exact": true,
+    "bab_i_ii_prefix_exact": true,
+    "bab_iii_heading_exact": true,
+    "clean_chapter_start": true,
+    "headings_3_1_to_3_12_exact": true,
+    "omml_count": 23,
+    "real_start_page": 35,
+    "table_count": 0
+  },
+  "chapter_freeze_history": {
+    "bab_i_cell192": "2195a56c7c1fca0ee019bc7bc6b9d8dcb1580061",
+    "bab_ii_cell195": "711e3fb5c7f3cd9a9b64738f68d2f3951c937815",
+    "bab_iii_cell197_candidate": "094fad050b3f1aebd35e16e8eff6eb56a095ce33"
+  },
+  "front_matter": {
+    "deferred_items": {
+      "abstract_bahasa_indonesia": "DEFERRED — align with frozen final scientific results after Bab I–V.",
+      "abstract_english": "DEFERRED — align with frozen final scientific results after Bab I–V.",
+      "list_of_figures": "DEFERRED — update after final figure integration.",
+      "list_of_tables": "DEFERRED — update after final table integration.",
+      "table_of_contents": "DEFERRED — update after final Bab I–V pagination."
+    },
+    "finalized": false
+  },
+  "gate": {
+    "bab_i_final_frozen": true,
+    "bab_ii_final_frozen": true,
+    "bab_iii_final_docx_frozen": true,
+    "bab_iii_final_text_frozen": true,
+    "bab_iii_final_visual_qa_pass": true,
+    "bab_iii_machine_verified": true,
+    "bab_iv_docx_integration_authorized": true
+  },
+  "parent_checkpoint": "094fad050b3f1aebd35e16e8eff6eb56a095ce33",
+  "protected_state": {
+    "authoritative_bab_i_ii_input_unchanged": true,
+    "frozen_cell185_bab_iii_unchanged": true,
+    "notebooks_05_to_10_unchanged": true,
+    "project_source_unchanged": true
+  },
+  "renderer_exception": {
+    "classified_as_cell197_regression": false,
+    "docx_numbering_repair_required": false,
+    "issue": "Existing Word multilevel section numbering may render as 1.x rather than chapter-relative 3.x in LibreOffice.",
+    "renderer": "LibreOffice 24.2.7.2"
+  },
+  "section_3_7_reclassification": {
+    "docx_correction_required": false,
+    "prior_visual_nonbold_finding_false_positive": true,
+    "x_explicitly_bold": true,
+    "x_omml_style": "b"
+  },
+  "stage": "CELL198_BAB_III_FINAL_FREEZE",
+  "visual_qa": {
+    "bab_iii_clean_chapter_start": true,
+    "bab_iii_end_layout_acceptable": true,
+    "equations_visible_and_complete": true,
+    "italic_terms": true,
+    "kp_ki_notation_visible": true,
+    "list_indentation": true,
+    "no_unexpected_blank_page": true,
+    "no_visible_clipping": true,
+    "no_visible_overlap": true,
+    "paragraph_alignment_and_margins": true,
+    "pdump_subscript_visible": true,
+    "section_3_12_final_content_complete": true,
+    "section_3_7_feature_vector_complete": true,
+    "section_headings_3_1_to_3_12": true,
+    "x_vector_explicit_omml_bold": true
+  }
+}
