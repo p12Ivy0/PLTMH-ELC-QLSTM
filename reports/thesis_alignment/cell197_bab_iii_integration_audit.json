@@ -1,0 +1,55 @@
+{
+  "candidate": {
+    "docx_healthy": true,
+    "path": "/content/PLTMH-ELC-QLSTM/reports/thesis_integration/cell197_bab_iii_candidate/Proposal_Tesis_BAB_I_II_III_CANDIDATE.docx",
+    "sha256": "a9a82475125c0db3fee6ac12d554759e69acc1debe9142ab8596a0e790fbc7d1"
+  },
+  "gate": {
+    "bab_iii_final_visual_qa_pending": true,
+    "bab_iv_integration_authorized": false,
+    "cell198_freeze_authorized": false,
+    "machine_pass": true
+  },
+  "integration": {
+    "all_12_donor_subtrees_exact": true,
+    "all_math_counts_exact": true,
+    "bab_iii_drawings": 0,
+    "bab_iii_omml": 23,
+    "bab_iii_tables": 0,
+    "obsolete_eq_3_1_to_3_7": [],
+    "obsolete_table_iii_1": []
+  },
+  "parent_checkpoint": "cce33732bd274fc80ac03bc5646bcd70c154be27",
+  "protected_state": {
+    "authoritative_input_unchanged": true,
+    "bab_i_ii_prefix_exact": true,
+    "bab_iii_heading_exact": true,
+    "frozen_bab_iii_unchanged": true,
+    "non_document_package_parts_exact": true,
+    "section_headings_exact": true,
+    "sectpr_exact": true
+  },
+  "render": {
+    "bab_iii_end_page": 43,
+    "bab_iii_start_page": 35,
+    "contact_sheets": [
+      "/content/PLTMH-ELC-QLSTM/data/runtime/cell197_bab_iii_integration/contact_sheets_fix1/cell197_bab_iii_contact_sheet_01.png",
+      "/content/PLTMH-ELC-QLSTM/data/runtime/cell197_bab_iii_integration/contact_sheets_fix1/cell197_bab_iii_contact_sheet_02.png"
+    ],
+    "page_count": 43,
+    "pdf": "/content/PLTMH-ELC-QLSTM/data/runtime/cell197_bab_iii_integration/pdf/Proposal_Tesis_BAB_I_II_III_CANDIDATE.pdf"
+  },
+  "render_locator_fix": {
+    "clean_new_page": true,
+    "false_positive_pages": [
+      5
+    ],
+    "original_textual_candidates": [
+      5,
+      35
+    ],
+    "real_bab_iii_page": 35,
+    "resolution_method": "frozen_section_3_1_body_anchor"
+  },
+  "stage": "CELL197_BAB_III_SURGICAL_INTEGRATION"
+}
