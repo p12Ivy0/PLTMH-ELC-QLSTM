@@ -1,0 +1,13 @@
+section,word_source_title,frozen_title,title_same
+3.1,Desain Penelitian,Desain Penelitian,True
+3.2,"Tempat, Perangkat, dan Waktu Penelitian","Tempat, Perangkat, dan Waktu Penelitian",True
+3.3,Pemodelan Sistem PLTMH–ELC,Pemodelan Sistem PLTMH–ELC,True
+3.4,Perancangan PI Baseline dan Rentang Gain,Perancangan PI Baseline dan Rentang Gain,True
+3.5,Penyusunan Skenario Operasi,Penyusunan Skenario Operasi,True
+3.6,Pembentukan Target Gain,Pembentukan Target Gain,True
+3.7,Variabel dan Pembentukan Dataset,Variabel dan Pembentukan Dataset,True
+3.8,Pengembangan Model LSTM dan QLSTM,Pengembangan Model LSTM dan QLSTM,True
+3.9,Integrasi Gain Adaptif dalam Simulasi Closed-Loop,Integrasi Gain Adaptif dalam Simulasi Closed-Loop,True
+3.10,Metode Analisis Data,Metode Analisis Data,True
+3.11,Kriteria Keberhasilan Penelitian,Kriteria Keberhasilan Penelitian,True
+3.12,Alur Penelitian,Alur Penelitian,True

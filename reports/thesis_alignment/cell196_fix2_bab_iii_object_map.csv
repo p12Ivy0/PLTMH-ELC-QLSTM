@@ -1,0 +1,13 @@
+section,title,body_start,body_end_exclusive,element_count,paragraph_count,table_count,drawing_count,omml_count,caption_count,captions,frozen_title,recommended_operation
+3.1,Desain Penelitian,312,315,3,3,0,0,2,0,,Desain Penelitian,STRUCTURE_AWARE_REPLACE
+3.2,"Tempat, Perangkat, dan Waktu Penelitian",315,320,5,4,1,0,2,1,Tabel III . 1 Rencana Jadwal Pelaksanaan Penelitian,"Tempat, Perangkat, dan Waktu Penelitian",STRUCTURE_AWARE_REPLACE
+3.3,Pemodelan Sistem PLTMH–ELC,320,324,4,4,0,0,0,0,,Pemodelan Sistem PLTMH–ELC,TEXT_BODY_REPLACE
+3.4,Perancangan PI Baseline dan Rentang Gain,324,327,3,3,0,0,3,0,,Perancangan PI Baseline dan Rentang Gain,STRUCTURE_AWARE_REPLACE
+3.5,Penyusunan Skenario Operasi,327,334,7,7,0,0,0,0,,Penyusunan Skenario Operasi,TEXT_BODY_REPLACE
+3.6,Pembentukan Target Gain,334,337,3,3,0,0,5,0,,Pembentukan Target Gain,STRUCTURE_AWARE_REPLACE
+3.7,Variabel dan Pembentukan Dataset,337,356,19,14,5,0,9,0,,Variabel dan Pembentukan Dataset,STRUCTURE_AWARE_REPLACE
+3.8,Pengembangan Model LSTM dan QLSTM,356,359,3,3,0,0,2,0,,Pengembangan Model LSTM dan QLSTM,STRUCTURE_AWARE_REPLACE
+3.9,Integrasi Gain Adaptif dalam Simulasi Closed-Loop,359,362,3,3,0,0,3,0,,Integrasi Gain Adaptif dalam Simulasi Closed-Loop,STRUCTURE_AWARE_REPLACE
+3.10,Metode Analisis Data,362,369,7,6,1,0,10,0,,Metode Analisis Data,STRUCTURE_AWARE_REPLACE
+3.11,Kriteria Keberhasilan Penelitian,369,372,3,3,0,0,0,0,,Kriteria Keberhasilan Penelitian,TEXT_BODY_REPLACE
+3.12,Alur Penelitian,372,382,10,8,1,0,3,0,,Alur Penelitian,STRUCTURE_AWARE_REPLACE

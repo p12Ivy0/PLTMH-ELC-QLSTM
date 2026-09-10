@@ -1,0 +1,99 @@
+{
+  "authoritative_input": {
+    "bab_i_frozen": true,
+    "bab_ii_frozen": true,
+    "path": "reports/thesis_integration/cell194_bab_ii_visual_fix/Proposal_Tesis_BAB_I_II_VISUAL_FIXED.docx",
+    "sha256": "9b62e213877fce4bc3633334a83459bf613cea5910cc1003755527dd04a75934"
+  },
+  "bab_iii": {
+    "authoritative_preintegration_body_sha": "bb7f6b3c45fbef79490e8a99efe229b3344e53d0052e911146bc925c46319722",
+    "drawing_count": 0,
+    "frozen_equation_references": [],
+    "frozen_figure_mentions": [],
+    "frozen_table_mentions": [],
+    "omml_count": 39,
+    "section_count": 12,
+    "sections": [
+      "3.1",
+      "3.2",
+      "3.3",
+      "3.4",
+      "3.5",
+      "3.6",
+      "3.7",
+      "3.8",
+      "3.9",
+      "3.10",
+      "3.11",
+      "3.12"
+    ],
+    "source_body_sha": "bb7f6b3c45fbef79490e8a99efe229b3344e53d0052e911146bc925c46319722",
+    "source_captions": [
+      "Tabel III . 1 Rencana Jadwal Pelaksanaan Penelitian"
+    ],
+    "source_equation_labels": [
+      "3.1",
+      "3.2",
+      "3.3",
+      "3.4",
+      "3.5",
+      "3.6",
+      "3.7"
+    ],
+    "table_count": 8
+  },
+  "bab_iii_boundary": {
+    "body_source_identical_before_integration": true,
+    "mode": "END_OF_DOCUMENT_BEFORE_SECTPR",
+    "terminal_in_authoritative_docx": true,
+    "terminal_in_source_docx": true
+  },
+  "cell185": {
+    "checkpoint": "791823280870636b33e6f3390d3cc83f7a053e4b",
+    "checkpoint_exists": true,
+    "frozen_artifact": "reports/thesis_alignment/cell185_bab_iii_full_revised_candidate.md",
+    "sha256": "d8e70a621f5b0e1aa047a65945ae035345be49d002082f861f8083dfa3fbe373",
+    "sha_valid": true
+  },
+  "contract": {
+    "authoritative_bab_i_ii_hash_valid": true,
+    "bab_i_final_frozen": true,
+    "bab_ii_final_frozen": true,
+    "bab_iii_body_source_identical_before_integration": true,
+    "cell185_checkpoint_exists": true,
+    "cell195_checkpoint_exact": true,
+    "frozen_bab_iii_sha_valid": true,
+    "frozen_sections_3_1_to_3_12_exact": true,
+    "namespace_safe_text_extraction": true,
+    "notebooks_05_to_10_unchanged": true,
+    "project_source_unchanged": true,
+    "resolved_boundary_consistent": true,
+    "section_position_contract_valid": true,
+    "source_baseline_hash_valid": true,
+    "terminal_boundary_consistent": true,
+    "word_has_exactly_12_section_anchors": true
+  },
+  "execution": {
+    "inference": false,
+    "monte_carlo": false,
+    "post_result_tuning": false,
+    "scientific_computation": false,
+    "simulation": false,
+    "source_docx_modified": false,
+    "thesis_docx_modified": false,
+    "training": false
+  },
+  "failure_recovery": {
+    "cell196_failure": "assumed a Heading 1 must follow Bab III",
+    "cell196_fix1_failure": "XPathEvalError: undefined namespace prefix while reading .//w:t/text()",
+    "fix1_boundary_resolution": "END_OF_DOCUMENT_BEFORE_SECTPR",
+    "fix2_text_extraction": "element.iter(qn('w:t'))",
+    "thesis_docx_modified": false
+  },
+  "next_gate": {
+    "bab_iv_docx_integration_authorized": false,
+    "cell197_bab_iii_integration_authorized": true
+  },
+  "parent_checkpoint": "711e3fb5c7f3cd9a9b64738f68d2f3951c937815",
+  "stage": "BAB_III_PRE_INTEGRATION_AUDIT_FIX2"
+}

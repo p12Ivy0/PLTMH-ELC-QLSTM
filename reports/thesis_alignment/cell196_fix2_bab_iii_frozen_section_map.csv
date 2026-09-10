@@ -1,0 +1,13 @@
+section,title,heading_line,end_line,body_word_count
+3.1,Desain Penelitian,3,32,218
+3.2,"Tempat, Perangkat, dan Waktu Penelitian",33,52,119
+3.3,Pemodelan Sistem PLTMH–ELC,53,78,179
+3.4,Perancangan PI Baseline dan Rentang Gain,79,105,142
+3.5,Penyusunan Skenario Operasi,106,134,208
+3.6,Pembentukan Target Gain,135,161,186
+3.7,Variabel dan Pembentukan Dataset,162,201,237
+3.8,Pengembangan Model LSTM dan QLSTM,202,230,205
+3.9,Integrasi Gain Adaptif dalam Simulasi Closed-Loop,231,263,208
+3.10,Metode Analisis Data,264,309,309
+3.11,Kriteria Keberhasilan Penelitian,310,336,192
+3.12,Alur Penelitian,337,371,268
