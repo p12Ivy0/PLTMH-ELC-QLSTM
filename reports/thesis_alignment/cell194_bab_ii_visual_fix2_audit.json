@@ -1,0 +1,49 @@
+{
+  "allowed_change": {
+    "page_break_before": true,
+    "paragraph": "METODOLOGI PENELITIAN",
+    "scientific_text_change": false,
+    "style": "Heading 1"
+  },
+  "bab_ii_bab_iii_boundary": {
+    "bab_ii_end_page": 34,
+    "bab_iii_clean_new_page": true,
+    "bab_iii_start_page": 35
+  },
+  "gates": {
+    "bab_ii_final_freeze": false,
+    "bab_iii_docx_integration_authorized": false
+  },
+  "human_visual_qa": {
+    "bab_iii_new_page": "PENDING_FINAL_SCREENSHOT",
+    "eq_2_21_to_2_27": "PASS",
+    "overall_bab_ii": "PENDING",
+    "research_row": "PASS",
+    "section_2_11": "PASS",
+    "table_ii_1_layout": "PASS"
+  },
+  "input_cell194": {
+    "path": "reports/thesis_integration/cell194_bab_ii_candidate/Proposal_Tesis_BAB_I_II_CANDIDATE.docx",
+    "sha256": "23cf4217f2f73b09d7fd880f36f1519bc1410b27c1b2e202db501ab2d1bf408e",
+    "unchanged": true
+  },
+  "libreoffice_numbering_exception": {
+    "cell194_regression": false,
+    "confirmed": true,
+    "docx_numbering_repair_prohibited": true,
+    "requires_final_microsoft_word_verification": true
+  },
+  "output": {
+    "path": "reports/thesis_integration/cell194_bab_ii_visual_fix/Proposal_Tesis_BAB_I_II_VISUAL_FIXED.docx",
+    "sha256": "9b62e213877fce4bc3633334a83459bf613cea5910cc1003755527dd04a75934",
+    "visible_text_unchanged": true
+  },
+  "parent_checkpoint": "702519b52f60f74235dd4764d05b4cbeae816120",
+  "stage": "BAB_II_VISUAL_FIX_BABIII_NEW_PAGE",
+  "table_ii1_caption": {
+    "introduced_by_cell194": false,
+    "libreoffice_render_verification_deferred_to_word": true,
+    "source_to_cell194_fields_exact": true,
+    "source_to_cell194_xml_exact": true
+  }
+}
