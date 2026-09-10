@@ -1,0 +1,78 @@
+{
+  "candidate": {
+    "path": "reports/thesis_integration/cell203_bab_v_candidate/Proposal_Tesis_BAB_I_II_III_IV_V_CANDIDATE.docx",
+    "sha256": "39a21c1b0f035937d6bb4173c5abd703cc2536ab1a357e0b855b7b86e3b4bffc",
+    "unchanged_during_fix2r": true
+  },
+  "gate": {
+    "bab_v_final_visual_qa_pending": true,
+    "cell204_bab_v_freeze_authorized": false,
+    "front_matter_finalization_authorized": false,
+    "machine_pass": true
+  },
+  "input": {
+    "path": "reports/thesis_integration/cell200_bab_iv_visual_fix2/Proposal_Tesis_BAB_I_II_III_IV_VISUAL_FIXED2.docx",
+    "sha256": "199798e5db1305b17eb375e893492127ff97ac41d4fdf2acc91c0f60d65fc1de",
+    "unchanged": true
+  },
+  "list_audit": {
+    "cause": "All section paragraphs were incorrectly treated as numbered-list items.",
+    "original_result": "FALSE_NEGATIVE",
+    "section_5_1_nonlist_paragraphs": 3,
+    "section_5_1_numbered_items": 4,
+    "section_5_1_sequence": [
+      "1.",
+      "2.",
+      "3.",
+      "4."
+    ],
+    "section_5_1_total_paragraphs": 7,
+    "section_5_2_nonlist_paragraphs": 1,
+    "section_5_2_numbered_items": 6,
+    "section_5_2_sequence": [
+      "1.",
+      "2.",
+      "3.",
+      "4.",
+      "5.",
+      "6."
+    ],
+    "section_5_2_total_paragraphs": 7
+  },
+  "parent_checkpoint": "e2a6f051874d69d5f21b9d49a3c3df2133d19770",
+  "render": {
+    "all_10_numbered_items_rendered": true,
+    "bab_v_end_page": 61,
+    "bab_v_start_page": 59,
+    "chapter_heading_two_lines": true,
+    "clean_new_page": true,
+    "contact_sheets": [
+      "/content/PLTMH-ELC-QLSTM/data/runtime/cell203_fix2r_complete/contact_sheets/cell203_bab_v_contact_sheet_01.png"
+    ],
+    "page_count": 61,
+    "pdf_path": "/content/PLTMH-ELC-QLSTM/data/runtime/cell203_fix2r_complete/render/Proposal_Tesis_BAB_I_II_III_IV_V_CANDIDATE.pdf"
+  },
+  "restrictions": [
+    "Do not modify final-frozen Bab I–IV.",
+    "Do not modify frozen Bab-V scientific text.",
+    "Do not rewrite explicit Bab-V list numbering using numbering.xml.",
+    "Do not rerun or retune completed experiments.",
+    "Do not introduce QLSTM-superiority or quantum-advantage claims.",
+    "Front matter remains deferred until Bab V is final-frozen."
+  ],
+  "scientific_integrity": {
+    "automatic_numbering_dependency": false,
+    "bab_i_iv_prefix_exact_xml": true,
+    "final_sectpr_exact": true,
+    "non_document_parts_exact": true,
+    "numbering_xml_unchanged": true,
+    "section_5_1_nonlist_exact": true,
+    "section_5_1_sequence_exact": true,
+    "section_5_1_text_exact": true,
+    "section_5_2_nonlist_exact": true,
+    "section_5_2_sequence_exact": true,
+    "section_5_2_text_exact": true,
+    "styles_xml_unchanged": true
+  },
+  "stage": "CELL203_BAB_V_INTEGRATION_FINAL_MACHINE_PASS"
+}
