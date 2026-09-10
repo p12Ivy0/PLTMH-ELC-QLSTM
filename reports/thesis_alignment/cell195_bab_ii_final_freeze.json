@@ -1,0 +1,80 @@
+{
+  "authoritative_docx": {
+    "path": "reports/thesis_integration/cell194_bab_ii_visual_fix/Proposal_Tesis_BAB_I_II_VISUAL_FIXED.docx",
+    "sha256": "9b62e213877fce4bc3633334a83459bf613cea5910cc1003755527dd04a75934"
+  },
+  "caption_integrity": {
+    "cell194_caption_regression": false,
+    "source_to_cell194_field_instructions_exact": true,
+    "source_to_cell194_xml_exact": true
+  },
+  "chapter_boundary": {
+    "bab_ii_final_rendered_end_page": 34,
+    "bab_iii_clean_new_page": true,
+    "bab_iii_final_rendered_start_page": 35
+  },
+  "deferred_until_final_document": {
+    "abstract_bahasa_indonesia": "DEFERRED — align with final frozen Bab I–V results.",
+    "abstract_english": "DEFERRED — align with final frozen Bab I–V results.",
+    "list_of_figures": "DEFERRED — update after final figure integration.",
+    "list_of_tables": "DEFERRED — update after final table integration.",
+    "microsoft_word_fields": "DEFERRED — update all fields and verify multilevel numbering/captions in Microsoft Word after Bab I–V.",
+    "table_of_contents": "DEFERRED — update after final Bab I–V pagination."
+  },
+  "freeze": {
+    "bab_ii_final_docx_frozen": true,
+    "bab_ii_final_text_frozen": true,
+    "bab_ii_final_visual_qa_pass": true,
+    "bab_ii_machine_verified": true,
+    "bab_iii_docx_integration_authorized": true
+  },
+  "human_visual_qa": {
+    "checks": {
+      "bab_ii_chapter_layout": true,
+      "bab_ii_to_bab_iii_transition": true,
+      "bab_iii_starts_clean_new_page": true,
+      "equations_2_17_to_2_27": true,
+      "equations_2_21_to_2_27_alignment": true,
+      "no_unexpected_blank_page": true,
+      "no_visible_formula_clipping": true,
+      "no_visible_overlap": true,
+      "no_visible_table_clipping": true,
+      "section_2_10_layout": true,
+      "section_2_11_layout": true,
+      "section_2_7_layout": true,
+      "section_2_8_layout": true,
+      "section_2_9_layout": true,
+      "table_ii1_inside_margins": true,
+      "table_ii1_repeated_header": true,
+      "table_ii1_research_row_visible": true
+    },
+    "pass": true
+  },
+  "parent_checkpoint": "ab42be51794494a85ac02786914d46462e90877a",
+  "protected_inputs": {
+    "cell178_unchanged": true,
+    "cell180_unchanged": true,
+    "cell194_original_candidate_unchanged": true,
+    "frozen_bab_i_input_unchanged": true,
+    "source_equivalent_baseline_unchanged": true
+  },
+  "renderer_exception": {
+    "automatic_table_caption": "LibreOffice may render STYLEREF-based chapter caption text anomalously",
+    "bab_ii_visible_section_numbering": "LibreOffice renders 1.x instead of expected Word 2.x",
+    "final_microsoft_word_verification_required": true,
+    "known_good_and_candidate_same_numbering_behavior": true,
+    "manual_number_hardcoding_authorized": false,
+    "numbering_xml_repair_authorized": false,
+    "renderer": "LibreOffice 24.2.7.2",
+    "styles_xml_repair_authorized": false
+  },
+  "scientific_execution": {
+    "inference": false,
+    "monte_carlo": false,
+    "post_result_tuning": false,
+    "significance_testing": false,
+    "simulation": false,
+    "training": false
+  },
+  "stage": "BAB_II_FINAL_FREEZE_AFTER_VISUAL_QA"
+}
